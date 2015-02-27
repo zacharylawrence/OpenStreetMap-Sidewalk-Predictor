@@ -10,8 +10,9 @@ class HighwayCounter(object):
     def ways(self, ways):
         # callback method for ways
         for osmid, tags, refs in ways:
-            # Only allow 'secondary' and 'residential' highways to have assumed sidewalks
-            if 'highway' in tags and (tags['highway'] == 'secondary' or tags['highway'] == 'residential'):
+            # Only allow 'secondary', 'residential' and 'tertiary' highways to have assumed sidewalks
+            valid_highways = set(['secondary', 'residential', 'tertiary'])
+            if 'highway' in tags and tags['highway'] in valid_highways:
                 self.highways[osmid] = refs
 
     def coords_callback(self, coords):
@@ -31,17 +32,18 @@ def window(seq, n=2):
         result = result[1:] + (elem,)
         yield result
 
+# TODO: Remove this
 # Make an angle given in rad between pi and -pi
-def normalize_angle(angle):
-    angle %= 2 * math.pi
-    if (angle > math.pi):
-        angle -= 2 * math.pi
-    return angle
+# def normalize_angle(angle):
+#     angle %= 2 * math.pi
+#     if (angle > math.pi):
+#         angle -= 2 * math.pi
+#     return angle
 
 # instantiate counter and parser and start parsing
 counter = HighwayCounter()
 p = OSMParser(concurrency=4, ways_callback=counter.ways, coords_callback=counter.coords_callback)
-p.parse('map.osm')
+p.parse('map2.osm')
 
 # Finished parsing, now use the data
 for osmid in counter.highways:                  # Way ids
@@ -60,49 +62,21 @@ for osmid in counter.highways:                  # Way ids
         average_y = math.cos(in_angle) + math.cos(out_angle) / 2
         average_angle = math.atan2(average_x, average_y)
 
-        perpendicular_angle_1 = normalize_angle(math.pi / 2 + average_angle)
-        perpendicular_angle_2 = normalize_angle(math.pi / 2 - average_angle)
-
-        print math.degrees(perpendicular_angle_1), math.degrees(perpendicular_angle_2)
+        perpendicular_angle = math.pi / 2 + average_angle
 
         # Here we are assuming that things are on a flat plane, not mapped to a globe!
-        deltaY = math.sin(average_angle) * 0.001
-        deltaX = math.cos(average_angle) * 0.001
+        sidewalk_distance = 5 # In meters - Not currently used, just trial-and-errored 0.00005
+        delta_lat = math.sin(perpendicular_angle) * 0.00005
+        delta_long = math.cos(perpendicular_angle) * 0.00005
+
+        sidewalk_lat = lat + delta_lat
+        sidewalk_long = long + delta_long
+
+        print str(sidewalk_lat) + ',' + str(sidewalk_long)
+
+        sidewalk_lat = lat - delta_lat
+        sidewalk_long = long - delta_long
+
+        print str(sidewalk_lat) + ',' + str(sidewalk_long)
 
     print
-
-
-    # for id in counter.highways[osmid]:   # Coord ids (in order)
-    #     if prev_id != None:
-    #         # print counter.coords[prev_id], " -> ", counter.coords[id]
-    #         lat1, long1 = counter.coords[prev_id]
-    #         lat2, long2 = counter.coords[id]
-
-    #         theta = math.atan2(lat2 - lat1, long2 - long1)
-
-    #         angle1 = math.pi/2 + theta
-    #         angle2 = math.pi/2 - theta
-
-    #         print math.degrees(theta), math.degrees(angle1), math.degrees(angle2)
-
-    #         # Here we are assuming that things are on a flat plane, not mapped to a globe!
-    #         sidewalk_distance = 5 # In meters
-    #         deltaY = math.sin(angle1) * 0.001
-    #         deltaX = math.cos(angle1) * 0.001
-
-    #         print deltaX, deltaY
-
-
-    #         # if long2 == long1:
-    #         #     slope = float("inf")
-    #         # else:
-    #         #     slope = (lat2 - lat1) / (long2 - long1)
-
-    #         # if slope == 0:
-    #         #     perpendicular = float("inf")
-    #         # else:
-    #         #     perpendicular = -1 / slope
-
-    #         # print slope, perpendicular
-    #     prev_id = id
-    # print
