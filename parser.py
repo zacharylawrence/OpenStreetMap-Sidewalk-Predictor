@@ -13,7 +13,7 @@ class HighwayCounter(object):
                 self.highways[osmid] = refs
 
     def coords_callback(self, coords):
-        for (id, lat, long) in coords:
+        for (id, long, lat) in coords:  # Be careful of the order of lat/long -> OSM uses long/lat
             self.coords[id] = (lat, long)
 
 # instantiate counter and parser and start parsing
