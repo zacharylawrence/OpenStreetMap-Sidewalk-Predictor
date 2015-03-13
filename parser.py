@@ -58,8 +58,8 @@ for osmid in counter.highways:                  # Way ids
         in_angle = math.atan2(lat - prev_lat, long - prev_long)
         out_angle = math.atan2(next_lat - lat, next_long - long)
 
-        average_x = math.sin(in_angle) + math.sin(out_angle) / 2
-        average_y = math.cos(in_angle) + math.cos(out_angle) / 2
+        average_x = (math.sin(in_angle) + math.sin(out_angle)) / 2
+        average_y = (math.cos(in_angle) + math.cos(out_angle)) / 2
         average_angle = math.atan2(average_x, average_y)
 
         perpendicular_angle = math.pi / 2 + average_angle
