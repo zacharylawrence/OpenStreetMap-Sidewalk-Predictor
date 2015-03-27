@@ -11,7 +11,7 @@ class HighwayCounter(object):
     def ways(self, ways):
         for osmid, tags, refs in ways:
             # Only allow 'secondary', 'residential' and 'tertiary' highways to have assumed sidewalks
-            valid_highways = set(['secondary', 'residential', 'tertiary', 'residential'])
+            valid_highways = set(['secondary', 'residential', 'tertiary'])
             if 'highway' in tags and tags['highway'] in valid_highways:
                 self.highways[osmid] = refs
 
@@ -54,12 +54,13 @@ p = OSMParser(concurrency=4, ways_callback=counter.ways, coords_callback=counter
 p.parse('map2.osm')
 counter.calculateIntersections()
 
+# Finished parsing, now use the data
 print "Intersections:"
 for id in counter.intersections:
-	print(counter.coords[id])
+	print(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
 print
 
-# Finished parsing, now use the data
+print "Sidewalks:"
 for osmid in counter.highways:                  # Way ids
     prev_id = None
     gen = window(counter.highways[osmid], 3)    # Coord ids (in order)
