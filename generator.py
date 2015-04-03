@@ -19,12 +19,12 @@ class Generator(object):
 		id = self.id_gen.next()
 
 		if self.bounds is None:
-			self.bounds = (lat, long, lat, long)
+			self.bounds = [lat, long, lat, long]
 		else:
-			self.bounds[0] = Math.min(self.bounds[0], lat)
-			self.bounds[1] = Math.min(self.bounds[1], long)
-			self.bounds[2] = Math.max(self.bounds[2], lat)
-			self.bounds[3] = Math.max(self.bounds[3]. long)
+			self.bounds[0] = min(self.bounds[0], lat)
+			self.bounds[1] = min(self.bounds[1], long)
+			self.bounds[2] = max(self.bounds[2], lat)
+			self.bounds[3] = max(self.bounds[3], long)
 
 		self.nodes.append((id, long, lat))
 

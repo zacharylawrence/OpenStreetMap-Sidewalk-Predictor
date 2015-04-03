@@ -1,6 +1,9 @@
-from imposm.parser import OSMParser
-from itertools import islice
 import math
+import logging as log
+from itertools import islice
+
+from imposm.parser import OSMParser
+
 from generator import Generator
 
 # simple class that handles the parsed OSM data.
@@ -51,20 +54,24 @@ def window(seq, n=2):
 
 # instantiate counter and parser and start parsing
 if __name__ == "__main__":
+    # log.basicConfig(format="", level=log.DEBUG)
+
     counter = HighwayCounter()
+    output = Generator()
     p = OSMParser(concurrency=4, ways_callback=counter.ways, coords_callback=counter.coords_callback)
     p.parse('map2.osm')
     counter.calculateIntersections()
 
     # Finished parsing, now use the data
-    print "Intersections:"
+    log.debug("Intersections:")
     for id in counter.intersections:
-        print(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
-    print
+        log.debug(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
+    log.debug('\n')
 
-    print "Sidewalks:"
+    log.debug("Sidewalks:")
     for osmid in counter.highways:                  # Way ids
-        prev_id = None
+        way1 = output.add_way([('highway', 'pedestrian')])
+        way2 = output.add_way([('highway', 'pedestrian')])
         gen = window(counter.highways[osmid], 3)    # Coord ids (in order)
         for ids in gen:
             prev_id, id, next_id = ids
@@ -91,11 +98,15 @@ if __name__ == "__main__":
                 sidewalk_lat = lat + delta_lat
                 sidewalk_long = long + delta_long
 
-                print str(sidewalk_lat) + ',' + str(sidewalk_long)
+                log.debug(str(sidewalk_lat) + ',' + str(sidewalk_long))
+                output.add_way_reference(way1, output.add_coord(sidewalk_lat, sidewalk_long))
 
                 sidewalk_lat = lat - delta_lat
                 sidewalk_long = long - delta_long
 
-                print str(sidewalk_lat) + ',' + str(sidewalk_long)
+                log.debug(str(sidewalk_lat) + ',' + str(sidewalk_long))
+                output.add_way_reference(way2, output.add_coord(sidewalk_lat, sidewalk_long))
 
-        print
+        log.debug('\n')
+
+    print output.generate()
