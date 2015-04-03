@@ -1,6 +1,7 @@
 from imposm.parser import OSMParser
 from itertools import islice
 import math
+from generator import Generator
 
 # simple class that handles the parsed OSM data.
 class HighwayCounter(object):
@@ -49,51 +50,52 @@ def window(seq, n=2):
 #     return angle
 
 # instantiate counter and parser and start parsing
-counter = HighwayCounter()
-p = OSMParser(concurrency=4, ways_callback=counter.ways, coords_callback=counter.coords_callback)
-p.parse('map2.osm')
-counter.calculateIntersections()
+if __name__ == "__main__":
+    counter = HighwayCounter()
+    p = OSMParser(concurrency=4, ways_callback=counter.ways, coords_callback=counter.coords_callback)
+    p.parse('map2.osm')
+    counter.calculateIntersections()
 
-# Finished parsing, now use the data
-print "Intersections:"
-for id in counter.intersections:
-	print(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
-print
-
-print "Sidewalks:"
-for osmid in counter.highways:                  # Way ids
-    prev_id = None
-    gen = window(counter.highways[osmid], 3)    # Coord ids (in order)
-    for ids in gen:
-        prev_id, id, next_id = ids
-
-        if id not in counter.intersections:
-            prev_lat, prev_long = counter.coords[prev_id]
-            lat, long = counter.coords[id]
-            next_lat, next_long = counter.coords[next_id]
-
-            in_angle = math.atan2(lat - prev_lat, long - prev_long)
-            out_angle = math.atan2(next_lat - lat, next_long - long)
-
-            average_x = (math.sin(in_angle) + math.sin(out_angle)) / 2
-            average_y = (math.cos(in_angle) + math.cos(out_angle)) / 2
-            average_angle = math.atan2(average_x, average_y)
-
-            perpendicular_angle = math.pi / 2 + average_angle
-
-            # Here we are assuming that things are on a flat plane, not mapped to a globe!
-            sidewalk_distance = 5 # In meters - Not currently used, just trial-and-errored 0.00005
-            delta_lat = math.sin(perpendicular_angle) * 0.00005
-            delta_long = math.cos(perpendicular_angle) * 0.00005
-
-            sidewalk_lat = lat + delta_lat
-            sidewalk_long = long + delta_long
-
-            print str(sidewalk_lat) + ',' + str(sidewalk_long)
-
-            sidewalk_lat = lat - delta_lat
-            sidewalk_long = long - delta_long
-
-            print str(sidewalk_lat) + ',' + str(sidewalk_long)
-
+    # Finished parsing, now use the data
+    print "Intersections:"
+    for id in counter.intersections:
+        print(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
     print
+
+    print "Sidewalks:"
+    for osmid in counter.highways:                  # Way ids
+        prev_id = None
+        gen = window(counter.highways[osmid], 3)    # Coord ids (in order)
+        for ids in gen:
+            prev_id, id, next_id = ids
+
+            if id not in counter.intersections:
+                prev_lat, prev_long = counter.coords[prev_id]
+                lat, long = counter.coords[id]
+                next_lat, next_long = counter.coords[next_id]
+
+                in_angle = math.atan2(lat - prev_lat, long - prev_long)
+                out_angle = math.atan2(next_lat - lat, next_long - long)
+
+                average_x = (math.sin(in_angle) + math.sin(out_angle)) / 2
+                average_y = (math.cos(in_angle) + math.cos(out_angle)) / 2
+                average_angle = math.atan2(average_x, average_y)
+
+                perpendicular_angle = math.pi / 2 + average_angle
+
+                # Here we are assuming that things are on a flat plane, not mapped to a globe!
+                sidewalk_distance = 5 # In meters - Not currently used, just trial-and-errored 0.00005
+                delta_lat = math.sin(perpendicular_angle) * 0.00005
+                delta_long = math.cos(perpendicular_angle) * 0.00005
+
+                sidewalk_lat = lat + delta_lat
+                sidewalk_long = long + delta_long
+
+                print str(sidewalk_lat) + ',' + str(sidewalk_long)
+
+                sidewalk_lat = lat - delta_lat
+                sidewalk_long = long - delta_long
+
+                print str(sidewalk_lat) + ',' + str(sidewalk_long)
+
+        print
