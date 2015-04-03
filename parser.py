@@ -99,13 +99,13 @@ if __name__ == "__main__":
                 sidewalk_long = long + delta_long
 
                 log.debug(str(sidewalk_lat) + ',' + str(sidewalk_long))
-                output.add_way_reference(way1, output.add_coord(sidewalk_lat, sidewalk_long))
+                output.add_way_reference(way1, output.add_coord(sidewalk_long, sidewalk_lat))
 
                 sidewalk_lat = lat - delta_lat
                 sidewalk_long = long - delta_long
 
                 log.debug(str(sidewalk_lat) + ',' + str(sidewalk_long))
-                output.add_way_reference(way2, output.add_coord(sidewalk_lat, sidewalk_long))
+                output.add_way_reference(way2, output.add_coord(sidewalk_long, sidewalk_lat))
 
         log.debug('\n')
 
