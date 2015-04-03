@@ -70,8 +70,8 @@ if __name__ == "__main__":
 
     log.debug("Sidewalks:")
     for osmid in counter.highways:                  # Way ids
-        way1 = output.add_way([('highway', 'pedestrian')])
-        way2 = output.add_way([('highway', 'pedestrian')])
+        way1 = output.add_way([('highway', 'footway')])
+        way2 = output.add_way([('highway', 'footway')])
         gen = window(counter.highways[osmid], 3)    # Coord ids (in order)
         for ids in gen:
             prev_id, id, next_id = ids
