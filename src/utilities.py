@@ -32,11 +32,22 @@ class WaySearcher(object):
         """
         for key, value in self.key_values:
             if key in tags:
-                if value and value != tags[key]:
-                    # If value is not None and it does not agree with tags[key],
-                    return False
+                # Check if the value is iterable
+                # http://stackoverflow.com/questions/1952464/in-python-how-do-i-determine-if-an-object-is-iterable
+                if hasattr(value, '__iter__'):
+                    flag = False
+                    for v in value:
+                        if v is None or v == tags[key]:
+                            flag = True
+                    if not flag:
+                        return False
+                else:
+                    if value and value != tags[key]:
+                        # If value is not None and it does not agree with tags[key],
+                        return False
             else:
                 return False
+
         return True
 
     def get_osm(self):
