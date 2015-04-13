@@ -1,0 +1,381 @@
+<osm>
+<bounds maxlat="38.9015000" maxlon="-76.9723000" minlat="38.8950000" minlon="-76.9865000" />
+ <node changeset="17461296" id="1444897308" lat="38.8960820" lon="-76.9934587" timestamp="2013-08-22T20:06:39Z" uid="1024769" user="trsmith" version="2" visible="true" />
+ <node changeset="17461296" id="49738294" lat="38.8986943" lon="-76.9870470" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="5024390" id="49758268" lat="38.9001310" lon="-76.9834420" timestamp="2010-06-19T14:22:37Z" uid="18713" user="Diego" version="3" visible="true">
+  <tag k="highway" v="traffic_signals" />
+ </node>
+ <node changeset="17461296" id="49788018" lat="38.8941493" lon="-76.9981930" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788019" lat="38.8943473" lon="-76.9977140" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788022" lat="38.8954703" lon="-76.9949570" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788024" lat="38.8959643" lon="-76.9937470" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788027" lat="38.8963783" lon="-76.9927250" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788029" lat="38.8964173" lon="-76.9926420" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788030" lat="38.8964583" lon="-76.9925310" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="8896852" id="49718911" lat="38.9007234" lon="-76.9819690" timestamp="2011-08-02T02:07:34Z" uid="230350" user="westendguy" version="3" visible="true" />
+ <node changeset="17461296" id="49788032" lat="38.8967093" lon="-76.9919150" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788033" lat="38.8968233" lon="-76.9916280" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="3273100" id="49766018" lat="38.9019270" lon="-76.9789940" timestamp="2009-12-02T15:51:48Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="17461296" id="49788036" lat="38.8969153" lon="-76.9914090" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="3046923" id="49718917" lat="38.9006129" lon="-76.9823201" timestamp="2009-11-06T10:21:23Z" uid="147510" user="woodpeck_fixbot" version="3" visible="true" />
+ <node changeset="17461296" id="49788038" lat="38.8969823" lon="-76.9912420" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788039" lat="38.8972263" lon="-76.9906410" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788040" lat="38.8972763" lon="-76.9905270" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788042" lat="38.8973383" lon="-76.9903710" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788043" lat="38.8973903" lon="-76.9902460" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788044" lat="38.8974523" lon="-76.9900950" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="3273100" id="49718925" lat="38.9006250" lon="-76.9826930" timestamp="2009-12-02T15:44:14Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="17461296" id="49788046" lat="38.8975073" lon="-76.9899570" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788048" lat="38.8980623" lon="-76.9885890" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788049" lat="38.8981313" lon="-76.9884170" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788050" lat="38.8981763" lon="-76.9883010" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788064" lat="38.8989883" lon="-76.9863210" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="49788067" lat="38.8991173" lon="-76.9859960" timestamp="2013-08-22T20:06:39Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="25194485" id="3056586918" lat="38.8947401" lon="-76.9967516" timestamp="2014-09-02T23:48:02Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="25194485" id="3056586919" lat="38.8946773" lon="-76.9967047" timestamp="2014-09-02T23:48:02Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="8896852" id="49788085" lat="38.9006003" lon="-76.9821836" timestamp="2011-08-02T02:07:34Z" uid="230350" user="westendguy" version="3" visible="true" />
+ <node changeset="2788109" id="49788089" lat="38.9010800" lon="-76.9810840" timestamp="2009-10-08T22:37:25Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="3046923" id="49788091" lat="38.9011140" lon="-76.9810030" timestamp="2009-11-06T10:36:16Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="2788109" id="49788093" lat="38.9011640" lon="-76.9808790" timestamp="2009-10-08T22:37:25Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="2788109" id="49788094" lat="38.9014570" lon="-76.9801610" timestamp="2009-10-08T22:37:25Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="3273100" id="49788096" lat="38.9016340" lon="-76.9797210" timestamp="2009-12-02T15:56:20Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="2788109" id="49788097" lat="38.9017800" lon="-76.9793670" timestamp="2009-10-08T22:37:25Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="27168021" id="3215047403" lat="38.8947508" lon="-76.9965244" timestamp="2014-12-01T22:50:51Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="17461296" id="49768693" lat="38.8968673" lon="-76.9915210" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="27168021" id="3215047414" lat="38.8948097" lon="-76.9965807" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215047416" lat="38.8948547" lon="-76.9962713" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="17461296" id="49777915" lat="38.8961893" lon="-76.9931960" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="4" visible="true" />
+ <node changeset="27168021" id="3215047420" lat="38.8949317" lon="-76.9962814" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215047421" lat="38.8949327" lon="-76.9960792" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215047428" lat="38.8953295" lon="-76.9950836" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215047429" lat="38.8954216" lon="-76.9948545" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215047430" lat="38.8954232" lon="-76.9950728" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215047431" lat="38.8955128" lon="-76.9948529" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215047433" lat="38.8958308" lon="-76.9938462" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215047434" lat="38.8959276" lon="-76.9938368" timestamp="2014-12-01T22:50:52Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="17461296" id="49763094" lat="38.8947803" lon="-76.9966530" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="4" visible="true" />
+ <node changeset="2788109" id="49718920" lat="38.9005995" lon="-76.9824231" timestamp="2009-10-08T22:18:57Z" uid="147510" user="woodpeck_fixbot" version="3" visible="true" />
+ <node changeset="2788109" id="49718922" lat="38.9005928" lon="-76.9825003" timestamp="2009-10-08T22:18:57Z" uid="147510" user="woodpeck_fixbot" version="3" visible="true" />
+ <node changeset="3046923" id="49718923" lat="38.9005928" lon="-76.9825604" timestamp="2009-11-06T10:21:23Z" uid="147510" user="woodpeck_fixbot" version="3" visible="true" />
+ <node changeset="2788109" id="49718924" lat="38.9006062" lon="-76.9826377" timestamp="2009-10-08T22:18:57Z" uid="147510" user="woodpeck_fixbot" version="3" visible="true" />
+ <node changeset="17461296" id="49739603" lat="38.8993252" lon="-76.9855042" timestamp="2013-08-22T20:06:39Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="2428507994" lat="38.8968412" lon="-76.9913898" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428507997" lat="38.8989141" lon="-76.9863021" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="24164553" id="2428508000" lat="38.8948987" lon="-76.9961645" timestamp="2014-07-15T16:38:21Z" uid="38487" user="jumbanho" version="2" visible="true" />
+ <node changeset="2788109" id="49718928" lat="38.9007320" lon="-76.9829670" timestamp="2009-10-08T22:18:57Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="17461296" id="2428508003" lat="38.8989949" lon="-76.9860976" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508005" lat="38.8961531" lon="-76.9930823" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508007" lat="38.8974330" lon="-76.9899384" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508009" lat="38.8969080" lon="-76.9912233" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508011" lat="38.8988895" lon="-76.9863603" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508013" lat="38.8973370" lon="-76.9901761" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508015" lat="38.8979880" lon="-76.9885703" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="24164553" id="2428508018" lat="38.8953780" lon="-76.9949620" timestamp="2014-07-15T16:38:21Z" uid="38487" user="jumbanho" version="2" visible="true" />
+ <node changeset="17461296" id="2428508020" lat="38.8972022" lon="-76.9905077" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="24164553" id="2428508022" lat="38.8958708" lon="-76.9937477" timestamp="2014-07-15T16:38:21Z" uid="38487" user="jumbanho" version="2" visible="true" />
+ <node changeset="17461296" id="2428508024" lat="38.8966350" lon="-76.9918964" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508026" lat="38.8990011" lon="-76.9860820" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508028" lat="38.8973780" lon="-76.9900763" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508030" lat="38.8998213" lon="-76.9840863" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="24164553" id="2428508032" lat="38.8980940" lon="-76.9883014" timestamp="2014-07-15T16:38:21Z" uid="38487" user="jumbanho" version="2" visible="true" />
+ <node changeset="17461296" id="2428508034" lat="38.8990368" lon="-76.9861988" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508036" lat="38.8972640" lon="-76.9903522" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="24164553" id="2428508038" lat="38.8988203" lon="-76.9865177" timestamp="2014-07-15T16:38:21Z" uid="38487" user="jumbanho" version="2" visible="true" />
+ <node changeset="9681243" id="1484481416" lat="38.9000876" lon="-76.9835470" timestamp="2011-10-29T05:06:50Z" uid="230350" user="westendguy" version="1" visible="true" />
+ <node changeset="17461296" id="2428508041" lat="38.8938525" lon="-76.9984558" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508043" lat="38.8992480" lon="-76.9855046" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508045" lat="38.8960078" lon="-76.9934398" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="49756558" lat="38.8989073" lon="-76.9865130" timestamp="2013-08-22T20:06:39Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <node changeset="17461296" id="2428508047" lat="38.8990430" lon="-76.9859774" timestamp="2013-08-22T20:06:35Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="24164553" id="2428508049" lat="38.8973040" lon="-76.9902460" timestamp="2014-07-15T16:38:21Z" uid="38487" user="jumbanho" version="2" visible="true" />
+ <node changeset="17461296" id="49730465" lat="38.8999388" lon="-76.9839979" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="4" visible="true" />
+ <node changeset="17461296" id="2428508066" lat="38.8971523" lon="-76.9906215" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="27168021" id="2428508068" lat="38.8967490" lon="-76.9916093" timestamp="2014-12-01T22:51:17Z" uid="305985" user="ingalls" version="2" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="17461296" id="2428508070" lat="38.8939765" lon="-76.9983567" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508075" lat="38.8961150" lon="-76.9931773" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508077" lat="38.8947061" lon="-76.9966342" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508079" lat="38.8939284" lon="-76.9983969" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508081" lat="38.8939013" lon="-76.9984157" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508084" lat="38.8942731" lon="-76.9976950" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="3273100" id="49728949" lat="38.9006650" lon="-76.9830080" timestamp="2009-12-02T15:45:33Z" uid="147510" user="woodpeck_fixbot" version="2" visible="true" />
+ <node changeset="17461296" id="2428508086" lat="38.8940752" lon="-76.9981739" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508088" lat="38.8980568" lon="-76.9883987" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="9378479" id="1443170233" lat="38.9005266" lon="-76.9825141" timestamp="2011-09-23T17:32:27Z" uid="207745" user="NE2" version="1" visible="true" />
+ <node changeset="24164553" id="2428508090" lat="38.8963260" lon="-76.9926440" timestamp="2014-07-15T16:38:21Z" uid="38487" user="jumbanho" version="2" visible="true" />
+ <node changeset="9378479" id="1443170235" lat="38.9005361" lon="-76.9823575" timestamp="2011-09-23T17:32:27Z" uid="207745" user="NE2" version="1" visible="true" />
+ <node changeset="17461296" id="2428508092" lat="38.8963837" lon="-76.9925130" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508095" lat="38.8963045" lon="-76.9927050" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="24164553" id="2428508097" lat="38.8967839" lon="-76.9915222" timestamp="2014-07-15T16:38:21Z" uid="38487" user="jumbanho" version="2" visible="true" />
+ <node changeset="17461296" id="2428508099" lat="38.8998902" lon="-76.9839291" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508101" lat="38.8986200" lon="-76.9870282" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="9378479" id="1443170246" lat="38.9005589" lon="-76.9826852" timestamp="2011-09-23T17:32:27Z" uid="207745" user="NE2" version="1" visible="true" />
+ <node changeset="27168021" id="2428508103" lat="38.8940091" lon="-76.9983258" timestamp="2014-12-01T22:51:17Z" uid="305985" user="ingalls" version="2" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="17461296" id="2428508105" lat="38.8986278" lon="-76.9870088" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="17461296" id="2428508107" lat="38.8947826" lon="-76.9964463" timestamp="2013-08-22T20:06:36Z" uid="1024769" user="trsmith" version="1" visible="true" />
+ <node changeset="27168021" id="3215048665" lat="38.8962884" lon="-76.9927451" timestamp="2014-12-01T22:50:53Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215048666" lat="38.8963618" lon="-76.9925626" timestamp="2014-12-01T22:50:53Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215048667" lat="38.8963705" lon="-76.9927445" timestamp="2014-12-01T22:50:53Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215048668" lat="38.8964450" lon="-76.9925671" timestamp="2014-12-01T22:50:53Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215048670" lat="38.8968232" lon="-76.9914315" timestamp="2014-12-01T22:50:53Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215048671" lat="38.8968293" lon="-76.9916135" timestamp="2014-12-01T22:50:53Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="27168021" id="3215048672" lat="38.8969067" lon="-76.9914291" timestamp="2014-12-01T22:50:53Z" uid="305985" user="ingalls" version="1" visible="true">
+  <tag k="highway" v="crossing" />
+ </node>
+ <node changeset="17461296" id="49767411" lat="38.8949803" lon="-76.9961620" timestamp="2013-08-22T20:06:38Z" uid="1024769" user="trsmith" version="3" visible="true" />
+ <way changeset="9413560" id="131052417" timestamp="2011-09-27T19:18:38Z" uid="207745" user="NE2" version="3" visible="true">
+  <nd ref="49728949" />
+  <nd ref="1443170246" />
+  <nd ref="1443170233" />
+  <nd ref="1443170235" />
+  <nd ref="49788085" />
+  <nd ref="49718911" />
+  <tag k="HFCS" v="Collector" />
+  <tag k="highway" v="tertiary" />
+  <tag k="lanes" v="2" />
+  <tag k="name" v="Maryland Avenue Northeast" />
+  <tag k="oneway" v="yes" />
+  <tag k="source:HFCS" v="District of Columbia (DC GIS)" />
+  <tag k="tiger:cfcc" v="A41" />
+  <tag k="tiger:county" v="District of Columbia, DC" />
+  <tag k="tiger:name_base" v="Maryland" />
+  <tag k="tiger:name_direction_suffix" v="NE" />
+  <tag k="tiger:name_type" v="Ave" />
+  <tag k="tiger:reviewed" v="no" />
+  <tag k="tiger:separated" v="no" />
+  <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809" />
+  <tag k="tiger:tlid" v="76231305:76231273:76231250:76231252:76242980:76242979:76230281:76240330:76240326:76240327:76242986:76242987:76240337:76240338:76230290:76230292:76229951:76229957:76229961:76229988:76230313:76240329:76231246" />
+  <tag k="tiger:upload_uuid" v="bulk_upload.pl-0113c5d6-c16d-484f-906b-0f8ab7b6b04e" />
+  <tag k="tiger:zip_left" v="20002" />
+  <tag k="tiger:zip_right" v="20002" />
+ </way>
+ <way changeset="27168021" id="234706403" timestamp="2014-12-01T22:51:13Z" uid="305985" user="ingalls" version="3" visible="true">
+  <nd ref="49788018" />
+  <nd ref="49788019" />
+  <nd ref="3056586918" />
+  <nd ref="49763094" />
+  <nd ref="3215047414" />
+  <nd ref="3215047420" />
+  <nd ref="49767411" />
+  <nd ref="3215047430" />
+  <nd ref="49788022" />
+  <nd ref="3215047431" />
+  <nd ref="3215047434" />
+  <nd ref="49788024" />
+  <nd ref="1444897308" />
+  <nd ref="49777915" />
+  <nd ref="3215048667" />
+  <nd ref="49788027" />
+  <nd ref="49788029" />
+  <nd ref="3215048668" />
+  <nd ref="49788030" />
+  <nd ref="49788032" />
+  <nd ref="49788033" />
+  <nd ref="3215048671" />
+  <nd ref="49768693" />
+  <nd ref="3215048672" />
+  <nd ref="49788036" />
+  <nd ref="49788038" />
+  <nd ref="49788039" />
+  <nd ref="49788040" />
+  <nd ref="49788042" />
+  <nd ref="49788043" />
+  <nd ref="49788044" />
+  <nd ref="49788046" />
+  <nd ref="49788048" />
+  <nd ref="49788049" />
+  <nd ref="49788050" />
+  <nd ref="49738294" />
+  <nd ref="49756558" />
+  <nd ref="49788064" />
+  <nd ref="2428508034" />
+  <nd ref="49788067" />
+  <nd ref="49739603" />
+  <nd ref="49730465" />
+  <nd ref="1484481416" />
+  <tag k="HFCS" v="Minor Arterial" />
+  <tag k="highway" v="primary" />
+  <tag k="lanes" v="2" />
+  <tag k="name" v="Maryland Avenue Northeast" />
+  <tag k="oneway" v="-1" />
+  <tag k="source:HFCS" v="District of Columbia (DC GIS)" />
+  <tag k="tiger:cfcc" v="A41" />
+  <tag k="tiger:county" v="District of Columbia, DC" />
+  <tag k="tiger:name_base" v="Maryland" />
+  <tag k="tiger:name_direction_suffix" v="NE" />
+  <tag k="tiger:name_type" v="Ave" />
+  <tag k="tiger:reviewed" v="no" />
+  <tag k="tiger:zip_left" v="20002" />
+  <tag k="tiger:zip_right" v="20002" />
+ </way>
+ <way changeset="17461296" id="234706404" timestamp="2013-08-22T20:06:37Z" uid="1024769" user="trsmith" version="1" visible="true">
+  <nd ref="1484481416" />
+  <nd ref="49758268" />
+  <tag k="HFCS" v="Minor Arterial" />
+  <tag k="highway" v="primary" />
+  <tag k="lanes" v="4" />
+  <tag k="name" v="Maryland Avenue Northeast" />
+  <tag k="source:HFCS" v="District of Columbia (DC GIS)" />
+  <tag k="tiger:cfcc" v="A41" />
+  <tag k="tiger:county" v="District of Columbia, DC" />
+  <tag k="tiger:name_base" v="Maryland" />
+  <tag k="tiger:name_direction_suffix" v="NE" />
+  <tag k="tiger:name_type" v="Ave" />
+  <tag k="tiger:reviewed" v="no" />
+  <tag k="tiger:zip_left" v="20002" />
+  <tag k="tiger:zip_right" v="20002" />
+ </way>
+ <way changeset="27168021" id="234706405" timestamp="2014-12-01T22:51:14Z" uid="305985" user="ingalls" version="3" visible="true">
+  <nd ref="2428508041" />
+  <nd ref="2428508081" />
+  <nd ref="2428508079" />
+  <nd ref="2428508070" />
+  <nd ref="2428508103" />
+  <nd ref="2428508086" />
+  <nd ref="2428508084" />
+  <nd ref="3056586919" />
+  <nd ref="2428508077" />
+  <nd ref="3215047403" />
+  <nd ref="2428508107" />
+  <nd ref="3215047416" />
+  <nd ref="2428508000" />
+  <nd ref="3215047421" />
+  <nd ref="3215047428" />
+  <nd ref="2428508018" />
+  <nd ref="3215047429" />
+  <nd ref="3215047433" />
+  <nd ref="2428508022" />
+  <nd ref="2428508045" />
+  <nd ref="2428508075" />
+  <nd ref="2428508005" />
+  <nd ref="3215048665" />
+  <nd ref="2428508095" />
+  <nd ref="2428508090" />
+  <nd ref="3215048666" />
+  <nd ref="2428508092" />
+  <nd ref="2428508024" />
+  <nd ref="2428508068" />
+  <nd ref="2428508097" />
+  <nd ref="3215048670" />
+  <nd ref="2428507994" />
+  <nd ref="2428508009" />
+  <nd ref="2428508066" />
+  <nd ref="2428508020" />
+  <nd ref="2428508036" />
+  <nd ref="2428508049" />
+  <nd ref="2428508013" />
+  <nd ref="2428508028" />
+  <nd ref="2428508007" />
+  <nd ref="2428508015" />
+  <nd ref="2428508088" />
+  <nd ref="2428508032" />
+  <nd ref="2428508101" />
+  <nd ref="2428508105" />
+  <nd ref="2428508038" />
+  <nd ref="2428508011" />
+  <nd ref="2428507997" />
+  <nd ref="2428508003" />
+  <nd ref="2428508026" />
+  <nd ref="2428508047" />
+  <nd ref="2428508043" />
+  <nd ref="2428508030" />
+  <nd ref="2428508099" />
+  <nd ref="1484481416" />
+  <tag k="highway" v="primary" />
+  <tag k="lanes" v="2" />
+  <tag k="name" v="Maryland Avenue Northeast" />
+  <tag k="oneway" v="yes" />
+ </way>
+ <way changeset="9413560" id="50523014" timestamp="2011-09-27T19:18:41Z" uid="207745" user="NE2" version="4" visible="true">
+  <nd ref="49718911" />
+  <nd ref="49788089" />
+  <nd ref="49788091" />
+  <nd ref="49788093" />
+  <nd ref="49788094" />
+  <nd ref="49788096" />
+  <nd ref="49788097" />
+  <nd ref="49766018" />
+  <tag k="HFCS" v="Collector" />
+  <tag k="highway" v="tertiary" />
+  <tag k="lanes" v="4" />
+  <tag k="name" v="Maryland Avenue Northeast" />
+  <tag k="source:HFCS" v="District of Columbia (DC GIS)" />
+  <tag k="tiger:cfcc" v="A41" />
+  <tag k="tiger:county" v="District of Columbia, DC" />
+  <tag k="tiger:name_base" v="Maryland" />
+  <tag k="tiger:name_direction_suffix" v="NE" />
+  <tag k="tiger:name_type" v="Ave" />
+  <tag k="tiger:reviewed" v="no" />
+  <tag k="tiger:separated" v="no" />
+  <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809" />
+  <tag k="tiger:tlid" v="76231305:76231273:76231250:76231252:76242980:76242979:76230281:76240330:76240326:76240327:76242986:76242987:76240337:76240338:76230290:76230292:76229951:76229957:76229961:76229988:76230313:76240329:76231246" />
+  <tag k="tiger:upload_uuid" v="bulk_upload.pl-0113c5d6-c16d-484f-906b-0f8ab7b6b04e" />
+  <tag k="tiger:zip_left" v="20002" />
+  <tag k="tiger:zip_right" v="20002" />
+ </way>
+ <way changeset="9413560" id="6051484" timestamp="2011-09-27T19:18:40Z" uid="207745" user="NE2" version="7" visible="true">
+  <nd ref="49718911" />
+  <nd ref="49718917" />
+  <nd ref="49718920" />
+  <nd ref="49718922" />
+  <nd ref="49718923" />
+  <nd ref="49718924" />
+  <nd ref="49718925" />
+  <nd ref="49718928" />
+  <tag k="HFCS" v="Collector" />
+  <tag k="highway" v="tertiary" />
+  <tag k="lanes" v="2" />
+  <tag k="name" v="Maryland Avenue Northeast" />
+  <tag k="oneway" v="yes" />
+  <tag k="source:HFCS" v="District of Columbia (DC GIS)" />
+  <tag k="tiger:cfcc" v="A41" />
+  <tag k="tiger:county" v="District of Columbia, DC" />
+  <tag k="tiger:name_base" v="Maryland" />
+  <tag k="tiger:name_direction_suffix" v="NE" />
+  <tag k="tiger:name_type" v="Ave" />
+  <tag k="tiger:reviewed" v="no" />
+  <tag k="tiger:separated" v="no" />
+  <tag k="tiger:source" v="tiger_import_dch_v0.6_20070809" />
+  <tag k="tiger:tlid" v="76231305:76231273:76231250:76231252:76242980:76242979:76230281:76240330:76240326:76240327:76242986:76242987:76240337:76240338:76230290:76230292:76229951:76229957:76229961:76229988:76230313:76240329:76231246" />
+  <tag k="tiger:upload_uuid" v="bulk_upload.pl-0113c5d6-c16d-484f-906b-0f8ab7b6b04e" />
+  <tag k="tiger:zip_left" v="20002" />
+  <tag k="tiger:zip_right" v="20002" />
+ </way>
+ </osm>
