@@ -16,31 +16,15 @@ class WaySearcher(object):
         self.way_nodes = []
         self.key_values = []
 
-    def _get_osm(self):
-        ret = "<osm>\n"
-        with open(self.filename, "rb") as osm:
-            # Find element
-            # http://stackoverflow.com/questions/222375/elementtree-xpath-select-element-based-on-attribute
-            tree = ET.parse(osm)
-            # print tree.find(".//way[@id='%d']" % self.ways_found[0])
-            ret += ET.tostring(tree.find(".//bounds"))
-            for node_id in self.way_nodes:
-                ret += ET.tostring(tree.find(".//node[@id='%d']" % node_id))
-            for way_id in self.ways_found:
-                ret += ET.tostring(tree.find(".//way[@id='%d']" % way_id))
-        ret += "</osm>"
-        print ret
-        return
-
-    def fine_ways(self, key_values):
+    def find_ways(self, key_values):
         self.key_values = key_values
         p = OSMParser(concurrency=4, ways_callback=self.way_callback)
         p.parse(self.filename)
 
         self.ways_found = list(set(self.ways_found)) # delete duplicates.
         self.way_nodes = list(set(self.way_nodes))
-        self._get_osm()
-        return
+
+        return self
 
     def key_values_exist(self, tags):
         """
@@ -54,6 +38,24 @@ class WaySearcher(object):
             else:
                 return False
         return True
+
+    def get_osm(self):
+        ret = "<osm>\n"
+        with open(self.filename, "rb") as osm:
+            # Find element
+            # http://stackoverflow.com/questions/222375/elementtree-xpath-select-element-based-on-attribute
+            tree = ET.parse(osm)
+            # print tree.find(".//way[@id='%d']" % self.ways_found[0])
+            ret += ET.tostring(tree.find(".//bounds"))
+            for node_id in self.way_nodes:
+                ret += ET.tostring(tree.find(".//node[@id='%d']" % node_id))
+            for way_id in self.ways_found:
+                ret += ET.tostring(tree.find(".//way[@id='%d']" % way_id))
+        ret += "</osm>"
+        return ret
+
+    def get_ways(self):
+        return self.ways_found
 
     def way_callback(self, ways):
         """
@@ -76,7 +78,6 @@ class WaySearcher(object):
 
 
 if __name__ == "__main__":
-    filename = "map3_LargerArea.osm"
+    filename = "../resources/MarylandAvenueNortheast.osm"
     searcher = WaySearcher(filename)
-    searcher.fine_ways((("highway", None), ("name", "Maryland Avenue Northeast")))
-
+    print searcher.find_ways((("highway", None), ("name", "Maryland Avenue Northeast"))).get_ways()
