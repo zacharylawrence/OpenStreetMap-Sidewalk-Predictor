@@ -54,6 +54,10 @@ class HighwayCounter(object):
                 self.intersections[id].append(refs[-2])
             seen.add(id)
 
+        # Sort each set of adjacent intersection coords by angle from intersection coord (from: -pi to pi)
+        for id in self.intersections:
+            self.intersections[id].sort(key=lambda c:math.atan2(self.coords[c][0]-self.coords[id][0], self.coords[c][1]-self.coords[id][1]))
+
 # Helper sliding window iterater method
 # See: http://stackoverflow.com/questions/6822725/rolling-or-sliding-window-iterator-in-python
 def window(seq, n=2):
@@ -119,7 +123,7 @@ if __name__ == "__main__":
     counter.calculateIntersections()
 
     # Finished parsing, now use the data
-    # log.debug("Intersections:")
+    log.debug("Intersections & Adjacent Coords:")
     for id in counter.intersections:
         log.debug(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
         for adjacent_node_ref in counter.intersections[id]:
