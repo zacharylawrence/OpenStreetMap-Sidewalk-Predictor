@@ -128,11 +128,11 @@ if __name__ == "__main__":
     log.debug('\n')
 
     log.debug("Sidewalks:")
-    for osmid in counter.highways:                  # Way ids
+    for osmid in counter.highways:  # Way ids
         way1 = output.add_way([('highway', 'footway')])
         way2 = output.add_way([('highway', 'footway')])
 
-        # First Case:
+        # First Coord id Case:
         if len(counter.highways[osmid]) > 1:
             id = counter.highways[osmid][0]
             next_id = counter.highways[osmid][1]
@@ -142,8 +142,8 @@ if __name__ == "__main__":
                 output.add_way_reference(way1, output.add_coord(sidewalk_long1, sidewalk_lat1))
                 output.add_way_reference(way2, output.add_coord(sidewalk_long2, sidewalk_lat2))
 
-        # Middle Case:
-        gen = window(counter.highways[osmid], 3)    # Coord ids (in order)
+        # Middle Case (Size 3 sliding window of Coord ids (in order)):
+        gen = window(counter.highways[osmid], 3)
         for ids in gen:
             prev_id, id, next_id = ids
 
@@ -152,7 +152,7 @@ if __name__ == "__main__":
                 output.add_way_reference(way1, output.add_coord(sidewalk_long1, sidewalk_lat1))
                 output.add_way_reference(way2, output.add_coord(sidewalk_long2, sidewalk_lat2))
 
-        # Last Case:
+        # Last Coord id Case:
         if len(counter.highways[osmid]) > 1:
             id = counter.highways[osmid][-1]
             prev_id = counter.highways[osmid][-2]
