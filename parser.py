@@ -8,14 +8,14 @@ from generator import Generator
 
 # simple class that handles the parsed OSM data.
 class HighwayCounter(object):
-    coords = {}
-    highways = {}
-    intersections = set()
+    coords = {}  # node_id -> (lat, long)
+    highways = {}  # way_id -> [node_ref]
+    intersections = {}  # duplicate_node_ref -> [adjacent_node_ref]
 
     def ways(self, ways):
         for osmid, tags, refs in ways:
-            # Only allow 'secondary', 'residential' and 'tertiary' highways to have assumed sidewalks
-            valid_highways = set(['secondary', 'residential', 'tertiary'])
+            # Only allow the following highways to have assumed sidewalks
+            valid_highways = set(['primary', 'secondary', 'tertiary', 'residential'])
             if 'highway' in tags and tags['highway'] in valid_highways:
                 self.highways[osmid] = refs
 
@@ -25,11 +25,34 @@ class HighwayCounter(object):
 
     def calculateIntersections(self):
         seen = set()
-        for way, refs in self.highways.items():
-            for ref in refs:
-                if ref in seen:
-                    self.intersections.add(ref)
-                seen.add(ref)
+        for refs in self.highways.values():
+            # Handle first element
+            id = refs[0]
+            if id in seen:
+                if (id not in self.intersections):
+                    self.intersections[id] = []
+                self.intersections[id].append(refs[1])
+            seen.add(refs[0])
+
+            gen = window(refs, 3)
+            for ids in gen:
+                prev_id, id, next_id = ids
+
+                if id in seen:
+                    if (id not in self.intersections):
+                        self.intersections[id] = []
+                    self.intersections[id].append(prev_id)
+                    self.intersections[id].append(next_id)
+
+                seen.add(id)
+
+            # Handle last element
+            id = refs[-1]
+            if id in seen:
+                if (id not in self.intersections):
+                    self.intersections[id] = []
+                self.intersections[id].append(refs[-2])
+            seen.add(id)
 
 # Helper sliding window iterater method
 # See: http://stackoverflow.com/questions/6822725/rolling-or-sliding-window-iterator-in-python
@@ -54,7 +77,7 @@ def window(seq, n=2):
 
 # instantiate counter and parser and start parsing
 if __name__ == "__main__":
-    # log.basicConfig(format="", level=log.DEBUG)
+    log.basicConfig(format="", level=log.DEBUG)
 
     counter = HighwayCounter()
     output = Generator()
@@ -63,9 +86,12 @@ if __name__ == "__main__":
     counter.calculateIntersections()
 
     # Finished parsing, now use the data
-    log.debug("Intersections:")
+    # log.debug("Intersections:")
     for id in counter.intersections:
         log.debug(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
+        for adjacent_node_ref in counter.intersections[id]:
+            log.debug(str(counter.coords[adjacent_node_ref][0]) + ',' + str(counter.coords[adjacent_node_ref][1]))
+        log.debug('\n')
     log.debug('\n')
 
     log.debug("Sidewalks:")
