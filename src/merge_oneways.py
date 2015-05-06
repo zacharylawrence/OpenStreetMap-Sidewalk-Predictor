@@ -120,9 +120,6 @@ def merge_oneways():
 
         plt.show()
 
-
-
-
         # print tree.find(".//way[@id='%d']" % self.ways_found[0])
         # ret += ET.tostring(tree.find(".//bounds"))
         # for node_id in self.way_nodes:
