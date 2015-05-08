@@ -66,8 +66,8 @@ class HighwayCounter(object):
 
         # Sort each set of adjacent intersection coords by angle from intersection coord (from: -pi to pi)
         # Note: We only sort the adjacent array for intersections
-        # for id in self.adjacent:
-        for id in self.intersections:
+        for id in self.adjacent:
+        # for id in self.intersections:
             self.adjacent[id].sort(key=lambda c:math.atan2(self.coords[c][0]-self.coords[id][0], self.coords[c][1]-self.coords[id][1]))
 
 # Helper sliding window iterater method
@@ -91,7 +91,7 @@ def window(seq, n=2):
 #         angle -= 2 * math.pi
 #     return angle
 
-def add_non_intersection(prev_id, id, next_id):
+def get_perpendicular_angle(prev_id, id, next_id):
     lat, long = counter.coords[id]
 
     if prev_id is not None:
@@ -109,7 +109,11 @@ def add_non_intersection(prev_id, id, next_id):
         average_y = (math.cos(in_angle) + math.cos(out_angle)) / 2
         average_angle = math.atan2(average_x, average_y)
 
-    perpendicular_angle = math.pi / 2 + average_angle
+    return math.pi / 2 + average_angle
+
+def add_non_intersection(prev_id, id, next_id):
+    lat, long = counter.coords[id]
+    perpendicular_angle = get_perpendicular_angle(prev_id, id, next_id)
 
     # Here we are assuming that things are on a flat plane, not mapped to a globe!
     sidewalk_distance = 5 # In meters - Not currently used, just trial-and-errored 0.00005
@@ -124,9 +128,31 @@ def add_non_intersection(prev_id, id, next_id):
 
     return (sidewalk_long1, sidewalk_lat1, sidewalk_long2, sidewalk_lat2)
 
+def add_intersection(prev_id, intersection_id, adjacent_id):
+    lat, long = counter.coords[id]
+    perpendicular_angle = get_perpendicular_angle(prev_id, intersection_id, adjacent_id)
+
+    # Here we are assuming that things are on a flat plane, not mapped to a globe!
+    sidewalk_distance = 5 # In meters - Not currently used, just trial-and-errored 0.00005
+    delta_lat = math.sin(perpendicular_angle) * 0.00010
+    delta_long = math.cos(perpendicular_angle) * 0.00010
+
+    sidewalk_lat = lat + delta_lat
+    sidewalk_long = long + delta_long
+
+    return (sidewalk_long, sidewalk_lat)
+
+def get_adjacent_id(prev_id, intersection_id):
+    adjacent_list = counter.adjacent[intersection_id]
+    intersection_id_index = adjacent_list.index(prev_id)
+    adjacent_id1 = adjacent_list[(intersection_id_index + 1) % len(adjacent_list)]
+    adjacent_id2 = adjacent_list[(intersection_id_index - 1) % len(adjacent_list)]
+
+    return (adjacent_id1, adjacent_id2)
+
 # instantiate counter and parser and start parsing
 if __name__ == "__main__":
-    # log.basicConfig(format="", level=log.DEBUG)
+    log.basicConfig(format="", level=log.DEBUG)
 
     counter = HighwayCounter()
     output = Generator()
@@ -135,6 +161,8 @@ if __name__ == "__main__":
     counter.calculateIntersections()
 
     # Finished parsing, now use the data
+    sidewalk_nodes = {}  # set{two adjacent nodes} -> newly created sidewalk node
+
     log.debug("Intersections & Adjacent Coords:")
     for id in counter.intersections:
         log.debug(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
@@ -168,6 +196,31 @@ if __name__ == "__main__":
                 (sidewalk_long1, sidewalk_lat1, sidewalk_long2, sidewalk_lat2) = add_non_intersection(prev_id, id, next_id)
                 output.add_way_reference(way1, output.add_coord(sidewalk_long1, sidewalk_lat1))
                 output.add_way_reference(way2, output.add_coord(sidewalk_long2, sidewalk_lat2))
+            # else:
+            #     (adjacent_id1, adjacent_id2) = get_adjacent_id(prev_id, id)
+            #     (sidewalk_long1, sidewalk_lat1) = add_intersection(prev_id, id, adjacent_id1)
+            #     (sidewalk_long2, sidewalk_lat2) = add_intersection(prev_id, id, adjacent_id2)
+
+            #     key1 = (id, adjacent_id1) if id < adjacent_id1 else (adjacent_id1, id)
+            #     key2 = (id, adjacent_id2) if id < adjacent_id2 else (adjacent_id2, id)
+
+            #     if (key1 in sidewalk_nodes):
+            #         output.add_way_reference(way1, sidewalk_nodes[key1])
+            #     else:
+            #         # Add these the the sidewalk_nodes map
+            #         sidewalk_node1 = output.add_coord(sidewalk_long1, sidewalk_lat1)
+            #         sidewalk_nodes[key1] = sidewalk_node1
+            #         # Add these to the generator
+            #         output.add_way_reference(way1, output.add_coord(sidewalk_long1, sidewalk_lat1))
+
+            #     if (key2 in sidewalk_nodes):
+            #         output.add_way_reference(way2, sidewalk_nodes[key2])
+            #     else:
+            #         # Add these the the sidewalk_nodes map
+            #         sidewalk_node2 = output.add_coord(sidewalk_long2, sidewalk_lat2)
+            #         sidewalk_nodes[key2] = sidewalk_node2
+            #         # Add these to the generator
+            #         output.add_way_reference(way2, output.add_coord(sidewalk_long2, sidewalk_lat2))
 
         # Last Coord id Case:
         if len(counter.highways[osmid]) > 1:  # TODO: should this be '>= 2' ?
@@ -179,9 +232,38 @@ if __name__ == "__main__":
                 output.add_way_reference(way1, output.add_coord(sidewalk_long1, sidewalk_lat1))
                 output.add_way_reference(way2, output.add_coord(sidewalk_long2, sidewalk_lat2))
 
+        if id in counter.intersections:
+            (adjacent_id1, adjacent_id2) = get_adjacent_id(prev_id, id)
+            (sidewalk_long1, sidewalk_lat1) = add_intersection(prev_id, id, adjacent_id1)
+            (sidewalk_long2, sidewalk_lat2) = add_intersection(prev_id, id, adjacent_id2)
 
-        log.debug(str(sidewalk_lat1) + ',' + str(sidewalk_long1))
-        log.debug(str(sidewalk_lat2) + ',' + str(sidewalk_long2))
-        log.debug('\n')
+            # log.debug(str(counter.coords[adjacent_id1][0]) + ',' + str(counter.coords[adjacent_id1][1]))
+            # log.debug(str(counter.coords[adjacent_id2][0]) + ',' + str(counter.coords[adjacent_id2][1]))
+
+            key1 = (id, adjacent_id1) if id < adjacent_id1 else (adjacent_id1, id)
+            key2 = (id, adjacent_id2) if id < adjacent_id2 else (adjacent_id2, id)
+
+            if (key1 in sidewalk_nodes):
+                output.add_way_reference(way1, sidewalk_nodes[key1])
+            else:
+                # Add these the the sidewalk_nodes map
+                sidewalk_node1 = output.add_coord(sidewalk_long1, sidewalk_lat1)
+                sidewalk_nodes[key1] = sidewalk_node1
+                # Add these to the generator
+                output.add_way_reference(way1, output.add_coord(sidewalk_long1, sidewalk_lat1))
+
+            if (key2 in sidewalk_nodes):
+                output.add_way_reference(way2, sidewalk_nodes[key2])
+            else:
+                # Add these the the sidewalk_nodes map
+                sidewalk_node2 = output.add_coord(sidewalk_long2, sidewalk_lat2)
+                sidewalk_nodes[key2] = sidewalk_node2
+                # Add these to the generator
+                output.add_way_reference(way2, output.add_coord(sidewalk_long2, sidewalk_lat2))
+
+
+            # log.debug(str(sidewalk_lat1) + ',' + str(sidewalk_long1))
+            # log.debug(str(sidewalk_lat2) + ',' + str(sidewalk_long2))
+        # log.debug('\n')
 
     print output.generate()
