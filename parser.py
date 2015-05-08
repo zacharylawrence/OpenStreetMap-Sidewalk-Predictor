@@ -10,7 +10,8 @@ from generator import Generator
 class HighwayCounter(object):
     coords = {}  # node_id -> (lat, long)
     highways = {}  # way_id -> [node_ref]
-    intersections = {}  # duplicate_node_ref -> [adjacent_node_ref]
+    intersections = set()
+    adjacent = {}  # node_ref -> [adjacent_node_ref]
 
     def ways(self, ways):
         for osmid, tags, refs in ways:
@@ -27,36 +28,47 @@ class HighwayCounter(object):
         seen = set()
         for refs in self.highways.values():
             # Handle first element
-            id = refs[0]
-            if id in seen:
-                if (id not in self.intersections):
-                    self.intersections[id] = []
-                self.intersections[id].append(refs[1])
-            seen.add(refs[0])
+            if (len(refs) >= 1):  # We must contain at least 1 element to have a first
+                id = refs[0]
+                if id in seen:
+                    self.intersections.add(id)
+                seen.add(refs[0])
 
+                if (id not in self.adjacent):
+                    self.adjacent[id] = []
+                self.adjacent[id].append(refs[1])
+
+            # Handle middle elements
             gen = window(refs, 3)
             for ids in gen:
                 prev_id, id, next_id = ids
 
                 if id in seen:
-                    if (id not in self.intersections):
-                        self.intersections[id] = []
-                    self.intersections[id].append(prev_id)
-                    self.intersections[id].append(next_id)
-
+                    self.intersections.add(id)
                 seen.add(id)
 
+                if (id not in self.adjacent):
+                    self.adjacent[id] = []
+                self.adjacent[id].append(prev_id)
+                self.adjacent[id].append(next_id)
+
+
             # Handle last element
-            id = refs[-1]
-            if id in seen:
-                if (id not in self.intersections):
-                    self.intersections[id] = []
-                self.intersections[id].append(refs[-2])
-            seen.add(id)
+            if (len(refs) >= 2):  # We must contain at least 2 elements to have a last that isn't a first
+                id = refs[-1]
+                if id in seen:
+                    self.intersections.add(id)
+                seen.add(id)
+
+                if (id not in self.adjacent):
+                    self.adjacent[id] = []
+                self.adjacent[id].append(refs[-2])
 
         # Sort each set of adjacent intersection coords by angle from intersection coord (from: -pi to pi)
+        # Note: We only sort the adjacent array for intersections
+        # for id in self.adjacent:
         for id in self.intersections:
-            self.intersections[id].sort(key=lambda c:math.atan2(self.coords[c][0]-self.coords[id][0], self.coords[c][1]-self.coords[id][1]))
+            self.adjacent[id].sort(key=lambda c:math.atan2(self.coords[c][0]-self.coords[id][0], self.coords[c][1]-self.coords[id][1]))
 
 # Helper sliding window iterater method
 # See: http://stackoverflow.com/questions/6822725/rolling-or-sliding-window-iterator-in-python
@@ -126,8 +138,9 @@ if __name__ == "__main__":
     log.debug("Intersections & Adjacent Coords:")
     for id in counter.intersections:
         log.debug(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
-        for adjacent_node_ref in counter.intersections[id]:
-            log.debug(str(counter.coords[adjacent_node_ref][0]) + ',' + str(counter.coords[adjacent_node_ref][1]))
+        for adjacent_node_ref in counter.adjacent[id]:
+            adj = counter.coords[adjacent_node_ref]
+            log.debug(str(adj[0]) + ',' + str(adj[1]))
         log.debug('\n')
     log.debug('\n')
 
@@ -137,7 +150,7 @@ if __name__ == "__main__":
         way2 = output.add_way([('highway', 'footway')])
 
         # First Coord id Case:
-        if len(counter.highways[osmid]) > 1:
+        if len(counter.highways[osmid]) > 1:  # TODO: should this be '>= 1' ?
             id = counter.highways[osmid][0]
             next_id = counter.highways[osmid][1]
 
@@ -157,7 +170,7 @@ if __name__ == "__main__":
                 output.add_way_reference(way2, output.add_coord(sidewalk_long2, sidewalk_lat2))
 
         # Last Coord id Case:
-        if len(counter.highways[osmid]) > 1:
+        if len(counter.highways[osmid]) > 1:  # TODO: should this be '>= 2' ?
             id = counter.highways[osmid][-1]
             prev_id = counter.highways[osmid][-2]
 
