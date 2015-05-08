@@ -57,6 +57,7 @@ def merge_oneways():
 
         # TODO. Latlng points that are close to each other should be deleted
         np_latlngs = np.array(latlngs)
+        print np_latlngs
 
         # Voronoi
         # http://docs.scipy.org/doc/scipy-dev/reference/generated/scipy.spatial.Voronoi.html
