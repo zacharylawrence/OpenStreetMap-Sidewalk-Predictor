@@ -1,14 +1,53 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pprint
 
 from math import radians
 from utilities import WaySearcher
 from scipy import spatial
 
+from shapely.geometry import LineString
+
 try:
     from xml.etree import cElementTree as ET
 except ImportError, e:
     from xml.etree import ElementTree as ET
+
+pp = pprint.PrettyPrinter(indent=2)
+
+
+class LatLng():
+    def __init__(self, lat, lng, node_id):
+        self.lat = float(lat)
+        self.lng = float(lng)
+        self.node_id = node_id
+        return
+
+    @property
+    def location(self, radian=True):
+        if radian:
+            return (radians(self.lng), radians(self.lat))
+        else:
+            return (self.lng, self.lat)
+
+
+class MyLineString(LineString):
+    def __init__(self, coordinates=None, latlngs=None):
+        super(MyLineString, self).__init__(coordinates)
+        self.latlngs = latlngs
+        self.nearby = []
+
+
+class MyStreet():
+    def __init__(self, linestrings=None):
+        self.linestrings = linestrings
+
+
+def slice_street(street, threshold=5):
+    """
+    Slice a way into pieces if it is longer than a given threshold (in meters)
+    """
+    pass
 
 
 def merge_oneways():
@@ -33,7 +72,8 @@ def merge_oneways():
         nodes = tree.findall(".//node")
         node_dict = {}
         for node in nodes:
-            node_dict[node.get("id")] = [radians(float(node.get("lon"))), radians(float(node.get("lat")))]
+            #node_dict[node.get("id")] = [radians(float(node.get("lon"))), radians(float(node.get("lat")))]
+            node_dict[node.get("id")] = LatLng(node.get("lat"), node.get("lon"), node.get("id"))
 
         for way_id in oneways:
             way = tree.find(".//way[@id='%d']" % way_id)
@@ -41,94 +81,80 @@ def merge_oneways():
             streetname = streetname_tag.get("v")
             grouped_oneways.setdefault(streetname, []).append(way)
 
-    for streetname in grouped_oneways:
-        node_id_list = []
-        latlngs = []
-        for way in grouped_oneways[streetname]:
-
-            node_elements = filter(lambda elem: elem.tag == "nd", list(way))
-            for node in node_elements:
-                node_id = node.get("ref")
-
-                # Append if there is no duplicate
-                if node_id not in node_id_list:
-                    node_id_list.append(node_id)
-                    latlngs.append(node_dict[node_id])
-
-        # TODO. Latlng points that are close to each other should be deleted
-        np_latlngs = np.array(latlngs)
-        print np_latlngs
-
-        # Voronoi
-        # http://docs.scipy.org/doc/scipy-dev/reference/generated/scipy.spatial.Voronoi.html
-        # vor = spatial.Voronoi(np_latlngs)
-        # spatial.voronoi_plot_2d(vor)
-
-        # Delaunay
-        # http://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.spatial.Delaunay.html
-        tri = spatial.Delaunay(np_latlngs)
-
-        # tri.points[tri.simplices[0]] # Access triangles
-
-        from numpy.linalg import norm
-
-        def area(a, b, c):
-            """
-            Area of a triangle
-            http://code.activestate.com/recipes/576896-3-point-area-finder/
-            """
-            return 0.5 * norm(np.cross(b - a, c - a))
-
-        def aspect(a, b, c):
-            """
-            Aspect ratio of a triangle
-            http://en.wikipedia.org/wiki/Types_of_mesh#Aspect_ratio
-            """
-            d1 = norm(a-b)
-            d2 = norm(b-c)
-            d3 = norm(c-a)
-            a1 = d1 / d2 if d1 > d2 else d2 / d1
-            a2 = d2 / d3 if d2 > d3 else d3 / d2
-            a3 = d3 / d1 if d3 > d1 else d1 / d3
-            return max((a1, a2, a3))
-
-        def centroid(a, b, c):
-            """
-            Centroid of a triangle
-            """
-            return (a + b + c) / 3
-
-        delete_indeces = []
-        new_points = []
-        for i, simplice in enumerate(tri.simplices):
-            s = area(tri.points[simplice][0], tri.points[simplice][1], tri.points[simplice][2])
-            asp = aspect(tri.points[simplice][0], tri.points[simplice][1], tri.points[simplice][2])
-            if s < 1.26e-11 and asp < 3:
-                delete_indeces.extend(simplice)
-                new_point = centroid(tri.points[simplice][0], tri.points[simplice][1], tri.points[simplice][2])
-                new_points.append(new_point)
+    oneways = grouped_oneways["Maryland Avenue Northeast"]
 
 
-        delete_indeces = set(delete_indeces)
-        new_tri_points = [p for i, p in enumerate(tri.points) if i not in delete_indeces]
-        new_tri_points.extend(new_points)
-        new_tri_points = np.array(new_tri_points)
+    # Itertools
+    # https://docs.python.org/2/library/itertools.html#recipes
+    from itertools import tee, izip
+    def pairwise(iterable):
+        a, b = tee(iterable)
+        next(b, None)
+        return izip(a, b)
 
-        #print np.array(new_points)
-        plt.triplot(np_latlngs[:, 0], np_latlngs[:, 1], tri.simplices.copy())
-        plt.plot(np_latlngs[:, 0], np_latlngs[:, 1], 'o')
-        plt.plot(new_tri_points[:, 0], new_tri_points[:, 1], 'ro')
+    # Create LineStrings: http://toblerity.org/shapely/manual.html
+    streets = []
+    for way in oneways:
+        node_elements = filter(lambda elem: elem.tag == "nd", list(way))
+        latlngs = [node_dict[node.get("ref")] for node in node_elements]
 
-        plt.show()
+        # TODO: Split segments if they are too long. Implement slice_street().
+        linestrings = [MyLineString([latlng1.location, latlng2.location]) for latlng1, latlng2 in pairwise(latlngs)]
+        street = MyStreet(linestrings)
+        streets.append(street)
 
-        # print tree.find(".//way[@id='%d']" % self.ways_found[0])
-        # ret += ET.tostring(tree.find(".//bounds"))
-        # for node_id in self.way_nodes:
-        #     ret += ET.tostring(tree.find(".//node[@id='%d']" % node_id))
-        # for way_id in self.ways_found:
-        #     ret += ET.tostring(tree.find(".//way[@id='%d']" % way_id))
-    # Merge a pair of grouped oneways if they are parallel and close to each other
+    # Find distance between segments
+    from itertools import combinations, product
+    samples = []
+    temp = {}
+    for street_pair in combinations(streets, 2):
+        street_a, street_b = street_pair[0], street_pair[1]
+        street_a_idx, street_b_idx = streets.index(street_a), streets.index(street_b)
+        temp[(street_a_idx, street_b_idx)] = 0
+
+        for way_pair in product(*[street_a.linestrings, street_b.linestrings]):
+            dist = way_pair[0].distance(way_pair[1])
+            if dist < 1.0e-5:
+                samples.append(dist)
+                # print way_pair[0]
+                way_pair[0].nearby.append(id(way_pair[1]))
+                way_pair[1].nearby.append(id(way_pair[0]))
+                temp[(street_a_idx, street_b_idx)] += 1
+
+        temp[(street_a_idx, street_b_idx)] = float(temp[(street_a_idx, street_b_idx)]) / len(list(product(*[street_a.linestrings, street_b.linestrings])))
+
+    pp.pprint(temp)
+
+
+    # Show a histogram
+    # import numpy as np
+    # import matplotlib.pyplot as plt
+    # import seaborn as sns
+    # sns.set_palette("deep", desat=.6)
+    # sns.set_context(rc={"figure.figsize": (8, 4)})
+    # np.random.seed(9221999)
+    # plt.hist(samples, 100)
+    # plt.show()
+
     return
+
+from math import radians, cos, sin, asin, sqrt
+
+
+def haversine(lon1, lat1, lon2, lat2):
+    """
+    Calculate the great circle distance between two points
+    on the earth (specified in decimal radians)
+
+    http://stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points
+    """
+    # haversine formula
+    dlon = lon2 - lon1
+    dlat = lat2 - lat1
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * asin(sqrt(a))
+    r = 6371  # Radius of earth in kilometers. Use 3956 for miles
+    return c * r
 
 if __name__ == "__main__":
     filename = "../resources/MarylandAvenueNortheast.osm"
