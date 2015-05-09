@@ -1,4 +1,7 @@
+from math import radians
 from imposm.parser import OSMParser
+from shapely.geometry import LineString
+
 import pprint
 
 try:
@@ -7,6 +10,32 @@ except ImportError, e:
     from xml.etree import ElementTree as ET
 
 pp = pprint.PrettyPrinter(indent=2)
+
+
+class LatLng():
+    def __init__(self, lat, lng, node_id=None):
+        self.lat = float(lat)
+        self.lng = float(lng)
+        self.node_id = node_id
+        return
+
+    def location(self, radian=True):
+        if radian:
+            return (radians(self.lng), radians(self.lat))
+        else:
+            return (self.lat, self.lng)
+
+
+class MyLineString(LineString):
+    def __init__(self, coordinates=None, latlngs=None):
+        super(MyLineString, self).__init__(coordinates)
+        self.latlngs = latlngs
+        self.nearby = []
+
+
+class MyStreet():
+    def __init__(self, linestrings=None):
+        self.linestrings = linestrings
 
 
 class WaySearcher(object):
