@@ -5,6 +5,11 @@ from itertools import islice
 from imposm.parser import OSMParser
 
 from generator import Generator
+from math import radians
+
+
+
+
 
 # simple class that handles the parsed OSM data.
 class HighwayCounter(object):
@@ -128,6 +133,7 @@ def add_non_intersection(prev_id, id, next_id):
 
     return (sidewalk_long1, sidewalk_lat1, sidewalk_long2, sidewalk_lat2)
 
+
 def add_intersection(prev_id, intersection_id, adjacent_id):
     lat, long = counter.coords[id]
     perpendicular_angle = get_perpendicular_angle(prev_id, intersection_id, adjacent_id)
@@ -140,7 +146,8 @@ def add_intersection(prev_id, intersection_id, adjacent_id):
     sidewalk_lat = lat + delta_lat
     sidewalk_long = long + delta_long
 
-    return (sidewalk_long, sidewalk_lat)
+    return (sidewalk_long, sidewalk_lat)  #Todo: KH. Change this output to a LatLng object
+
 
 def get_adjacent_id(prev_id, intersection_id):
     adjacent_list = counter.adjacent[intersection_id]
@@ -163,6 +170,8 @@ if __name__ == "__main__":
     # Finished parsing, now use the data
     sidewalk_nodes = {}  # set{two adjacent nodes} -> newly created sidewalk node
 
+
+    # Todo: KH: Instead of tuples, we should create and use a LatLng class like what I did in the merge-oneway branch.
     log.debug("Intersections & Adjacent Coords:")
     for id in counter.intersections:
         log.debug(str(counter.coords[id][0]) + ',' + str(counter.coords[id][1]))
@@ -172,6 +181,7 @@ if __name__ == "__main__":
         log.debug('\n')
     log.debug('\n')
 
+    # Go through each streets (highways) and create sidewalks on the both sides
     log.debug("Sidewalks:")
     for osmid in counter.highways:  # Way ids
         way1 = output.add_way([('highway', 'footway')])
