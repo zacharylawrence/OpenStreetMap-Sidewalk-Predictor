@@ -21,9 +21,12 @@ class LatLng():
 
     def location(self, radian=True):
         if radian:
-            return (radians(self.lng), radians(self.lat))
+            return (radians(self.lat), radians(self.lng))
         else:
             return (self.lat, self.lng)
+
+    def __str__(self):
+        return str(self.lat) + "," + str(self.lng)
 
 
 class MyLineString(LineString):
@@ -114,7 +117,6 @@ class WaySearcher(object):
 
         #print self.ways_found
         return
-
 
 
 if __name__ == "__main__":

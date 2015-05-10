@@ -7,10 +7,6 @@ from imposm.parser import OSMParser
 from generator import Generator
 from math import radians
 
-
-
-
-
 # simple class that handles the parsed OSM data.
 class HighwayCounter(object):
     coords = {}  # node_id -> (lat, long)
@@ -115,6 +111,7 @@ def get_perpendicular_angle(prev_id, id, next_id):
         average_angle = math.atan2(average_x, average_y)
 
     return math.pi / 2 + average_angle
+
 
 def add_non_intersection(prev_id, id, next_id):
     lat, long = counter.coords[id]
