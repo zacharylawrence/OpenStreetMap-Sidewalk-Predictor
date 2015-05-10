@@ -1,6 +1,6 @@
 from latlng import LatLng
-from ways import Way, Ways
 import numpy as np
+import math
 
 class Node(LatLng):
     def __init__(self, nid=None, latlng=None):
@@ -21,19 +21,16 @@ class Node(LatLng):
     def __str__(self):
         return "Node object, id: " + str(self.id)
 
-    def set_prev(self, way_id, prev):
-        self.prev[way_id] = prev
-        return
+    def angle_to(self, node):
+        y_node, x_node = node.latlng.location(radian=True)
+        y_self, x_self = self.latlng.location(radian=True)
+        return math.atan2(y_node - y_self, x_node - x_self)
 
-    def set_next(self, way_id, next):
-        self.next[way_id] = next
-        return
+    def is_intersection(self):
+        return len(self.way_ids) > 1
 
-    def get_prev(self, way_id):
-        return self.prev[way_id]
-
-    def get_next(self, way_id):
-        return self.next[way_id]
+    def has_sidewalk_nodes(self):
+        return len(self.sidewalk_nodes) > 0
 
     def append_way(self, wid):
         self.way_ids.append(wid)
@@ -132,6 +129,20 @@ class Node(LatLng):
 
         return
 
+    def get_prev(self, way_id):
+        return self.prev[way_id]
+
+    def get_next(self, way_id):
+        return self.next[way_id]
+
+    def set_prev(self, way_id, prev):
+        self.prev[way_id] = prev
+        return
+
+    def set_next(self, way_id, next):
+        self.next[way_id] = next
+        return
+
     def vector(self):
         return np.array(self.latlng.location())
 
@@ -140,17 +151,6 @@ class Node(LatLng):
         if normalize:
             vec = vec / np.linalg.norm(vec)
         return vec
-
-    def angle_to(self, node):
-        y_node, x_node = node.latlng.location(radian=True)
-        y_self, x_self = self.latlng.location(radian=True)
-        return math.atan2(y_node - y_self, x_node - x_self)
-
-    def is_intersection(self):
-        return len(self.way_ids) > 1
-
-    def has_sidewalk_nodes(self):
-        return len(self.sidewalk_nodes) > 0
 
 
 class Nodes():
