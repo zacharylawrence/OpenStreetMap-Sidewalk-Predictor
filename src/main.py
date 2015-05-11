@@ -13,11 +13,7 @@ try:
 except ImportError, e:
     from xml.etree import ElementTree as ET
 
-
 log.basicConfig(format="", level=log.DEBUG)
-
-
-
 
 def parse(filename):
     """
@@ -61,21 +57,21 @@ def parse(filename):
 
             nodes.get(nid).set_prev(way.id, nodes.get(prev_nid))
             nodes.get(nid).set_next(way.id, nodes.get(next_nid))
-            if nodes.get(nid).is_intersection() and nid not in ways.intersection_nodes:
-                ways.intersection_nodes.append(nid)
+            if nodes.get(nid).is_intersection() and nid not in ways.intersection_node_ids:
+                ways.intersection_node_ids.append(nid)
 
     return nodes, ways
 
 
-def print_intersections():
+def print_intersections(nodes):
     for node in nodes.get_list():
         if node.is_intersection():
             location = node.latlng.location(radian=False)
-            print str(location[0]) + "," + str(location[1])
+            log.debug(str(location[0]) + "," + str(location[1]))
     return
 
 
-def make_sidewalk_nodes(prev_node, curr_node, next_node):
+def make_sidewalk_nodes(way_id, prev_node, curr_node, next_node):
     if prev_node is None:
         v = - curr_node.vector_to(next_node, normalize=False)
         vec_prev = curr_node.vector() + v
@@ -87,9 +83,7 @@ def make_sidewalk_nodes(prev_node, curr_node, next_node):
         latlng = LatLng(math.degrees(vec_next[0]), math.degrees(vec_next[1]))
         next_node = Node(None, latlng)
 
-    prev_latlng = np.array(prev_node.latlng.location())
     curr_latlng = np.array(curr_node.latlng.location())
-    next_latlng = np.array(next_node.latlng.location())
 
     v_cp_n = curr_node.vector_to(prev_node)
     v_cn_n = curr_node.vector_to(next_node)
@@ -109,6 +103,9 @@ def make_sidewalk_nodes(prev_node, curr_node, next_node):
 
     p_sidewalk_1 = Node(None, latlng1)
     p_sidewalk_2 = Node(None, latlng2)
+
+    curr_node.append_sidewalk_node(way_id, p_sidewalk_1)
+    curr_node.append_sidewalk_node(way_id, p_sidewalk_2)
 
     # Figure out on which side you want to put each sidewalk node
     v_c1 = curr_node.vector_to(p_sidewalk_1)
@@ -133,19 +130,24 @@ def make_sidewalks(nodes, ways):
             prev_node = curr_node.get_prev(way.id)
             next_node = curr_node.get_next(way.id)
 
-            n1, n2 = make_sidewalk_nodes(prev_node, curr_node, next_node)
+            n1, n2 = make_sidewalk_nodes(way.id, prev_node, curr_node, next_node)
 
             sidewalk_nodes.add(n1.id, n1)
             sidewalk_nodes.add(n2.id, n2)
 
             sidewalk_1_nodes.append(n1)
             sidewalk_2_nodes.append(n2)
-            print n1.latlng
-            print n2.latlng
+            #log.debug(n1.latlng.location(radian=False))
+            #log.debug(n2.latlng.location(radian=False))
 
-        # Set adjacency information
+        # Keep track of parent-child relationship between streets and sidewalks.
+        # And set nodes' adjacency information
         sidewalk_1 = Way(None, [node.id for node in sidewalk_1_nodes])
         sidewalk_2 = Way(None, [node.id for node in sidewalk_2_nodes])
+        sidewalk_1.set_parent_way_id(way.id)
+        sidewalk_2.set_parent_way_id(way.id)
+        way.append_child_way_id(sidewalk_1.id)
+        way.append_child_way_id(sidewalk_2.id)
         for prev_nid, nid, next_nid in window(sidewalk_1.nids, 3, padding=1):
             curr_node = sidewalk_nodes.get(nid)
             curr_node.append_way(sidewalk_1.id)
@@ -163,8 +165,100 @@ def make_sidewalks(nodes, ways):
         sidewalk_ways.add(sidewalk_2.id, sidewalk_2)
     return sidewalk_nodes, sidewalk_ways
 
+
+def make_intersection_nodes(nodes, sidewalk_nodes, ways, sidewalk_ways):
+    # Some helper functions
+    def make_intersection_node(node, n1, n2):
+        v1 = node.vector_to(n1, normalize=True)
+        v2 = node.vector_to(n2, normalize=True)
+        v = v1 + v2
+        v_norm = v / np.linalg.norm(v)
+        v_new = v_curr + v_norm * 0.000001
+        latlng_new = LatLng(math.degrees(v_new[0]), math.degrees(v_new[1]))
+        return Node(None, latlng_new)
+
+    def cmp(n1, n2):
+        angle1 = intersection_node.angle_to(n1)
+        angle2 = intersection_node.angle_to(n2)
+        if angle1 < angle2:
+            return -1
+        elif angle1 == angle2:
+            return 0
+        else:
+            return 1
+
+    intersection_node_ids = ways.intersection_node_ids
+    intersection_nodes = [nodes.get(nid) for nid in intersection_node_ids]
+
+    # Create sidewalk nodes for each intersection node and overwrite the adjacency information
+    for intersection_node in intersection_nodes:
+        way_ids = intersection_node.get_way_ids()
+        adj_nodes = []
+        for wid in way_ids:
+            if intersection_node.get_next(wid) is not None:
+                adj_nodes.append(intersection_node.get_next(wid))
+            if intersection_node.get_prev(wid) is not None:
+                adj_nodes.append(intersection_node.get_prev(wid))
+
+        adj_nodes = sorted(adj_nodes, cmp=cmp)
+        v_curr = intersection_node.vector()
+
+
+        # Creat new sidewalk nodes
+        source_table = {}  # Keep track of from which street nodes each intersection node is created
+        if len(adj_nodes) == 3:
+            # Todo. Take care of the case where len(adj_nodes) == 3
+            continue
+        else:
+            for n1, n2 in window(adj_nodes, 2):
+                node_new = make_intersection_node(intersection_node, n1, n2)
+                sidewalk_nodes.add(node_new.id, node_new)
+                source_table[node_new.id] = [intersection_node, n1, n2]
+
+            n1 = adj_nodes[-1]
+            n2 = adj_nodes[0]
+            node_new = make_intersection_node(intersection_node, n1, n2)
+            sidewalk_nodes.add(node_new.id, node_new)
+            source_table[node_new.id] = [intersection_node, n1, n2]
+
+        # Go through all the newly created sidewalk nodes at the intersection and
+        # edit the connectivity
+        # for nid in source_table:
+        #     print nid
+        #     n, n1, n2 = source_table[nid]
+        #     #print n, n1, n2
+        #     print n1.sidewalk_nodes.values()[0]
+        #     for sidewalk_node in n1.sidewalk_nodes.values()[0]:
+        #         print sidewalk_node.next
+        #
+        # break
+        print way_ids
+        for int_node_id in source_table:
+            print int_node_id, source_table[int_node_id]
+            intersection_node, n1, n2 = source_table[int_node_id]
+            vec_1 = intersection_node.vector_to(n1)
+            vec_2 = intersection_node.vector_to(n2)
+
+            for way_id in n1.sidewalk_nodes:
+                if way_id in way_ids:
+                    adj_sidewalk_nodes = n1.sidewalk_nodes[way_id]
+                    vec_1_s1 = intersection_node.vector_to(adj_sidewalk_nodes[0])
+                    vec_intersection_corner = intersection_node.vector_to(sidewalk_nodes.get(int_node_id))
+                    print vec_1_s1, vec_intersection_corner
+
+
+
+            break
+
+
+        break
+    return
+
+
 def main(nodes, ways):
     sidewalk_nodes, sidewalk_ways = make_sidewalks(nodes, ways)
+    make_intersection_nodes(nodes, sidewalk_nodes, ways, sidewalk_ways)
+
 
 if __name__ == "__main__":
     filename = "../resources/map2.osm"
