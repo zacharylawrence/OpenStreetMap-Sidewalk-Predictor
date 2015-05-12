@@ -7,13 +7,13 @@ import logging as log
 import math
 import numpy as np
 
-
 try:
     from xml.etree import cElementTree as ET
 except ImportError, e:
     from xml.etree import ElementTree as ET
 
 log.basicConfig(format="", level=log.DEBUG)
+
 
 def parse(filename):
     """
@@ -246,11 +246,7 @@ def make_intersection_nodes(nodes, sidewalk_nodes, ways, sidewalk_ways):
                     vec_intersection_corner = intersection_node.vector_to(sidewalk_nodes.get(int_node_id))
                     print vec_1_s1, vec_intersection_corner
 
-
-
             break
-
-
         break
     return
 
