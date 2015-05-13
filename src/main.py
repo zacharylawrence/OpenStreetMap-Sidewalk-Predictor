@@ -2,6 +2,7 @@ from latlng import LatLng
 from nodes import Node, Nodes
 from ways import Way, Ways
 from utilities import window
+from osm import OSM
 
 import logging as log
 import math
@@ -142,8 +143,8 @@ def make_sidewalks(nodes, ways):
 
         # Keep track of parent-child relationship between streets and sidewalks.
         # And set nodes' adjacency information
-        sidewalk_1 = Way(None, [node.id for node in sidewalk_1_nodes])
-        sidewalk_2 = Way(None, [node.id for node in sidewalk_2_nodes])
+        sidewalk_1 = Way(None, [node.id for node in sidewalk_1_nodes], "footway")
+        sidewalk_2 = Way(None, [node.id for node in sidewalk_2_nodes], "footway")
         sidewalk_1.set_parent_way_id(way.id)
         sidewalk_2.set_parent_way_id(way.id)
         way.append_child_way_id(sidewalk_1.id)
@@ -168,14 +169,23 @@ def make_sidewalks(nodes, ways):
 
 def make_intersection_nodes(nodes, sidewalk_nodes, ways, sidewalk_ways):
     # Some helper functions
-    def make_intersection_node(node, n1, n2):
-        v1 = node.vector_to(n1, normalize=True)
-        v2 = node.vector_to(n2, normalize=True)
-        v = v1 + v2
-        v_norm = v / np.linalg.norm(v)
-        v_new = v_curr + v_norm * 0.000001
-        latlng_new = LatLng(math.degrees(v_new[0]), math.degrees(v_new[1]))
-        return Node(None, latlng_new)
+    def make_intersection_node(node, n1, n2, angle=None):
+        const = 0.000001
+        if n2 is None and angle is not None:
+            v1 = node.vector_to(n1, normalize=True)
+            rot_mat = np.array([(math.cos(angle), -math.sin(angle)), (math.sin(angle), math.cos(angle))])
+            v_norm = rot_mat.dot(v1)
+            v_new = v_curr + v_norm * const
+            latlng_new = LatLng(math.degrees(v_new[0]), math.degrees(v_new[1]))
+            return Node(None, latlng_new)
+        else:
+            v1 = node.vector_to(n1, normalize=True)
+            v2 = node.vector_to(n2, normalize=True)
+            v = v1 + v2
+            v_norm = v / np.linalg.norm(v)
+            v_new = v_curr + v_norm * const
+            latlng_new = LatLng(math.degrees(v_new[0]), math.degrees(v_new[1]))
+            return Node(None, latlng_new)
 
     def cmp(n1, n2):
         angle1 = intersection_node.angle_to(n1)
@@ -204,56 +214,109 @@ def make_intersection_nodes(nodes, sidewalk_nodes, ways, sidewalk_ways):
         v_curr = intersection_node.vector()
 
 
-        # Creat new sidewalk nodes
-        source_table = {}  # Keep track of from which street nodes each intersection node is created
+        # Creat new intersection sidewalk nodes
+        # Record from which street nodes each intersection node is created with source_table
+        source_table = {}
+        new_intersection_sidewalk_nodes = []
         if len(adj_nodes) == 3:
             # Todo. Take care of the case where len(adj_nodes) == 3
             continue
+            # print len(adj_nodes)
+            #
+            # vecs = []
+            # for n in adj_nodes:
+            #     vecs.append(intersection_node.vector_to(n))
+            #
+            # def angle(v1, v2):
+            #     return np.arccos(np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2)))
+            # max_angle_idx = np.array([angle(vecs[i], vecs[i - 1]) for i in range(len(vecs))]).argmax()
+            # max_angle = angle(vecs[max_angle_idx], vecs[max_angle_idx - 1])
+            #
+            # for i in range(len(adj_nodes)):
+            #     n1 = adj_nodes[i-1]
+            #     n2 = adj_nodes[i]
+                # if i == max_angle_idx:
+                #     node_new = make_intersection_node(intersection_node, n2, n2=None, angle=max_angle / 2 - 0.00000001)
+                # else:
+                #     node_new = make_intersection_node(intersection_node, n1, n2)
+                # node_new = make_intersection_node(intersection_node, n1, n2)
+                # sidewalk_nodes.add(node_new.id, node_new)
+                # new_intersection_sidewalk_nodes.append(node_new)
+                # source_table[node_new.id] = [intersection_node, n1, n2]
+
         else:
             for n1, n2 in window(adj_nodes, 2):
                 node_new = make_intersection_node(intersection_node, n1, n2)
                 sidewalk_nodes.add(node_new.id, node_new)
+                new_intersection_sidewalk_nodes.append(node_new)
                 source_table[node_new.id] = [intersection_node, n1, n2]
 
             n1 = adj_nodes[-1]
             n2 = adj_nodes[0]
             node_new = make_intersection_node(intersection_node, n1, n2)
             sidewalk_nodes.add(node_new.id, node_new)
+            new_intersection_sidewalk_nodes.append(node_new)
             source_table[node_new.id] = [intersection_node, n1, n2]
 
-        # Go through all the newly created sidewalk nodes at the intersection and
-        # edit the connectivity
-        # for nid in source_table:
-        #     print nid
-        #     n, n1, n2 = source_table[nid]
-        #     #print n, n1, n2
-        #     print n1.sidewalk_nodes.values()[0]
-        #     for sidewalk_node in n1.sidewalk_nodes.values()[0]:
-        #         print sidewalk_node.next
-        #
+        # Add the cross walk to the data structure
+        # crosswalk = Way(None, new_intersection_sidewalk_nodes, "crosswalk")
+        # sidewalk_ways.add(crosswalk.id, crosswalk)
+
+        # Connect the new intersection sidewalk nodes with appropriate sidewalk nodes
+        for new_node_id in source_table:
+            # Get the intersection node and two nodes that created the intersection sidewalk node
+            ni, n1, n2 = source_table[new_node_id]
+            ni_s = sidewalk_nodes.get(new_node_id)
+            v_ni_s = ni.vector_to(ni_s)  # A vector to the intersection sidewalk node
+
+            for n_adj in [n1, n2]:
+                v_n_adj = ni.vector_to(n_adj)  # A vector to n1
+                shared_ways = set(intersection_node.way_ids) & set(n_adj.way_ids)
+                shared_way_id = list(shared_ways)[0]
+
+                # Get a pair of vectors to two sidewalk nodes created from n1
+                n_adj_s1, n_adj_s2 = n_adj.sidewalk_nodes[shared_way_id]
+                v_n_adj_s1 = intersection_node.vector_to(n_adj_s1)
+
+                # Check which one of n1_s1 and n1_s2 are on the same side of the road with ni_s
+                # If the rotation (cross product) from v_n1 to v_ni_s is same as v_n1 to v_n1_s1, then
+                # n1_s1 should be on the same side. Otherwise, n1_s1 should be on the same side with ni_s.
+                if np.cross(v_n_adj, v_ni_s) * np.cross(v_n_adj, v_n_adj_s1) > 0:
+                    n_adj_s_temp = n_adj_s1
+                else:
+                    n_adj_s_temp = n_adj_s2
+
+                # Connect n1_s1 with temp_node
+                n_temp_connected = n_adj_s_temp.get_connected()
+                ni_all_sidewalk = [item for sublist in ni.sidewalk_nodes.values() for item in sublist]
+                if len(set(n_temp_connected) & set(ni_all_sidewalk)) > 0:
+                    n_target = list(set(n_temp_connected) & set(ni_all_sidewalk))[0]
+                    shared_sidewalk = set(n_adj_s_temp.way_ids) & set(n_target.way_ids)
+                    shared_sidewalk_id = list(shared_sidewalk)[0]
+
+                    sidewalk = sidewalk_ways.get(shared_sidewalk_id)
+                    if n_target.get_prev(shared_sidewalk_id) == n_adj_s_temp:
+                        ni_s.set_prev(shared_sidewalk_id, n_adj_s_temp)
+                        ni_s.set_next(shared_sidewalk_id, n_target)
+                        n_adj_s_temp.set_next(shared_sidewalk_id, ni_s)
+                        sidewalk.nids.insert(sidewalk.nids.index(n_target.id), ni_s.id)
+                    else:
+                        ni_s.set_next(shared_sidewalk_id, n_adj_s_temp)
+                        ni_s.set_prev(shared_sidewalk_id, n_target)
+                        n_adj_s_temp.set_prev(shared_sidewalk_id, ni_s)
+                        sidewalk.nids.insert(sidewalk.nids.index(n_adj_s_temp.id), ni_s.id)
+
         # break
-        print way_ids
-        for int_node_id in source_table:
-            print int_node_id, source_table[int_node_id]
-            intersection_node, n1, n2 = source_table[int_node_id]
-            vec_1 = intersection_node.vector_to(n1)
-            vec_2 = intersection_node.vector_to(n2)
-
-            for way_id in n1.sidewalk_nodes:
-                if way_id in way_ids:
-                    adj_sidewalk_nodes = n1.sidewalk_nodes[way_id]
-                    vec_1_s1 = intersection_node.vector_to(adj_sidewalk_nodes[0])
-                    vec_intersection_corner = intersection_node.vector_to(sidewalk_nodes.get(int_node_id))
-                    print vec_1_s1, vec_intersection_corner
-
-            break
-        break
     return
+
 
 
 def main(nodes, ways):
     sidewalk_nodes, sidewalk_ways = make_sidewalks(nodes, ways)
     make_intersection_nodes(nodes, sidewalk_nodes, ways, sidewalk_ways)
+    osm = OSM(sidewalk_nodes, sidewalk_ways)
+    output = osm.export()
+    print output
 
 
 if __name__ == "__main__":

@@ -28,17 +28,18 @@ class Node(LatLng):
 
     def append_sidewalk_node(self, way_id, node):
         self.sidewalk_nodes.setdefault(way_id, []).append(node)
-        return
 
     def append_way(self, wid):
         self.way_ids.append(wid)
-        return
 
     def is_intersection(self):
         return len(self.way_ids) > 1
 
     def has_sidewalk_nodes(self):
         return len(self.sidewalk_nodes) > 0
+
+    def get_connected(self, way_id=None):
+        return self.next.values() + self.prev.values()
 
     def get_prev(self, way_id):
         return self.prev[way_id]
@@ -51,11 +52,9 @@ class Node(LatLng):
 
     def set_prev(self, way_id, prev):
         self.prev[way_id] = prev
-        return
 
     def set_next(self, way_id, next):
         self.next[way_id] = next
-        return
 
     def vector(self):
         return np.array(self.latlng.location())

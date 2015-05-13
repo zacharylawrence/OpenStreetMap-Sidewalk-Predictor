@@ -18,6 +18,9 @@ class Way():
     def get_child_way_ids(self):
         return self.child_way_ids
 
+    def get_node_ids(self):
+        return self.nids
+
     def set_parent_way_id(self, way_id):
         self.parent_way_id = way_id
         return
