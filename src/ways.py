@@ -1,6 +1,5 @@
-
-class Way():
-    def __init__(self, wid=None, nids=[], type=None):
+class Way(object):
+    def __init__(self, wid=None, nids=(), type=None):
         if wid is None:
             self.id = id(self)
         else:
@@ -25,8 +24,7 @@ class Way():
         self.parent_way_id = way_id
         return
 
-
-class Ways():
+class Ways(object):
     def __init__(self):
         self.ways = {}
         self.intersection_node_ids = []
@@ -39,3 +37,13 @@ class Ways():
 
     def get_list(self):
         return self.ways.values()
+
+# Notes on inheritance
+# http://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods
+class Street(Way):
+    def __init__(self, wid=None, nids=(), type=None):
+        super(Street, self).__init__(wid, nids, type)
+
+class Streets(Ways):
+    def __init__(self):
+        super(Streets, self).__init__()

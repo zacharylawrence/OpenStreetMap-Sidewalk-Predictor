@@ -16,6 +16,7 @@ class Node(LatLng):
         self.sidewalk_nodes = {}
         self.prev = {}
         self.next = {}
+        self.min_intersection_cardinality = 2
         return
 
     def __str__(self):
@@ -32,8 +33,11 @@ class Node(LatLng):
     def append_way(self, wid):
         self.way_ids.append(wid)
 
+    def distance_to(self, node):
+        return self.latlng.distance_to(node.latlng)
+
     def is_intersection(self):
-        return len(self.way_ids) > 1
+        return len(self.way_ids) >= self.min_intersection_cardinality
 
     def has_sidewalk_nodes(self):
         return len(self.sidewalk_nodes) > 0
@@ -66,7 +70,7 @@ class Node(LatLng):
         return vec
 
 
-class Nodes():
+class Nodes(object):
     def __init__(self):
         self.nodes = {}
         return

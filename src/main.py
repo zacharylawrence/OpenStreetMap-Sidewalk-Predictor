@@ -2,7 +2,7 @@ from latlng import LatLng
 from nodes import Node, Nodes
 from ways import Way, Ways
 from utilities import window
-from osm import OSM
+from osm import OSM, parse
 
 import logging as log
 import math
@@ -15,53 +15,6 @@ except ImportError, e:
 
 log.basicConfig(format="", level=log.DEBUG)
 
-
-def parse(filename):
-    """
-    Parse a OSM file
-    """
-    with open(filename, "rb") as osm:
-        # Find element
-        # http://stackoverflow.com/questions/222375/elementtree-xpath-select-element-based-on-attribute
-        tree = ET.parse(osm)
-
-        nodes_tree = tree.findall(".//node")
-        ways_tree = tree.findall(".//way")
-        nodes = Nodes()
-
-        for node in nodes_tree:
-            mynode = Node(node.get("id"), LatLng(node.get("lat"), node.get("lon")))
-            nodes.add(node.get("id"), mynode)
-
-        # Parse ways and find streets that has the following tags
-        ways = Ways()
-        valid_highways = set(['primary', 'secondary', 'tertiary', 'residential'])
-        for way in ways_tree:
-            highway_tag = way.find(".//tag[@k='highway']")
-            # print type(highway_tag)
-            if highway_tag is not None and highway_tag.get("v") in valid_highways:
-                # print highway_tag.get("v"), way
-                node_elements = filter(lambda elem: elem.tag == "nd", list(way))
-                nids = [node.get("ref") for node in node_elements]
-
-                # Todo: Nodes that are too close to each other should be filtered out.
-
-                myway = Way(way.get("id"), nids)
-                ways.add(way.get("id"), myway)
-
-    # Find intersections and store adjacency information
-    for way in ways.get_list():
-        # prev_nid = None
-        for prev_nid, nid, next_nid in window(way.nids, 3, padding=1):
-            # print prev_nid, nid, next_nid
-            nodes.get(nid).append_way(way.id)
-
-            nodes.get(nid).set_prev(way.id, nodes.get(prev_nid))
-            nodes.get(nid).set_next(way.id, nodes.get(next_nid))
-            if nodes.get(nid).is_intersection() and nid not in ways.intersection_node_ids:
-                ways.intersection_node_ids.append(nid)
-
-    return nodes, ways
 
 
 def print_intersections(nodes):
