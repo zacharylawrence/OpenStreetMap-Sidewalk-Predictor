@@ -94,6 +94,6 @@ class WaySearcher(object):
 
 
 if __name__ == "__main__":
-    filename = "../resources/MarylandAvenueNortheast.osm"
+    filename = "../resources/ParallelLanes_01.osm"
     searcher = WaySearcher(filename)
     print searcher.find_ways((("highway", None), ("name", "Maryland Avenue Northeast"))).get_ways()

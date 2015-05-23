@@ -161,7 +161,7 @@ if __name__ == "__main__":
     counter = HighwayCounter()
     output = Generator()
     p = OSMParser(concurrency=4, ways_callback=counter.ways, coords_callback=counter.coords_callback)
-    p.parse('map2.osm')
+    p.parse('SmallMap_02.osm')
     counter.calculateIntersections()
 
     # Finished parsing, now use the data

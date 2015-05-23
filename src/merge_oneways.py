@@ -47,7 +47,7 @@ def merge_oneways():
 
     # Group oneways by street names
 
-    filename = "../resources/MarylandAvenueNortheast.osm"
+    filename = "../resources/ParallelLanes_01.osm"
 
     grouped_oneways = {}
     grouped_nodes = {}
@@ -144,7 +144,7 @@ def haversine(lon1, lat1, lon2, lat2):
     return c * r
 
 if __name__ == "__main__":
-    filename = "../resources/MarylandAvenueNortheast.osm"
+    filename = "../resources/ParallelLanes_01.osm"
     searcher = WaySearcher(filename)
 
     merge_oneways()

@@ -320,6 +320,6 @@ def main(nodes, ways):
 
 
 if __name__ == "__main__":
-    filename = "../resources/map2.osm"
+    filename = "../resources/SmallMap_02.osm"
     nodes, ways = parse(filename)
     main(nodes, ways)
