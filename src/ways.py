@@ -6,23 +6,10 @@ class Way(object):
             self.id = wid
         self.nids = nids
         self.type = type
-        self.child_way_ids = []  # Keep track of which sidewalks were generated from this way
-        self.parent_way_id = None  # Keep track of the parent street
         return
-
-    def append_child_way_id(self, way_id):
-        self.child_way_ids.append(way_id)
-        return
-
-    def get_child_way_ids(self):
-        return self.child_way_ids
 
     def get_node_ids(self):
         return self.nids
-
-    def set_parent_way_id(self, way_id):
-        self.parent_way_id = way_id
-        return
 
 class Ways(object):
     def __init__(self):
@@ -38,12 +25,38 @@ class Ways(object):
     def get_list(self):
         return self.ways.values()
 
+    def set_intersection_node_ids(self, nids):
+        self.intersection_node_ids = nids
+
 # Notes on inheritance
 # http://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods
 class Street(Way):
     def __init__(self, wid=None, nids=(), type=None):
         super(Street, self).__init__(wid, nids, type)
+        self.sidewalk_ids = []  # Keep track of which sidewalks were generated from this way
+
+    def append_sidewalk_id(self, way_id):
+        self.sidewalk_ids.append(way_id)
+        return self
+
+    def get_sidewalk_ids(self):
+        return self.sidewalk_ids
 
 class Streets(Ways):
     def __init__(self):
         super(Streets, self).__init__()
+
+class Sidewalk(Way):
+    def __init__(self, wid=None, nids=(), type=None):
+        super(Sidewalk, self).__init__(wid, nids, type)
+
+    def set_street_id(self, street_id):
+        """  Set the parent street id """
+        self.street_id = street_id
+        return
+
+class Sidewalks(Ways):
+    def __init__(self):
+        super(Sidewalks, self).__init__()
+        self.street_id = None
+

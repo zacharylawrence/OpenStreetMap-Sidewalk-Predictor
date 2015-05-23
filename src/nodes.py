@@ -1,11 +1,11 @@
 from latlng import LatLng
 import numpy as np
 import math
+import logging as log
 
-
-class Node(LatLng):
+class Node(object):
     def __init__(self, nid=None, latlng=None):
-        self.latlng = latlng
+        self.latlng = latlng  # Note: Would it be cleaner to inherit LatLng?
 
         if nid is None:
             self.id = id(self)
@@ -87,3 +87,10 @@ class Nodes(object):
 
     def get_list(self):
         return self.nodes.values()
+
+def print_intersections(nodes):
+    for node in nodes.get_list():
+        if node.is_intersection():
+            location = node.latlng.location(radian=False)
+            log.debug(str(location[0]) + "," + str(location[1]))
+    return

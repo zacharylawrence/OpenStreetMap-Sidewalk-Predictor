@@ -11,6 +11,13 @@ class OSM(object):
         self.ways = ways
         self.bounds = [100000.0, 100000.0, -1.0, -1.0]  # min lat, min lng, max lat, and max lng
 
+        # Preprocess and clean up the data
+        self.split_streets()
+        # Todo: go through nodes and find ones that have two ways (nodes should have either one or more than two ways)
+        #  self.merge_ways()
+        self.merge_nodes()
+        self.clean_up_nodes()
+
         for node in self.nodes.get_list():
             lat, lng = node.latlng.location(radian=False)
             if lat < self.bounds[0]:
@@ -21,6 +28,95 @@ class OSM(object):
                 self.bounds[1] = lng
             elif lng > self.bounds[3]:
                 self.bounds[3] = lng
+
+    def clean_up_nodes(self):
+        """
+        Remove unnecessary nodess
+        """
+        nids = []
+        for way in self.ways.get_list():
+            nids.extend(way.nids)
+        nids = set(nids)
+
+        new_nodes = Nodes()
+        for nid in nids:
+            new_nodes.add(nid, self.nodes.get(nid))
+
+        self.nodes = new_nodes
+        return
+
+    def export(self, format="osm"):
+        """
+        Export the node and way data.
+        Todo: Implement geojson format for export.
+        """
+        header = """
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6">
+<bounds minlat="%s" minlon="%s" maxlat="%s" maxlon="%s" />
+""" % (str(self.bounds[0]), str(self.bounds[1]), str(self.bounds[2]), str(self.bounds[3]))
+
+        footer = "</osm>"
+        node_list = []
+        for node in self.nodes.get_list():
+            lat, lng = node.latlng.location(radian=False)
+            node_str = """<node id="%s" visible="true" user="test" lat="%s" lon="%s" />""" % (str(node.id), str(lat), str(lng))
+            node_list.append(node_str)
+
+        way_list = []
+        for way in self.ways.get_list():
+            way_str = """<way id="%s" visible="true" user="test">""" % (str(way.id))
+            way_list.append(way_str)
+            for nid in way.get_node_ids():
+                nid_str = """<nd ref="%s" />""" % (str(nid))
+                way_list.append(nid_str)
+
+            if way.type is not None:
+                tag = """<tag k="%s" v="%s" />""" % ("highway", way.type)
+                way_list.append(tag)
+            way_list.append("</way>")
+
+        osm = header + "\n".join(node_list) + "\n" + "\n".join(way_list) + "\n" + footer
+
+        return osm
+
+    def merge_nodes(self, distance_threshold=0.025):
+        """
+        Merge nodes that are close to intersection nodes.
+        """
+        for street in self.ways.get_list():
+            if len(street.nids) < 2:
+                continue
+
+            # print street.nids
+            start = self.nodes.get(street.nids[0])
+            end = self.nodes.get(street.nids[-1])
+            # Merge the nodes around the beginning of the street
+            for nid in street.nids[1:-1]:
+                target = self.nodes.get(nid)
+                distance = start.distance_to(target)
+                if distance < distance_threshold:
+                    street.nids.remove(nid)
+                else:
+                    break
+
+            if len(street.nids) < 2:
+                continue
+
+            for nid in street.nids[-2:0:-1]:
+                target = self.nodes.get(nid)
+                distance = end.distance_to(target)
+                if distance < distance_threshold:
+                    street.nids.remove(nid)
+                else:
+                    break
+
+            # print street.nids
+        return
+
+    def parse_intersections(self):
+        parse_intersections(self.nodes, self.ways)
+        return
 
     def split_streets(self):
         """
@@ -57,87 +153,8 @@ class OSM(object):
             node.min_intersection_cardinality = 3
         for street in self.ways.get_list():
             for nid in street.nids:
-                nodes.get(nid).append_way(way.id)
-
-        return self
-
-    def merge_nodes(self, distance_threshold=0.025):
-        """
-        Merge nodes that are close to intersection nodes.
-        """
-        for street in self.ways.get_list():
-            if len(street.nids) < 2:
-                continue
-
-            # print street.nids
-            start = self.nodes.get(street.nids[0])
-            end = self.nodes.get(street.nids[-1])
-            # Merge the nodes around the beginning of the street
-            for nid in street.nids[1:-1]:
-                target = self.nodes.get(nid)
-                distance = start.distance_to(target)
-                if distance < distance_threshold:
-                    street.nids.remove(nid)
-                else:
-                    break
-
-            if len(street.nids) < 2:
-                continue
-
-            for nid in street.nids[-2:0:-1]:
-                target = self.nodes.get(nid)
-                distance = end.distance_to(target)
-                if distance < distance_threshold:
-                    street.nids.remove(nid)
-                else:
-                    break
-
-            # print street.nids
-        return self
-
-    def export(self, format="osm"):
-        header = """
-<?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6">
-<bounds minlat="%s" minlon="%s" maxlat="%s" maxlon="%s" />
-""" % (str(self.bounds[0]), str(self.bounds[1]), str(self.bounds[2]), str(self.bounds[3]))
-
-        footer = "</osm>"
-        node_list = []
-        for node in self.nodes.get_list():
-            lat, lng = node.latlng.location(radian=False)
-            node_str = """<node id="%s" visible="true" user="test" lat="%s" lon="%s" />""" % (str(node.id), str(lat), str(lng))
-            node_list.append(node_str)
-
-        way_list = []
-        for way in self.ways.get_list():
-            way_str = """<way id="%s" visible="true" user="test">""" % (str(way.id))
-            way_list.append(way_str)
-            for nid in way.get_node_ids():
-                nid_str = """<nd ref="%s" />""" % (str(nid))
-                way_list.append(nid_str)
-
-            if way.type is not None:
-                tag = """<tag k="%s" v="%s" />""" % ("highway", way.type)
-                way_list.append(tag)
-            way_list.append("</way>")
-
-        osm = header + "\n".join(node_list) + "\n" + "\n".join(way_list) + "\n" + footer
-
-        return osm
-
-    def filter(self):
-        nids = []
-        for way in self.ways.get_list():
-            nids.extend(way.nids)
-        nids = set(nids)
-
-        new_nodes = Nodes()
-        for nid in nids:
-            new_nodes.add(nid, self.nodes.get(nid))
-
-        self.nodes = new_nodes
-        return self
+                self.nodes.get(nid).append_way(street.id)
+        return
 
 def parse(filename):
     """
@@ -186,8 +203,14 @@ def parse(filename):
 
     return nodes, ways
 
+def parse_intersections(nodes, ways):
+    node_list = nodes.get_list()
+    intersection_node_ids = [node.id for node in node_list if node.is_intersection()]
+    ways.set_intersection_node_ids(intersection_node_ids)
+    return
+
 if __name__ == "__main__":
     filename = "../resources/Simple4WayIntersection_01.osm"
     nodes, ways = parse(filename)
     obj = OSM(nodes, ways)
-    print obj.filter().split_streets().merge_nodes().export()
+    print obj.export()
