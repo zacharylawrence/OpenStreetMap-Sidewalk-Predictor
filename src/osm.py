@@ -196,8 +196,6 @@ def parse(filename):
             # print prev_nid, nid, next_nid
             nodes.get(nid).append_way(way.id)
 
-            nodes.get(nid).set_prev(way.id, nodes.get(prev_nid))
-            nodes.get(nid).set_next(way.id, nodes.get(next_nid))
             if nodes.get(nid).is_intersection() and nid not in ways.intersection_node_ids:
                 ways.intersection_node_ids.append(nid)
 

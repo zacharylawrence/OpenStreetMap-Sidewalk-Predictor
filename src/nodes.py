@@ -14,8 +14,6 @@ class Node(object):
 
         self.way_ids = []
         self.sidewalk_nodes = {}
-        self.prev = {}
-        self.next = {}
         self.min_intersection_cardinality = 2
         return
 
@@ -42,23 +40,11 @@ class Node(object):
     def has_sidewalk_nodes(self):
         return len(self.sidewalk_nodes) > 0
 
-    def get_connected(self, way_id=None):
-        return self.next.values() + self.prev.values()
-
-    def get_prev(self, way_id):
-        return self.prev[way_id]
-
-    def get_next(self, way_id):
-        return self.next[way_id]
-
     def get_way_ids(self):
         return self.way_ids
 
-    def set_prev(self, way_id, prev):
-        self.prev[way_id] = prev
-
-    def set_next(self, way_id, next):
-        self.next[way_id] = next
+    def get_sidewalk_nodes(self, wid):
+        return self.sidewalk_nodes[wid]
 
     def vector(self):
         return np.array(self.latlng.location())
@@ -87,6 +73,11 @@ class Nodes(object):
 
     def get_list(self):
         return self.nodes.values()
+
+    def remove(self, nid):
+        # http://stackoverflow.com/questions/5844672/delete-an-element-from-a-dictionary
+        del self.nodes[nid]
+        return
 
 def print_intersections(nodes):
     for node in nodes.get_list():
