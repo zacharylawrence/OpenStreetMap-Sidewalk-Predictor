@@ -152,7 +152,7 @@ def make_intersection_nodes(street_nodes, sidewalk_nodes, streets, sidewalks):
             else:
                 adj_nodes.append(street_nodes.get(street.nids[-2]))
 
-        adj_nodes = sorted(adj_nodes, cmp=cmp)  # Sort anti-clockwise
+        adj_nodes = sorted(adj_nodes, cmp=cmp)  # Sort counter clockwise
         v_curr = intersection_node.vector()
 
         # Creat new intersection sidewalk nodes
@@ -162,29 +162,6 @@ def make_intersection_nodes(street_nodes, sidewalk_nodes, streets, sidewalks):
         if len(adj_nodes) == 3:
             # Todo. Take care of the case where len(adj_nodes) == 3
             continue
-            # print len(adj_nodes)
-            #
-            # vecs = []
-            # for n in adj_nodes:
-            #     vecs.append(intersection_node.vector_to(n))
-            #
-            # def angle(v1, v2):
-            #     return np.arccos(np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2)))
-            # max_angle_idx = np.array([angle(vecs[i], vecs[i - 1]) for i in range(len(vecs))]).argmax()
-            # max_angle = angle(vecs[max_angle_idx], vecs[max_angle_idx - 1])
-            #
-            # for i in range(len(adj_nodes)):
-            #     n1 = adj_nodes[i-1]
-            #     n2 = adj_nodes[i]
-                # if i == max_angle_idx:
-                #     node_new = make_intersection_node(intersection_node, n2, n2=None, angle=max_angle / 2 - 0.00000001)
-                # else:
-                #     node_new = make_intersection_node(intersection_node, n1, n2)
-                # node_new = make_intersection_node(intersection_node, n1, n2)
-                # sidewalk_nodes.add(node_new.id, node_new)
-                # new_intersection_sidewalk_nodes.append(node_new)
-                # source_table[node_new.id] = [intersection_node, n1, n2]
-
         else:
             for i in range(len(adj_nodes)):
                 n1 = adj_nodes[i - 1]
