@@ -175,39 +175,37 @@ def parse(filename):
 
         nodes_tree = tree.findall(".//node")
         ways_tree = tree.findall(".//way")
-        nodes = Nodes()
 
-        for node in nodes_tree:
-            mynode = Node(node.get("id"), LatLng(node.get("lat"), node.get("lon")))
-            nodes.add(node.get("id"), mynode)
+    street_nodes = Nodes()
+    for node in nodes_tree:
+        mynode = Node(node.get("id"), LatLng(node.get("lat"), node.get("lon")))
+        street_nodes.add(node.get("id"), mynode)
 
-        # Parse ways and find streets that has the following tags
-        ways = Ways()
-        valid_highways = set(['primary', 'secondary', 'tertiary', 'residential'])
-        for way in ways_tree:
-            highway_tag = way.find(".//tag[@k='highway']")
-            # print type(highway_tag)
-            if highway_tag is not None and highway_tag.get("v") in valid_highways:
-                # print highway_tag.get("v"), way
-                node_elements = filter(lambda elem: elem.tag == "nd", list(way))
-                nids = [node.get("ref") for node in node_elements]
+    # Parse ways and find streets that has the following tags
+    streets = Streets()
+    valid_highways = set(['primary', 'secondary', 'tertiary', 'residential'])
+    for way in ways_tree:
+        highway_tag = way.find(".//tag[@k='highway']")
+        # print type(highway_tag)
+        if highway_tag is not None and highway_tag.get("v") in valid_highways:
+            # print highway_tag.get("v"), way
+            node_elements = filter(lambda elem: elem.tag == "nd", list(way))
+            nids = [node.get("ref") for node in node_elements]
 
-                # Todo: Nodes that are too close to each other should be filtered out.
-
-                myway = Way(way.get("id"), nids)
-                ways.add(way.get("id"), myway)
+            street = Street(way.get("id"), nids)
+            streets.add(way.get("id"), street)
 
     # Find intersections and store adjacency information
-    for way in ways.get_list():
+    for street in streets.get_list():
         # prev_nid = None
-        for prev_nid, nid, next_nid in window(way.nids, 3, padding=1):
+        for prev_nid, nid, next_nid in window(street.nids, 3, padding=1):
             # print prev_nid, nid, next_nid
-            nodes.get(nid).append_way(way.id)
+            street_nodes.get(nid).append_way(street.id)
 
-            if nodes.get(nid).is_intersection() and nid not in ways.intersection_node_ids:
-                ways.intersection_node_ids.append(nid)
+            if street_nodes.get(nid).is_intersection() and nid not in streets.intersection_node_ids:
+                streets.intersection_node_ids.append(nid)
 
-    return nodes, ways
+    return street_nodes, streets
 
 
 def parse_intersections(nodes, ways):

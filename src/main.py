@@ -161,8 +161,7 @@ def make_intersection_nodes(street_nodes, sidewalk_nodes, streets, sidewalks):
         source_table = {}
         new_intersection_sidewalk_node_ids = []
         if len(adj_street_nodes) == 3:
-            # Todo. Take care of the case where len(adj_nodes) == 3
-
+            # Take care of the case where len(adj_nodes) == 3.
             # Identify the largest angle that are formed by three segments
             # Make a dummy node between two vectors that form the largest angle
             # Using the four nodes (original 3 and a dummy node), create intersection nodes
@@ -245,38 +244,7 @@ def make_intersection_nodes(street_nodes, sidewalk_nodes, streets, sidewalks):
 
                     if len(set(ni_s.get_way_ids())) == 1:
                         break
-                # # Connect sidewalk nodes created from each street node n1 and n2
-                # for n_adj in [n1, n2]:
-                #     # Get sidewalk nodes that are created from the street node, and
-                #     # identify which one should be connected to ni_s (intersection sidewalk node of current focus)
-                #     v_n_adj = ni.vector_to(n_adj)  # A vector from an intersection node to an adjacent street node
-                #     shared_street_ids = set(intersection_node.way_ids) & set(n_adj.way_ids)
-                #     shared_street_id = list(shared_street_ids)[0]
-                #
-                #     # Get a pair of vectors to two sidewalk nodes created from n1
-                #     n_adj_s1, n_adj_s2 = n_adj.sidewalk_nodes[shared_street_id]
-                #     v_n_adj_s1 = intersection_node.vector_to(n_adj_s1)
-                #
-                #     # Check which one of n1_s1 and n1_s2 are on the same side of the road with ni_s
-                #     # If the rotation (cross product) from v_n1 to v_ni_s is same as v_n1 to v_n1_s1, then
-                #     # n1_s1 should be on the same side. Otherwise, n1_s1 should be on the same side with ni_s.
-                #     if np.cross(v_n_adj, v_ni_s) * np.cross(v_n_adj, v_n_adj_s1) > 0:
-                #         n_adj_sidewalk_temp = n_adj_s1
-                #     else:
-                #         n_adj_sidewalk_temp = n_adj_s2
-                #
-                #     # Identify on which sidewalk n_adj_sidewalk_temp belongs too.
-                #     sidewalk_id = n_adj_sidewalk_temp.get_way_ids()[0]
-                #     sidewalk = sidewalks.get(sidewalk_id)
-                # #
-                #     # Swap the sidewalk intersection_sidewalk_node with ni_s
-                #     intersection_sidewalk_node_ids = set(sidewalk.nids) & set([n.id for n in ni.get_sidewalk_nodes(shared_street_id)])
-                #     intersection_sidewalk_node_id = list(intersection_sidewalk_node_ids)[0]
-                #     intersection_sidewalk_node_id_index = sidewalk.nids.index(intersection_sidewalk_node_id)
-                #     sidewalk.nids[intersection_sidewalk_node_id_index] = ni_s.id
-                #     sidewalk_nodes.remove(intersection_sidewalk_node_id)
 
-            continue
         else:
             # There are more than 3 nodes connected to the intersection node
             for i in range(len(adj_street_nodes)):
@@ -343,8 +311,9 @@ def main(street_nodes, streets):
 
 
 if __name__ == "__main__":
-    # filename = "../resources/Simple4WayIntersection_01.osm"
-    filename = "../resources/TShapeIntersection_01.osm"
+    filename = "../resources/Simple4WayIntersection_01.osm"
+    # filename = "../resources/TShapeIntersection_01.osm"
+    #filename = "../resources/ComplexIntersection_01.osm"
     nodes, ways = parse(filename)
     osm_obj = OSM(nodes, ways)
     osm_obj.parse_intersections()
