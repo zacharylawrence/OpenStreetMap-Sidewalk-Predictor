@@ -29,6 +29,13 @@ class OSM(object):
             elif lng > self.bounds[3]:
                 self.bounds[3] = lng
 
+        for way in self.ways.get_list():
+            if len(way.nids) < 2:
+                for nid in way.get_node_ids():
+                    n = self.nodes.get(nid)
+                    n.remove_way_id(way.id)
+                self.ways.remove(way.id)
+
     def clean_up_nodes(self):
         """
         Remove unnecessary nodess
@@ -156,6 +163,7 @@ class OSM(object):
                 self.nodes.get(nid).append_way(street.id)
         return
 
+
 def parse(filename):
     """
     Parse a OSM file
@@ -200,6 +208,7 @@ def parse(filename):
                 ways.intersection_node_ids.append(nid)
 
     return nodes, ways
+
 
 def parse_intersections(nodes, ways):
     node_list = nodes.get_list()

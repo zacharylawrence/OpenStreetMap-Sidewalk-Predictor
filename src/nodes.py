@@ -46,6 +46,10 @@ class Node(object):
     def get_sidewalk_nodes(self, wid):
         return self.sidewalk_nodes[wid]
 
+    def remove_way_id(self, wid):
+        self.way_ids.remove(wid)
+        return
+
     def vector(self):
         return np.array(self.latlng.location())
 

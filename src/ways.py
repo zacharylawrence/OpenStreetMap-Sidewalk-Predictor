@@ -25,6 +25,11 @@ class Ways(object):
     def get_list(self):
         return self.ways.values()
 
+    def remove(self, wid):
+        # http://stackoverflow.com/questions/5844672/delete-an-element-from-a-dictionary
+        del self.ways[wid]
+        return
+
     def set_intersection_node_ids(self, nids):
         self.intersection_node_ids = nids
 
