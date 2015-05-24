@@ -311,8 +311,11 @@ def main(street_nodes, streets):
 
 
 if __name__ == "__main__":
-    filename = "../resources/Simple4WayIntersection_01.osm"
+    #filename = "../resources/Simple4WayIntersection_01.osm"
+    #filename = "../resources/Simple4WayIntersection_02.osm"
     # filename = "../resources/TShapeIntersection_01.osm"
+    # filename = "../resources/TShapeIntersection_02.osm"
+    filename = "../resources/SegmentedStreet_01.osm"
     #filename = "../resources/ComplexIntersection_01.osm"
     nodes, ways = parse(filename)
     osm_obj = OSM(nodes, ways)

@@ -1,0 +1,1740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.4.0 (31151 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="38.8943200" minlon="-76.9796000" maxlat="38.8962900" maxlon="-76.9785200"/>
+ <node id="49729701" visible="true" version="2" changeset="3273100" timestamp="2009-12-02T15:45:42Z" user="woodpeck_fixbot" uid="147510" lat="38.8960950" lon="-76.9717910"/>
+ <node id="49739585" visible="true" version="3" changeset="3273100" timestamp="2009-12-02T15:48:02Z" user="woodpeck_fixbot" uid="147510" lat="38.8947810" lon="-76.9855040"/>
+ <node id="49763155" visible="true" version="4" changeset="4516968" timestamp="2010-04-24T23:40:11Z" user="westendguy" uid="230350" lat="38.8947780" lon="-76.9762180"/>
+ <node id="49763130" visible="true" version="3" changeset="3046923" timestamp="2009-11-06T10:31:13Z" user="woodpeck_fixbot" uid="147510" lat="38.8947820" lon="-76.9860970"/>
+ <node id="49763149" visible="true" version="3" changeset="3046923" timestamp="2009-11-06T10:31:13Z" user="woodpeck_fixbot" uid="147510" lat="38.8947780" lon="-76.9789950"/>
+ <node id="49763151" visible="true" version="3" changeset="3046923" timestamp="2009-11-06T10:31:13Z" user="woodpeck_fixbot" uid="147510" lat="38.8947750" lon="-76.9776800"/>
+ <node id="49763158" visible="true" version="3" changeset="3046923" timestamp="2009-11-06T10:31:13Z" user="woodpeck_fixbot" uid="147510" lat="38.8947800" lon="-76.9749580"/>
+ <node id="49763165" visible="true" version="3" changeset="3046923" timestamp="2009-11-06T10:31:13Z" user="woodpeck_fixbot" uid="147510" lat="38.8947480" lon="-76.9744490"/>
+ <node id="49763126" visible="true" version="3" changeset="3273100" timestamp="2009-12-02T15:51:25Z" user="woodpeck_fixbot" uid="147510" lat="38.8947830" lon="-76.9875270"/>
+ <node id="49763163" visible="true" version="3" changeset="3273100" timestamp="2009-12-02T15:51:26Z" user="woodpeck_fixbot" uid="147510" lat="38.8947700" lon="-76.9745380"/>
+ <node id="49777993" visible="true" version="3" changeset="4516968" timestamp="2010-04-24T23:40:11Z" user="westendguy" uid="230350" lat="38.8961130" lon="-76.9762200"/>
+ <node id="49777983" visible="true" version="2" changeset="3046923" timestamp="2009-11-06T10:34:50Z" user="woodpeck_fixbot" uid="147510" lat="38.8961110" lon="-76.9783750"/>
+ <node id="49777988" visible="true" version="2" changeset="3046923" timestamp="2009-11-06T10:34:50Z" user="woodpeck_fixbot" uid="147510" lat="38.8961110" lon="-76.9775670"/>
+ <node id="49777997" visible="true" version="2" changeset="3046923" timestamp="2009-11-06T10:34:50Z" user="woodpeck_fixbot" uid="147510" lat="38.8961110" lon="-76.9751130"/>
+ <node id="49778012" visible="true" version="2" changeset="3046923" timestamp="2009-11-06T10:34:50Z" user="woodpeck_fixbot" uid="147510" lat="38.8961100" lon="-76.9727520"/>
+ <node id="49778022" visible="true" version="2" changeset="3046923" timestamp="2009-11-06T10:34:50Z" user="woodpeck_fixbot" uid="147510" lat="38.8961070" lon="-76.9718570"/>
+ <node id="49778002" visible="true" version="2" changeset="3273100" timestamp="2009-12-02T15:54:51Z" user="woodpeck_fixbot" uid="147510" lat="38.8961140" lon="-76.9746010"/>
+ <node id="49886149" visible="true" version="2" changeset="3046923" timestamp="2009-11-06T10:51:15Z" user="woodpeck_fixbot" uid="147510" lat="38.8946030" lon="-76.9789970"/>
+ <node id="49886145" visible="true" version="2" changeset="3273100" timestamp="2009-12-02T16:06:52Z" user="woodpeck_fixbot" uid="147510" lat="38.8939810" lon="-76.9789940"/>
+ <node id="2274103839" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8963117" lon="-76.9786109"/>
+ <node id="2274103840" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8963105" lon="-76.9785491"/>
+ <node id="2274103841" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8962239" lon="-76.9786100"/>
+ <node id="2274103842" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8963111" lon="-76.9786656"/>
+ <node id="2274103843" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8962226" lon="-76.9786656"/>
+ <node id="2274103844" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8963124" lon="-76.9787245"/>
+ <node id="2274103845" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8962226" lon="-76.9787237"/>
+ <node id="2274103846" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8963131" lon="-76.9787801"/>
+ <node id="2274103847" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8962226" lon="-76.9787784"/>
+ <node id="2274103848" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8963137" lon="-76.9788391"/>
+ <node id="2274103849" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8962233" lon="-76.9788373"/>
+ <node id="2274103850" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8963310" lon="-76.9788938"/>
+ <node id="2274103851" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:21Z" user="teddyumd" uid="1211619" lat="38.8963304" lon="-76.9788408"/>
+ <node id="2274103854" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963310" lon="-76.9789485"/>
+ <node id="2274103856" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962073" lon="-76.9788929"/>
+ <node id="2274103858" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962073" lon="-76.9789502"/>
+ <node id="2274103859" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963310" lon="-76.9790066"/>
+ <node id="2274103860" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962086" lon="-76.9790049"/>
+ <node id="2274103861" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963324" lon="-76.9790630"/>
+ <node id="2274103862" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962086" lon="-76.9790630"/>
+ <node id="2274103863" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963337" lon="-76.9791185"/>
+ <node id="2274103864" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962086" lon="-76.9791168"/>
+ <node id="2274103865" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963330" lon="-76.9791741"/>
+ <node id="2274103866" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962412" lon="-76.9791173"/>
+ <node id="2274103867" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962412" lon="-76.9791724"/>
+ <node id="2274103868" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963317" lon="-76.9792279"/>
+ <node id="2274103869" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962399" lon="-76.9792305"/>
+ <node id="2274103870" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963330" lon="-76.9792878"/>
+ <node id="2274103871" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962399" lon="-76.9792869"/>
+ <node id="2274103872" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962100" lon="-76.9792852"/>
+ <node id="2274103873" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962099" lon="-76.9793363"/>
+ <node id="2274103874" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963346" lon="-76.9793387"/>
+ <node id="2274103875" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963339" lon="-76.9794004"/>
+ <node id="2274103876" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962091" lon="-76.9793980"/>
+ <node id="2274103877" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963324" lon="-76.9794570"/>
+ <node id="2274103878" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962100" lon="-76.9794518"/>
+ <node id="2274103879" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963437" lon="-76.9794561"/>
+ <node id="2274103880" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962221" lon="-76.9794524"/>
+ <node id="2274103881" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962213" lon="-76.9795185"/>
+ <node id="2274103882" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963443" lon="-76.9795202"/>
+ <node id="2274103883" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963211" lon="-76.9795199"/>
+ <node id="2274103884" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963211" lon="-76.9795740"/>
+ <node id="2274103885" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962218" lon="-76.9795748"/>
+ <node id="2274103886" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8963213" lon="-76.9796301"/>
+ <node id="2274103887" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:22Z" user="teddyumd" uid="1211619" lat="38.8962221" lon="-76.9796309"/>
+ <node id="800997091" visible="true" version="2" changeset="15801832" timestamp="2013-04-20T19:05:32Z" user="teddyumd" uid="1211619" lat="38.8962243" lon="-76.9785486"/>
+ <node id="800995985" visible="true" version="2" changeset="15801832" timestamp="2013-04-20T19:05:32Z" user="teddyumd" uid="1211619" lat="38.8963409" lon="-76.9785491"/>
+ <node id="801012796" visible="true" version="2" changeset="15801832" timestamp="2013-04-20T19:05:32Z" user="teddyumd" uid="1211619" lat="38.8963409" lon="-76.9784965"/>
+ <node id="800993996" visible="true" version="2" changeset="15801832" timestamp="2013-04-20T19:05:33Z" user="teddyumd" uid="1211619" lat="38.8962244" lon="-76.9784963"/>
+ <node id="801011711" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:04Z" user="teddyumd" uid="1211619" lat="38.8958790" lon="-76.9794028"/>
+ <node id="801009647" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:04Z" user="teddyumd" uid="1211619" lat="38.8958657" lon="-76.9793775"/>
+ <node id="800997535" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8958648" lon="-76.9795090"/>
+ <node id="800999276" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8960349" lon="-76.9792823"/>
+ <node id="801012608" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8954265" lon="-76.9793036"/>
+ <node id="800989361" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8956100" lon="-76.9792704"/>
+ <node id="801000658" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8955727" lon="-76.9791160"/>
+ <node id="800995534" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8952356" lon="-76.9793036"/>
+ <node id="800995461" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8956190" lon="-76.9792704"/>
+ <node id="801002855" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8956190" lon="-76.9791160"/>
+ <node id="800995546" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8955218" lon="-76.9793036"/>
+ <node id="801004014" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8954275" lon="-76.9791312"/>
+ <node id="801001792" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951184" lon="-76.9795245"/>
+ <node id="801012589" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951744" lon="-76.9794139"/>
+ <node id="801000797" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951749" lon="-76.9792626"/>
+ <node id="800993054" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951204" lon="-76.9792618"/>
+ <node id="49758147" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T22:28:32Z" user="woodpeck_fixbot" uid="147510" lat="38.8961080" lon="-76.9736960"/>
+ <node id="49758306" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:28:35Z" user="woodpeck_fixbot" uid="147510" lat="38.8947830" lon="-76.9836480"/>
+ <node id="49763125" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:07Z" user="woodpeck_fixbot" uid="147510" lat="38.8947850" lon="-76.9883110"/>
+ <node id="49763128" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947830" lon="-76.9866810"/>
+ <node id="49763132" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947820" lon="-76.9845700"/>
+ <node id="49763138" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947790" lon="-76.9822120"/>
+ <node id="49763143" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947800" lon="-76.9807620"/>
+ <node id="49763147" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947790" lon="-76.9798710"/>
+ <node id="49763150" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947780" lon="-76.9781230"/>
+ <node id="49763152" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947760" lon="-76.9773530"/>
+ <node id="49763154" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947770" lon="-76.9772590"/>
+ <node id="49763157" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947790" lon="-76.9749820"/>
+ <node id="49763160" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:09Z" user="woodpeck_fixbot" uid="147510" lat="38.8947750" lon="-76.9745970"/>
+ <node id="49763162" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:10Z" user="woodpeck_fixbot" uid="147510" lat="38.8947740" lon="-76.9745670"/>
+ <node id="49763164" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:10Z" user="woodpeck_fixbot" uid="147510" lat="38.8947610" lon="-76.9744930"/>
+ <node id="49763167" visible="true" version="3" changeset="2788109" timestamp="2009-10-08T22:30:10Z" user="woodpeck_fixbot" uid="147510" lat="38.8947300" lon="-76.9744080"/>
+ <node id="49765949" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T22:31:13Z" user="woodpeck_fixbot" uid="147510" lat="38.8961110" lon="-76.9807120"/>
+ <node id="49777969" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T22:34:00Z" user="woodpeck_fixbot" uid="147510" lat="38.8961170" lon="-76.9822140"/>
+ <node id="49777981" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T22:34:00Z" user="woodpeck_fixbot" uid="147510" lat="38.8961130" lon="-76.9789890"/>
+ <node id="49777990" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T22:34:00Z" user="woodpeck_fixbot" uid="147510" lat="38.8961160" lon="-76.9772570"/>
+ <node id="49777991" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T22:34:00Z" user="woodpeck_fixbot" uid="147510" lat="38.8961140" lon="-76.9763160"/>
+ <node id="49778020" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T22:34:00Z" user="woodpeck_fixbot" uid="147510" lat="38.8961100" lon="-76.9719140"/>
+ <node id="49778024" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T22:34:00Z" user="woodpeck_fixbot" uid="147510" lat="38.8961020" lon="-76.9718240"/>
+ <node id="49886143" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T23:03:15Z" user="woodpeck_fixbot" uid="147510" lat="38.8936630" lon="-76.9789920"/>
+ <node id="49886147" visible="true" version="2" changeset="2788109" timestamp="2009-10-08T23:03:16Z" user="woodpeck_fixbot" uid="147510" lat="38.8942950" lon="-76.9789940"/>
+ <node id="611127954" visible="true" version="1" changeset="3590399" timestamp="2010-01-10T18:59:57Z" user="emacsen" uid="74937" lat="38.8946137" lon="-76.9788998"/>
+ <node id="611127956" visible="true" version="1" changeset="3590399" timestamp="2010-01-10T18:59:57Z" user="emacsen" uid="74937" lat="38.8945027" lon="-76.9786689"/>
+ <node id="611127958" visible="true" version="1" changeset="3590399" timestamp="2010-01-10T18:59:57Z" user="emacsen" uid="74937" lat="38.8947061" lon="-76.9788997"/>
+ <node id="611127960" visible="true" version="1" changeset="3590399" timestamp="2010-01-10T18:59:57Z" user="emacsen" uid="74937" lat="38.8947063" lon="-76.9786730"/>
+ <node id="611127952" visible="true" version="2" changeset="24836558" timestamp="2014-08-18T15:49:32Z" user="DavidYJackson_import" uid="2132512" lat="38.8945022" lon="-76.9788985"/>
+ <node id="705647738" visible="true" version="1" changeset="4516968" timestamp="2010-04-24T23:40:19Z" user="westendguy" uid="230350" lat="38.8932331" lon="-76.9789990"/>
+ <node id="705647749" visible="true" version="1" changeset="4516968" timestamp="2010-04-24T23:40:20Z" user="westendguy" uid="230350" lat="38.8933751" lon="-76.9789936"/>
+ <node id="750406532" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:37:27Z" user="RoadGeek_MD99" uid="475877" lat="38.8949945" lon="-76.9787060">
+  <tag k="addr:housenumber" v="1804"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="dataset" v="ABRA locations"/>
+  <tag k="name" v="Economy Market"/>
+  <tag k="shop" v="convenience"/>
+  <tag k="source" v="dcgis"/>
+ </node>
+ <node id="750406565" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:37:35Z" user="RoadGeek_MD99" uid="475877" lat="38.8949699" lon="-76.9786353">
+  <tag k="addr:housenumber" v="1806"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="dataset" v="ABRA locations"/>
+  <tag k="name" v="Master Liquors"/>
+  <tag k="shop" v="alcohol"/>
+  <tag k="source" v="dcgis"/>
+ </node>
+ <node id="800987560" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:27Z" user="aude" uid="12055" lat="38.8960124" lon="-76.9785110"/>
+ <node id="800987578" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:28Z" user="aude" uid="12055" lat="38.8943995" lon="-76.9791487"/>
+ <node id="800987584" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:28Z" user="aude" uid="12055" lat="38.8948756" lon="-76.9786603"/>
+ <node id="800987610" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:29Z" user="aude" uid="12055" lat="38.8944464" lon="-76.9786937"/>
+ <node id="800987702" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:33Z" user="aude" uid="12055" lat="38.8949312" lon="-76.9792871"/>
+ <node id="800987801" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:38Z" user="aude" uid="12055" lat="38.8955032" lon="-76.9787458"/>
+ <node id="800987810" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:39Z" user="aude" uid="12055" lat="38.8952316" lon="-76.9787552"/>
+ <node id="800987813" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:39Z" user="aude" uid="12055" lat="38.8949435" lon="-76.9791588"/>
+ <node id="800987902" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:44Z" user="aude" uid="12055" lat="38.8950336" lon="-76.9795090"/>
+ <node id="800987953" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:47Z" user="aude" uid="12055" lat="38.8946471" lon="-76.9792118"/>
+ <node id="800988138" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:54:55Z" user="aude" uid="12055" lat="38.8946697" lon="-76.9795115"/>
+ <node id="800988682" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8958775" lon="-76.9795233"/>
+ <node id="800988825" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:55:24Z" user="aude" uid="12055" lat="38.8951210" lon="-76.9789036"/>
+ <node id="800989032" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:55:31Z" user="aude" uid="12055" lat="38.8946680" lon="-76.9794026"/>
+ <node id="800989280" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:55:41Z" user="aude" uid="12055" lat="38.8944437" lon="-76.9788231"/>
+ <node id="800989700" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:55:56Z" user="aude" uid="12055" lat="38.8958832" lon="-76.9788813"/>
+ <node id="800990856" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8959337" lon="-76.9791398"/>
+ <node id="800990753" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:56:29Z" user="aude" uid="12055" lat="38.8960147" lon="-76.9789032"/>
+ <node id="800990816" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:56:32Z" user="aude" uid="12055" lat="38.8944667" lon="-76.9788680"/>
+ <node id="800990843" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:56:32Z" user="aude" uid="12055" lat="38.8958819" lon="-76.9787823"/>
+ <node id="800991270" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:56:46Z" user="aude" uid="12055" lat="38.8944481" lon="-76.9791767"/>
+ <node id="800991545" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:57:00Z" user="aude" uid="12055" lat="38.8959017" lon="-76.9785088"/>
+ <node id="800992510" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:57:37Z" user="aude" uid="12055" lat="38.8943046" lon="-76.9795503"/>
+ <node id="800992577" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:57:40Z" user="aude" uid="12055" lat="38.8950250" lon="-76.9792826"/>
+ <node id="800992585" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:57:40Z" user="aude" uid="12055" lat="38.8950234" lon="-76.9796570"/>
+ <node id="800992796" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:57:50Z" user="aude" uid="12055" lat="38.8960236" lon="-76.9788527"/>
+ <node id="800992743" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951747" lon="-76.9794924"/>
+ <node id="800993320" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:58:14Z" user="aude" uid="12055" lat="38.8955613" lon="-76.9787457"/>
+ <node id="800993606" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:58:27Z" user="aude" uid="12055" lat="38.8959008" lon="-76.9786796"/>
+ <node id="800993664" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:58:29Z" user="aude" uid="12055" lat="38.8949099" lon="-76.9794070"/>
+ <node id="800993724" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:58:32Z" user="aude" uid="12055" lat="38.8959015" lon="-76.9787934"/>
+ <node id="800993730" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:58:33Z" user="aude" uid="12055" lat="38.8949532" lon="-76.9792337"/>
+ <node id="800993752" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:58:34Z" user="aude" uid="12055" lat="38.8950237" lon="-76.9795966"/>
+ <node id="800993773" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:58:36Z" user="aude" uid="12055" lat="38.8945613" lon="-76.9793422"/>
+ <node id="800993285" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8960486" lon="-76.9792666"/>
+ <node id="800994186" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:59:03Z" user="aude" uid="12055" lat="38.8950258" lon="-76.9795089"/>
+ <node id="800993883" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8958608" lon="-76.9794072"/>
+ <node id="800994605" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:59:29Z" user="aude" uid="12055" lat="38.8944026" lon="-76.9788607"/>
+ <node id="800994690" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:59:33Z" user="aude" uid="12055" lat="38.8943480" lon="-76.9792983"/>
+ <node id="800994718" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8959047" lon="-76.9792200"/>
+ <node id="800994778" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8955727" lon="-76.9791312"/>
+ <node id="800994815" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:59:42Z" user="aude" uid="12055" lat="38.8956722" lon="-76.9787566"/>
+ <node id="800994840" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:59:44Z" user="aude" uid="12055" lat="38.8956625" lon="-76.9785726"/>
+ <node id="800994928" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T18:59:49Z" user="aude" uid="12055" lat="38.8946699" lon="-76.9794676"/>
+ <node id="800995667" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:20Z" user="aude" uid="12055" lat="38.8948711" lon="-76.9784250"/>
+ <node id="800995778" visible="true" version="2" changeset="15801832" timestamp="2013-04-20T19:05:32Z" user="teddyumd" uid="1211619" lat="38.8963257" lon="-76.9785491"/>
+ <node id="800995969" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:31Z" user="aude" uid="12055" lat="38.8958891" lon="-76.9788458"/>
+ <node id="800996053" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:34Z" user="aude" uid="12055" lat="38.8943032" lon="-76.9792972"/>
+ <node id="800996128" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:36Z" user="aude" uid="12055" lat="38.8960121" lon="-76.9788527"/>
+ <node id="800996146" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:37Z" user="aude" uid="12055" lat="38.8945023" lon="-76.9788681"/>
+ <node id="800996305" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:42Z" user="aude" uid="12055" lat="38.8945299" lon="-76.9792125"/>
+ <node id="800996312" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:42Z" user="aude" uid="12055" lat="38.8943039" lon="-76.9787007"/>
+ <node id="800996371" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:44Z" user="aude" uid="12055" lat="38.8943489" lon="-76.9797264"/>
+ <node id="800996471" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:47Z" user="aude" uid="12055" lat="38.8946474" lon="-76.9791499"/>
+ <node id="800996538" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951732" lon="-76.9796366"/>
+ <node id="800996654" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:51Z" user="aude" uid="12055" lat="38.8946659" lon="-76.9796517"/>
+ <node id="800996735" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:54Z" user="aude" uid="12055" lat="38.8950618" lon="-76.9794145"/>
+ <node id="800996796" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8958815" lon="-76.9795090"/>
+ <node id="800996669" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8959903" lon="-76.9792823"/>
+ <node id="800996876" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:58Z" user="aude" uid="12055" lat="38.8951742" lon="-76.9789037"/>
+ <node id="800996889" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:59Z" user="aude" uid="12055" lat="38.8945625" lon="-76.9795244"/>
+ <node id="800996906" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:00:59Z" user="aude" uid="12055" lat="38.8945627" lon="-76.9796469"/>
+ <node id="800996826" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8958649" lon="-76.9796182"/>
+ <node id="800997164" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951189" lon="-76.9796355"/>
+ <node id="800997238" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:07Z" user="aude" uid="12055" lat="38.8950240" lon="-76.9795315"/>
+ <node id="800997360" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:10Z" user="aude" uid="12055" lat="38.8943943" lon="-76.9792974"/>
+ <node id="800997402" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:11Z" user="aude" uid="12055" lat="38.8943514" lon="-76.9787008"/>
+ <node id="800997417" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:11Z" user="aude" uid="12055" lat="38.8943520" lon="-76.9795504"/>
+ <node id="800997427" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:11Z" user="aude" uid="12055" lat="38.8944495" lon="-76.9788231"/>
+ <node id="800997430" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:11Z" user="aude" uid="12055" lat="38.8946671" lon="-76.9792121"/>
+ <node id="800997623" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:16Z" user="aude" uid="12055" lat="38.8952317" lon="-76.9785716"/>
+ <node id="800997656" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:16Z" user="aude" uid="12055" lat="38.8946451" lon="-76.9791498"/>
+ <node id="800997714" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:18Z" user="aude" uid="12055" lat="38.8945620" lon="-76.9791776"/>
+ <node id="800997785" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:19Z" user="aude" uid="12055" lat="38.8951137" lon="-76.9786956"/>
+ <node id="800998073" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:25Z" user="aude" uid="12055" lat="38.8946473" lon="-76.9796516"/>
+ <node id="800998133" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:27Z" user="aude" uid="12055" lat="38.8960072" lon="-76.9789145"/>
+ <node id="800998166" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:27Z" user="aude" uid="12055" lat="38.8946683" lon="-76.9793571"/>
+ <node id="800998131" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8959937" lon="-76.9795221"/>
+ <node id="800998121" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8952801" lon="-76.9791313"/>
+ <node id="800998316" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:31Z" user="aude" uid="12055" lat="38.8946664" lon="-76.9793360"/>
+ <node id="800998372" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:32Z" user="aude" uid="12055" lat="38.8950249" lon="-76.9792901"/>
+ <node id="800998456" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:34Z" user="aude" uid="12055" lat="38.8951216" lon="-76.9787523"/>
+ <node id="800998552" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:36Z" user="aude" uid="12055" lat="38.8944495" lon="-76.9788384"/>
+ <node id="800998663" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:38Z" user="aude" uid="12055" lat="38.8944437" lon="-76.9788363"/>
+ <node id="800998691" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:39Z" user="aude" uid="12055" lat="38.8943548" lon="-76.9787008"/>
+ <node id="800998751" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:41Z" user="aude" uid="12055" lat="38.8948755" lon="-76.9787503"/>
+ <node id="800998985" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:46Z" user="aude" uid="12055" lat="38.8950365" lon="-76.9792901"/>
+ <node id="800999056" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:47Z" user="aude" uid="12055" lat="38.8945622" lon="-76.9791333"/>
+ <node id="800999086" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:48Z" user="aude" uid="12055" lat="38.8946478" lon="-76.9793423"/>
+ <node id="800999101" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:48Z" user="aude" uid="12055" lat="38.8943273" lon="-76.9793038"/>
+ <node id="800999240" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8959504" lon="-76.9792216"/>
+ <node id="800999127" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8952801" lon="-76.9791186"/>
+ <node id="800999364" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:54Z" user="aude" uid="12055" lat="38.8944466" lon="-76.9797266"/>
+ <node id="800999419" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:56Z" user="aude" uid="12055" lat="38.8943564" lon="-76.9793047"/>
+ <node id="800999489" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:59Z" user="aude" uid="12055" lat="38.8944481" lon="-76.9791781"/>
+ <node id="800999428" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8959935" lon="-76.9794003"/>
+ <node id="800999495" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:59Z" user="aude" uid="12055" lat="38.8944012" lon="-76.9787009"/>
+ <node id="800999497" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:59Z" user="aude" uid="12055" lat="38.8943482" lon="-76.9793954"/>
+ <node id="800999503" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:01:59Z" user="aude" uid="12055" lat="38.8943489" lon="-76.9797325"/>
+ <node id="800999595" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:02Z" user="aude" uid="12055" lat="38.8946468" lon="-76.9795264"/>
+ <node id="800999696" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:05Z" user="aude" uid="12055" lat="38.8951217" lon="-76.9787666"/>
+ <node id="800999695" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8958790" lon="-76.9794072"/>
+ <node id="800999712" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:06Z" user="aude" uid="12055" lat="38.8953658" lon="-76.9787465"/>
+ <node id="800999763" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:07Z" user="aude" uid="12055" lat="38.8945636" lon="-76.9791333"/>
+ <node id="800999810" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:08Z" user="aude" uid="12055" lat="38.8943513" lon="-76.9791488"/>
+ <node id="800999847" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:09Z" user="aude" uid="12055" lat="38.8950262" lon="-76.9794143"/>
+ <node id="800999976" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:13Z" user="aude" uid="12055" lat="38.8943062" lon="-76.9793039"/>
+ <node id="800999979" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951186" lon="-76.9794786"/>
+ <node id="801000032" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:15Z" user="aude" uid="12055" lat="38.8945027" lon="-76.9786938"/>
+ <node id="801000074" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:16Z" user="aude" uid="12055" lat="38.8959014" lon="-76.9789044"/>
+ <node id="801000144" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:18Z" user="aude" uid="12055" lat="38.8953936" lon="-76.9787465"/>
+ <node id="801000185" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:19Z" user="aude" uid="12055" lat="38.8943792" lon="-76.9793047"/>
+ <node id="801000264" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:21Z" user="aude" uid="12055" lat="38.8943487" lon="-76.9793240"/>
+ <node id="801000301" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:22Z" user="aude" uid="12055" lat="38.8944025" lon="-76.9788472"/>
+ <node id="801000287" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951743" lon="-76.9793307"/>
+ <node id="801000408" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:25Z" user="aude" uid="12055" lat="38.8950672" lon="-76.9787518"/>
+ <node id="801000429" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8958800" lon="-76.9796182"/>
+ <node id="801000474" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:26Z" user="aude" uid="12055" lat="38.8949089" lon="-76.9796574"/>
+ <node id="801000496" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:27Z" user="aude" uid="12055" lat="38.8945523" lon="-76.9795239"/>
+ <node id="801000598" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:30Z" user="aude" uid="12055" lat="38.8943672" lon="-76.9787009"/>
+ <node id="801000650" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:31Z" user="aude" uid="12055" lat="38.8943062" lon="-76.9792972"/>
+ <node id="801000687" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:33Z" user="aude" uid="12055" lat="38.8946131" lon="-76.9791231"/>
+ <node id="801000688" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8959979" lon="-76.9796244"/>
+ <node id="801000735" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:35Z" user="aude" uid="12055" lat="38.8951356" lon="-76.9785571"/>
+ <node id="801000790" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:36Z" user="aude" uid="12055" lat="38.8958681" lon="-76.9785662"/>
+ <node id="801000800" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:37Z" user="aude" uid="12055" lat="38.8944020" lon="-76.9788472"/>
+ <node id="801000848" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:38Z" user="aude" uid="12055" lat="38.8944438" lon="-76.9786743"/>
+ <node id="801000748" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8960247" lon="-76.9792225"/>
+ <node id="801000853" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8959050" lon="-76.9792375"/>
+ <node id="801000949" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:41Z" user="aude" uid="12055" lat="38.8943356" lon="-76.9793139"/>
+ <node id="801001010" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8958620" lon="-76.9792787"/>
+ <node id="801001092" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:44Z" user="aude" uid="12055" lat="38.8960121" lon="-76.9787910"/>
+ <node id="801001093" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:44Z" user="aude" uid="12055" lat="38.8949534" lon="-76.9791925"/>
+ <node id="801001170" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:46Z" user="aude" uid="12055" lat="38.8945526" lon="-76.9794634"/>
+ <node id="801001212" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:48Z" user="aude" uid="12055" lat="38.8946664" lon="-76.9795533"/>
+ <node id="801001340" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:51Z" user="aude" uid="12055" lat="38.8960072" lon="-76.9789032"/>
+ <node id="801001472" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8958800" lon="-76.9796231"/>
+ <node id="801001621" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:59Z" user="aude" uid="12055" lat="38.8944668" lon="-76.9788385"/>
+ <node id="801001624" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:02:59Z" user="aude" uid="12055" lat="38.8943049" lon="-76.9797324"/>
+ <node id="801001626" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8959050" lon="-76.9792406"/>
+ <node id="801001670" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:00Z" user="aude" uid="12055" lat="38.8953339" lon="-76.9787464"/>
+ <node id="801001744" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:02Z" user="aude" uid="12055" lat="38.8950167" lon="-76.9784240"/>
+ <node id="801001767" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:02Z" user="aude" uid="12055" lat="38.8943520" lon="-76.9792983"/>
+ <node id="801001795" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:03Z" user="aude" uid="12055" lat="38.8946467" lon="-76.9795531"/>
+ <node id="801001833" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:04Z" user="aude" uid="12055" lat="38.8949092" lon="-76.9795968"/>
+ <node id="801001862" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:05Z" user="aude" uid="12055" lat="38.8946486" lon="-76.9794674"/>
+ <node id="801001802" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8959504" lon="-76.9792374"/>
+ <node id="801001874" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:05Z" user="aude" uid="12055" lat="38.8944446" lon="-76.9795506"/>
+ <node id="801001967" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:08Z" user="aude" uid="12055" lat="38.8958931" lon="-76.9788964"/>
+ <node id="801001971" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:08Z" user="aude" uid="12055" lat="38.8943308" lon="-76.9793038"/>
+ <node id="801002016" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:09Z" user="aude" uid="12055" lat="38.8960121" lon="-76.9788474"/>
+ <node id="801002006" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8953331" lon="-76.9793036"/>
+ <node id="801002120" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:12Z" user="aude" uid="12055" lat="38.8943049" lon="-76.9797253"/>
+ <node id="801002187" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:14Z" user="aude" uid="12055" lat="38.8950766" lon="-76.9787523"/>
+ <node id="801002238" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:15Z" user="aude" uid="12055" lat="38.8953339" lon="-76.9785716"/>
+ <node id="801002310" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:17Z" user="aude" uid="12055" lat="38.8944443" lon="-76.9791767"/>
+ <node id="801002361" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:19Z" user="aude" uid="12055" lat="38.8958832" lon="-76.9788458"/>
+ <node id="801002381" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:19Z" user="aude" uid="12055" lat="38.8960122" lon="-76.9786775"/>
+ <node id="801002401" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:20Z" user="aude" uid="12055" lat="38.8960123" lon="-76.9785664"/>
+ <node id="801002404" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:20Z" user="aude" uid="12055" lat="38.8950608" lon="-76.9787658"/>
+ <node id="801002458" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:21Z" user="aude" uid="12055" lat="38.8945501" lon="-76.9796468"/>
+ <node id="801002471" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:22Z" user="aude" uid="12055" lat="38.8950262" lon="-76.9794076"/>
+ <node id="801002538" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:24Z" user="aude" uid="12055" lat="38.8950608" lon="-76.9787518"/>
+ <node id="801002581" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:25Z" user="aude" uid="12055" lat="38.8955293" lon="-76.9787458"/>
+ <node id="801002721" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:30Z" user="aude" uid="12055" lat="38.8949988" lon="-76.9792368"/>
+ <node id="801002761" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:31Z" user="aude" uid="12055" lat="38.8952225" lon="-76.9788789"/>
+ <node id="801002764" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:31Z" user="aude" uid="12055" lat="38.8949072" lon="-76.9792875"/>
+ <node id="801002792" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:32Z" user="aude" uid="12055" lat="38.8946479" lon="-76.9793359"/>
+ <node id="801002806" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:33Z" user="aude" uid="12055" lat="38.8943308" lon="-76.9793083"/>
+ <node id="801002949" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:37Z" user="aude" uid="12055" lat="38.8943322" lon="-76.9793139"/>
+ <node id="801002968" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:37Z" user="aude" uid="12055" lat="38.8959940" lon="-76.9789045"/>
+ <node id="801003028" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:39Z" user="aude" uid="12055" lat="38.8950766" lon="-76.9787658"/>
+ <node id="801003050" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:39Z" user="aude" uid="12055" lat="38.8960123" lon="-76.9786207"/>
+ <node id="801003055" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:39Z" user="aude" uid="12055" lat="38.8944473" lon="-76.9791767"/>
+ <node id="801003009" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8959067" lon="-76.9791458"/>
+ <node id="801003117" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:42Z" user="aude" uid="12055" lat="38.8944013" lon="-76.9786740"/>
+ <node id="801003161" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:43Z" user="aude" uid="12055" lat="38.8959016" lon="-76.9785662"/>
+ <node id="801003209" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:44Z" user="aude" uid="12055" lat="38.8951137" lon="-76.9786610"/>
+ <node id="801003218" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:44Z" user="aude" uid="12055" lat="38.8944027" lon="-76.9788472"/>
+ <node id="801003254" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:46Z" user="aude" uid="12055" lat="38.8945537" lon="-76.9794017"/>
+ <node id="801003295" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:47Z" user="aude" uid="12055" lat="38.8943033" lon="-76.9788469"/>
+ <node id="801003334" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:48Z" user="aude" uid="12055" lat="38.8960122" lon="-76.9787335"/>
+ <node id="801003444" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:03:52Z" user="aude" uid="12055" lat="38.8946678" lon="-76.9794483"/>
+ <node id="801003627" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:01Z" user="aude" uid="12055" lat="38.8949989" lon="-76.9792340"/>
+ <node id="801003504" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8955224" lon="-76.9791312"/>
+ <node id="801004151" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:09Z" user="aude" uid="12055" lat="38.8959940" lon="-76.9789145"/>
+ <node id="801004288" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:11Z" user="aude" uid="12055" lat="38.8950364" lon="-76.9793139"/>
+ <node id="801004344" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:12Z" user="aude" uid="12055" lat="38.8950670" lon="-76.9787658"/>
+ <node id="801004597" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:17Z" user="aude" uid="12055" lat="38.8950335" lon="-76.9795315"/>
+ <node id="801004659" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:18Z" user="aude" uid="12055" lat="38.8948709" lon="-76.9785451"/>
+ <node id="801004696" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:19Z" user="aude" uid="12055" lat="38.8953654" lon="-76.9788788"/>
+ <node id="801005113" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:26Z" user="aude" uid="12055" lat="38.8943943" lon="-76.9793098"/>
+ <node id="801005367" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:32Z" user="aude" uid="12055" lat="38.8946453" lon="-76.9791233"/>
+ <node id="801005379" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:32Z" user="aude" uid="12055" lat="38.8943671" lon="-76.9787009"/>
+ <node id="801006037" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:47Z" user="aude" uid="12055" lat="38.8945507" lon="-76.9795368"/>
+ <node id="801006258" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:51Z" user="aude" uid="12055" lat="38.8958931" lon="-76.9788813"/>
+ <node id="801006507" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:04:56Z" user="aude" uid="12055" lat="38.8943981" lon="-76.9792974"/>
+ <node id="801006558" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:04Z" user="teddyumd" uid="1211619" lat="38.8960349" lon="-76.9792667"/>
+ <node id="801006276" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8956100" lon="-76.9793036"/>
+ <node id="801006760" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:05Z" user="teddyumd" uid="1211619" lat="38.8960316" lon="-76.9791396"/>
+ <node id="801006873" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:04Z" user="aude" uid="12055" lat="38.8959008" lon="-76.9786191"/>
+ <node id="801006931" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:05Z" user="aude" uid="12055" lat="38.8943564" lon="-76.9792983"/>
+ <node id="801007014" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:06Z" user="aude" uid="12055" lat="38.8945497" lon="-76.9792123"/>
+ <node id="801007047" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:07Z" user="aude" uid="12055" lat="38.8956626" lon="-76.9787566"/>
+ <node id="801007111" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:08Z" user="aude" uid="12055" lat="38.8945614" lon="-76.9794018"/>
+ <node id="801007376" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:14Z" user="aude" uid="12055" lat="38.8945499" lon="-76.9791775"/>
+ <node id="801007434" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:15Z" user="aude" uid="12055" lat="38.8946477" lon="-76.9793569"/>
+ <node id="801007349" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951734" lon="-76.9794800"/>
+ <node id="801007542" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:17Z" user="aude" uid="12055" lat="38.8944438" lon="-76.9786937"/>
+ <node id="801007544" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:17Z" user="aude" uid="12055" lat="38.8943516" lon="-76.9788470"/>
+ <node id="801007780" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:22Z" user="aude" uid="12055" lat="38.8960147" lon="-76.9788959"/>
+ <node id="801008073" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:27Z" user="aude" uid="12055" lat="38.8943671" lon="-76.9786882"/>
+ <node id="801008152" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:29Z" user="aude" uid="12055" lat="38.8950259" lon="-76.9794715"/>
+ <node id="801008460" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:37Z" user="aude" uid="12055" lat="38.8951743" lon="-76.9787666"/>
+ <node id="801008653" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:41Z" user="aude" uid="12055" lat="38.8945617" lon="-76.9792755"/>
+ <node id="801008671" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:41Z" user="aude" uid="12055" lat="38.8943030" lon="-76.9793950"/>
+ <node id="801008746" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:43Z" user="aude" uid="12055" lat="38.8958681" lon="-76.9786191"/>
+ <node id="801009443" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951197" lon="-76.9795649"/>
+ <node id="801009302" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:53Z" user="aude" uid="12055" lat="38.8950266" lon="-76.9793137"/>
+ <node id="801009385" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:54Z" user="aude" uid="12055" lat="38.8950240" lon="-76.9795361"/>
+ <node id="801009440" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:05:55Z" user="aude" uid="12055" lat="38.8943035" lon="-76.9793136"/>
+ <node id="801009678" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:02Z" user="aude" uid="12055" lat="38.8943994" lon="-76.9797265"/>
+ <node id="801009738" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:03Z" user="aude" uid="12055" lat="38.8960236" lon="-76.9788959"/>
+ <node id="801009689" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951740" lon="-76.9795659"/>
+ <node id="801009816" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951198" lon="-76.9793299"/>
+ <node id="801009957" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:09Z" user="aude" uid="12055" lat="38.8944436" lon="-76.9788609"/>
+ <node id="801009999" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:10Z" user="aude" uid="12055" lat="38.8943549" lon="-76.9786882"/>
+ <node id="801010078" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:12Z" user="aude" uid="12055" lat="38.8950616" lon="-76.9794716"/>
+ <node id="801010289" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:18Z" user="aude" uid="12055" lat="38.8946469" lon="-76.9795113"/>
+ <node id="801010074" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:04Z" user="teddyumd" uid="1211619" lat="38.8959050" lon="-76.9792845"/>
+ <node id="801010331" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:19Z" user="aude" uid="12055" lat="38.8955292" lon="-76.9788789"/>
+ <node id="801010358" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:19Z" user="aude" uid="12055" lat="38.8946667" lon="-76.9792760"/>
+ <node id="801010481" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:23Z" user="aude" uid="12055" lat="38.8943997" lon="-76.9788472"/>
+ <node id="801010722" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:29Z" user="aude" uid="12055" lat="38.8950656" lon="-76.9788193"/>
+ <node id="801010784" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:30Z" user="aude" uid="12055" lat="38.8943996" lon="-76.9795505"/>
+ <node id="801010795" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:30Z" user="aude" uid="12055" lat="38.8943506" lon="-76.9795504"/>
+ <node id="801010860" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:32Z" user="aude" uid="12055" lat="38.8960236" lon="-76.9788584"/>
+ <node id="801010871" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:32Z" user="aude" uid="12055" lat="38.8943489" lon="-76.9797310"/>
+ <node id="801010968" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:35Z" user="aude" uid="12055" lat="38.8948757" lon="-76.9785569"/>
+ <node id="801010999" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:35Z" user="aude" uid="12055" lat="38.8950166" lon="-76.9785435"/>
+ <node id="801011015" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:04Z" user="teddyumd" uid="1211619" lat="38.8958610" lon="-76.9795194"/>
+ <node id="801011028" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951455" lon="-76.9794919"/>
+ <node id="801011094" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:38Z" user="aude" uid="12055" lat="38.8959013" lon="-76.9788964"/>
+ <node id="801011160" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:39Z" user="aude" uid="12055" lat="38.8945622" lon="-76.9791344"/>
+ <node id="801011170" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:39Z" user="aude" uid="12055" lat="38.8949095" lon="-76.9795359"/>
+ <node id="801011188" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:40Z" user="aude" uid="12055" lat="38.8950264" lon="-76.9793459"/>
+ <node id="801011251" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:42Z" user="aude" uid="12055" lat="38.8944468" lon="-76.9795506"/>
+ <node id="801011255" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:42Z" user="aude" uid="12055" lat="38.8959008" lon="-76.9787349"/>
+ <node id="801011303" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:43Z" user="aude" uid="12055" lat="38.8949077" lon="-76.9791586"/>
+ <node id="801011396" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:45Z" user="aude" uid="12055" lat="38.8958820" lon="-76.9787349"/>
+ <node id="801011460" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:47Z" user="aude" uid="12055" lat="38.8955018" lon="-76.9782736"/>
+ <node id="801011515" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:48Z" user="aude" uid="12055" lat="38.8945636" lon="-76.9794470"/>
+ <node id="801011428" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8953329" lon="-76.9791313"/>
+ <node id="801011525" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:48Z" user="aude" uid="12055" lat="38.8949105" lon="-76.9792875"/>
+ <node id="801011590" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:50Z" user="aude" uid="12055" lat="38.8959015" lon="-76.9788148"/>
+ <node id="801011629" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:51Z" user="aude" uid="12055" lat="38.8956723" lon="-76.9788790"/>
+ <node id="801011996" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:06:59Z" user="aude" uid="12055" lat="38.8950656" lon="-76.9789036"/>
+ <node id="801012009" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:00Z" user="aude" uid="12055" lat="38.8949098" lon="-76.9794709"/>
+ <node id="801012019" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:00Z" user="aude" uid="12055" lat="38.8949987" lon="-76.9792825"/>
+ <node id="801012027" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:00Z" user="aude" uid="12055" lat="38.8944481" lon="-76.9792974"/>
+ <node id="801012049" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:01Z" user="aude" uid="12055" lat="38.8943355" lon="-76.9793239"/>
+ <node id="801012099" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:02Z" user="aude" uid="12055" lat="38.8948756" lon="-76.9788193"/>
+ <node id="801012112" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:02Z" user="aude" uid="12055" lat="38.8944437" lon="-76.9797266"/>
+ <node id="801012203" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:04Z" user="aude" uid="12055" lat="38.8951356" lon="-76.9786610"/>
+ <node id="801012257" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:05Z" user="aude" uid="12055" lat="38.8943792" lon="-76.9793098"/>
+ <node id="801012278" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:06Z" user="aude" uid="12055" lat="38.8949434" lon="-76.9791924"/>
+ <node id="801012340" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:07Z" user="aude" uid="12055" lat="38.8950672" lon="-76.9786955"/>
+ <node id="801012529" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:11Z" user="aude" uid="12055" lat="38.8952225" lon="-76.9787551"/>
+ <node id="801012759" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:16Z" user="aude" uid="12055" lat="38.8958891" lon="-76.9788148"/>
+ <node id="801012786" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:17Z" user="aude" uid="12055" lat="38.8945504" lon="-76.9795925"/>
+ <node id="801013051" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:22Z" user="aude" uid="12055" lat="38.8943029" lon="-76.9791488"/>
+ <node id="801013217" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:26Z" user="aude" uid="12055" lat="38.8949102" lon="-76.9793470"/>
+ <node id="801013363" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:04Z" user="teddyumd" uid="1211619" lat="38.8959067" lon="-76.9791956"/>
+ <node id="801013448" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:30Z" user="aude" uid="12055" lat="38.8943995" lon="-76.9791490"/>
+ <node id="801013551" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:04Z" user="teddyumd" uid="1211619" lat="38.8960486" lon="-76.9792223"/>
+ <node id="801013506" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:32Z" user="aude" uid="12055" lat="38.8946487" lon="-76.9794480"/>
+ <node id="801013517" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:32Z" user="aude" uid="12055" lat="38.8944443" lon="-76.9791487"/>
+ <node id="801013577" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:33Z" user="aude" uid="12055" lat="38.8955613" lon="-76.9785725"/>
+ <node id="801013527" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951287" lon="-76.9795247"/>
+ <node id="801013372" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951186" lon="-76.9794916"/>
+ <node id="801013647" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:35Z" user="aude" uid="12055" lat="38.8946130" lon="-76.9791337"/>
+ <node id="801013691" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:36Z" user="aude" uid="12055" lat="38.8945624" lon="-76.9795369"/>
+ <node id="801013796" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:38Z" user="aude" uid="12055" lat="38.8949311" lon="-76.9792835"/>
+ <node id="801013844" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:39Z" user="aude" uid="12055" lat="38.8945301" lon="-76.9792769"/>
+ <node id="801013875" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:40Z" user="aude" uid="12055" lat="38.8945534" lon="-76.9794470"/>
+ <node id="801013986" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:42Z" user="aude" uid="12055" lat="38.8945635" lon="-76.9794635"/>
+ <node id="801013956" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:06Z" user="teddyumd" uid="1211619" lat="38.8952355" lon="-76.9791186"/>
+ <node id="801013839" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951196" lon="-76.9794126"/>
+ <node id="801014040" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:44Z" user="aude" uid="12055" lat="38.8946662" lon="-76.9795920"/>
+ <node id="801014050" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:44Z" user="aude" uid="12055" lat="38.8959015" lon="-76.9787823"/>
+ <node id="801014165" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:46Z" user="aude" uid="12055" lat="38.8943481" lon="-76.9793083"/>
+ <node id="801014199" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:07:47Z" user="aude" uid="12055" lat="38.8953922" lon="-76.9782742"/>
+ <node id="801014305" visible="true" version="2" changeset="15802102" timestamp="2013-04-20T19:25:07Z" user="teddyumd" uid="1211619" lat="38.8951744" lon="-76.9795253"/>
+ <node id="2324467075" visible="true" version="1" changeset="16339664" timestamp="2013-05-29T15:47:27Z" user="jfire" uid="67236" lat="38.8961100" lon="-76.9722546"/>
+ <node id="2828264170" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:37:30Z" user="RoadGeek_MD99" uid="475877" lat="38.8948905" lon="-76.9785916">
+  <tag k="addr:housenumber" v="1808"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+ </node>
+ <node id="2828264169" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:37:30Z" user="RoadGeek_MD99" uid="475877" lat="38.8948905" lon="-76.9786352">
+  <tag k="addr:housenumber" v="1806"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+ </node>
+ <node id="2828546735" visible="true" version="1" changeset="22060478" timestamp="2014-05-01T09:38:21Z" user="botdidier2020" uid="870861" lat="38.8958648" lon="-76.9795194"/>
+ <node id="2274103853" visible="true" version="2" changeset="22060478" timestamp="2014-05-01T09:44:23Z" user="botdidier2020" uid="870861" lat="38.8962226" lon="-76.9788930"/>
+ <way id="218127544" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:27Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103839"/>
+  <nd ref="2274103840"/>
+  <nd ref="800997091"/>
+  <nd ref="2274103841"/>
+  <nd ref="2274103839"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127545" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:27Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103842"/>
+  <nd ref="2274103839"/>
+  <nd ref="2274103841"/>
+  <nd ref="2274103843"/>
+  <nd ref="2274103842"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127546" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:27Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103844"/>
+  <nd ref="2274103842"/>
+  <nd ref="2274103843"/>
+  <nd ref="2274103845"/>
+  <nd ref="2274103844"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127547" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103844"/>
+  <nd ref="2274103846"/>
+  <nd ref="2274103847"/>
+  <nd ref="2274103845"/>
+  <nd ref="2274103844"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127548" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103848"/>
+  <nd ref="2274103846"/>
+  <nd ref="2274103847"/>
+  <nd ref="2274103849"/>
+  <nd ref="2274103848"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127549" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103850"/>
+  <nd ref="2274103851"/>
+  <nd ref="2274103848"/>
+  <nd ref="2274103849"/>
+  <nd ref="2274103853"/>
+  <nd ref="2274103850"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127551" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103859"/>
+  <nd ref="2274103854"/>
+  <nd ref="2274103858"/>
+  <nd ref="2274103860"/>
+  <nd ref="2274103859"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127552" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103861"/>
+  <nd ref="2274103859"/>
+  <nd ref="2274103860"/>
+  <nd ref="2274103862"/>
+  <nd ref="2274103861"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127553" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103863"/>
+  <nd ref="2274103861"/>
+  <nd ref="2274103862"/>
+  <nd ref="2274103864"/>
+  <nd ref="2274103866"/>
+  <nd ref="2274103863"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127554" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103865"/>
+  <nd ref="2274103863"/>
+  <nd ref="2274103866"/>
+  <nd ref="2274103867"/>
+  <nd ref="2274103865"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127550" visible="true" version="2" changeset="22060478" timestamp="2014-05-01T09:43:41Z" user="botdidier2020" uid="870861">
+  <nd ref="2274103854"/>
+  <nd ref="2274103850"/>
+  <nd ref="2274103853"/>
+  <nd ref="2274103856"/>
+  <nd ref="2274103858"/>
+  <nd ref="2274103854"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127555" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103868"/>
+  <nd ref="2274103865"/>
+  <nd ref="2274103867"/>
+  <nd ref="2274103869"/>
+  <nd ref="2274103868"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127556" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103870"/>
+  <nd ref="2274103868"/>
+  <nd ref="2274103869"/>
+  <nd ref="2274103871"/>
+  <nd ref="2274103870"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127557" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103870"/>
+  <nd ref="2274103871"/>
+  <nd ref="2274103872"/>
+  <nd ref="2274103873"/>
+  <nd ref="2274103874"/>
+  <nd ref="2274103870"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127558" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103875"/>
+  <nd ref="2274103874"/>
+  <nd ref="2274103873"/>
+  <nd ref="2274103876"/>
+  <nd ref="2274103875"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127559" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103877"/>
+  <nd ref="2274103875"/>
+  <nd ref="2274103876"/>
+  <nd ref="2274103878"/>
+  <nd ref="2274103880"/>
+  <nd ref="2274103877"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127560" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103879"/>
+  <nd ref="2274103877"/>
+  <nd ref="2274103880"/>
+  <nd ref="2274103881"/>
+  <nd ref="2274103883"/>
+  <nd ref="2274103882"/>
+  <nd ref="2274103879"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127561" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103883"/>
+  <nd ref="2274103884"/>
+  <nd ref="2274103885"/>
+  <nd ref="2274103881"/>
+  <nd ref="2274103883"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="218127562" visible="true" version="1" changeset="15801832" timestamp="2013-04-20T19:05:28Z" user="teddyumd" uid="1211619">
+  <nd ref="2274103886"/>
+  <nd ref="2274103884"/>
+  <nd ref="2274103885"/>
+  <nd ref="2274103887"/>
+  <nd ref="2274103886"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="59245183" visible="true" version="2" changeset="24836558" timestamp="2014-08-18T15:49:30Z" user="DavidYJackson_import" uid="2132512">
+  <nd ref="611127956"/>
+  <nd ref="801000032"/>
+  <nd ref="800996146"/>
+  <nd ref="611127952"/>
+  <nd ref="611127954"/>
+  <nd ref="611127958"/>
+  <nd ref="611127960"/>
+  <nd ref="611127956"/>
+  <tag k="access" v="unknown"/>
+  <tag k="amenity" v="parking"/>
+  <tag k="dcgis:capturedate" v="1999/03/31"/>
+  <tag k="dcgis:featurecode" v="1070"/>
+  <tag k="dcgis:gis_id" v="344448"/>
+  <tag k="dcgis:pubdate" v="2009-06-12"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731200" visible="true" version="2" changeset="22057516" timestamp="2014-05-01T05:48:18Z" user="botdidier2020" uid="870861">
+  <nd ref="800987584"/>
+  <nd ref="801003209"/>
+  <nd ref="801012203"/>
+  <nd ref="801000735"/>
+  <nd ref="801010968"/>
+  <nd ref="800987584"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="72834"/>
+  <tag k="dcgis:lot" v="0807"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731156" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:25Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801012786"/>
+  <nd ref="801002458"/>
+  <nd ref="800996906"/>
+  <nd ref="800998073"/>
+  <nd ref="800996654"/>
+  <nd ref="801014040"/>
+  <nd ref="801012786"/>
+  <tag k="addr:housenumber" v="1727"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="74002"/>
+  <tag k="dcgis:lot" v="0163"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731042" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:28Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801002471"/>
+  <nd ref="800993664"/>
+  <nd ref="801012009"/>
+  <nd ref="801008152"/>
+  <nd ref="801010078"/>
+  <nd ref="800996735"/>
+  <nd ref="800999847"/>
+  <nd ref="801002471"/>
+  <tag k="addr:housenumber" v="1736"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Mon Apr 04 00:00:00 EDT 2005"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="75365"/>
+  <tag k="dcgis:lot" v="0153"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731113" visible="true" version="2" changeset="29582960" timestamp="2015-03-19T01:16:53Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801010784"/>
+  <nd ref="801009678"/>
+  <nd ref="801012112"/>
+  <nd ref="800999364"/>
+  <nd ref="801011251"/>
+  <nd ref="801001874"/>
+  <nd ref="801010784"/>
+  <tag k="addr:housenumber" v="341"/>
+  <tag k="addr:street" v="17th Place Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="10995"/>
+  <tag k="dcgis:lot" v="0160"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731291" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:29Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801011525"/>
+  <nd ref="800987702"/>
+  <nd ref="801013796"/>
+  <nd ref="801012019"/>
+  <nd ref="801002721"/>
+  <nd ref="801003627"/>
+  <nd ref="800993730"/>
+  <nd ref="801001093"/>
+  <nd ref="801012278"/>
+  <nd ref="800987813"/>
+  <nd ref="801011303"/>
+  <nd ref="801002764"/>
+  <nd ref="801011525"/>
+  <tag k="addr:housenumber" v="1742"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="11572"/>
+  <tag k="dcgis:lot" v="0150"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731404" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:31Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800995667"/>
+  <nd ref="801004659"/>
+  <nd ref="801010999"/>
+  <nd ref="801001744"/>
+  <nd ref="800995667"/>
+  <tag k="addr:housenumber" v="1812"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="73267"/>
+  <tag k="dcgis:lot" v="0065"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731761" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:09:27Z" user="aude" uid="12055">
+  <nd ref="801001792"/>
+  <nd ref="801013527"/>
+  <nd ref="801014305"/>
+  <nd ref="800992743"/>
+  <nd ref="801011028"/>
+  <nd ref="801013372"/>
+  <nd ref="801001792"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dcgis:gis_id" v="11834"/>
+ </way>
+ <way id="65731833" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:29Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801007014"/>
+  <nd ref="800987953"/>
+  <nd ref="800996471"/>
+  <nd ref="800997656"/>
+  <nd ref="801005367"/>
+  <nd ref="801000687"/>
+  <nd ref="801013647"/>
+  <nd ref="800999763"/>
+  <nd ref="800999056"/>
+  <nd ref="801011160"/>
+  <nd ref="800997714"/>
+  <nd ref="801007376"/>
+  <nd ref="801007014"/>
+  <tag k="addr:housenumber" v="1741"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="73742"/>
+  <tag k="dcgis:lot" v="0170"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731949" visible="true" version="2" changeset="29582960" timestamp="2015-03-19T01:16:53Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801010795"/>
+  <nd ref="800996371"/>
+  <nd ref="801009678"/>
+  <nd ref="801010784"/>
+  <nd ref="800997417"/>
+  <nd ref="801010795"/>
+  <tag k="addr:housenumber" v="339"/>
+  <tag k="addr:street" v="17th Place Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="10852"/>
+  <tag k="dcgis:lot" v="0159"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65732798" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:12:16Z" user="aude" uid="12055">
+  <nd ref="801009443"/>
+  <nd ref="800997164"/>
+  <nd ref="800996538"/>
+  <nd ref="801009689"/>
+  <nd ref="801009443"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dcgis:gis_id" v="72876"/>
+ </way>
+ <way id="65733200" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:13:43Z" user="aude" uid="12055">
+  <nd ref="801012049"/>
+  <nd ref="801000949"/>
+  <nd ref="801002949"/>
+  <nd ref="801009440"/>
+  <nd ref="801008671"/>
+  <nd ref="800999497"/>
+  <nd ref="801000264"/>
+  <nd ref="801012049"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dcgis:gis_id" v="157701"/>
+ </way>
+ <way id="65733410" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:26Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800999595"/>
+  <nd ref="800996889"/>
+  <nd ref="801013691"/>
+  <nd ref="801006037"/>
+  <nd ref="801012786"/>
+  <nd ref="801014040"/>
+  <nd ref="801001212"/>
+  <nd ref="801001795"/>
+  <nd ref="800999595"/>
+  <tag k="addr:housenumber" v="1729"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="74003"/>
+  <tag k="dcgis:lot" v="0164"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65733844" visible="true" version="2" changeset="29582960" timestamp="2015-03-19T01:16:53Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800992510"/>
+  <nd ref="801002120"/>
+  <nd ref="801001624"/>
+  <nd ref="800999503"/>
+  <nd ref="801010871"/>
+  <nd ref="800996371"/>
+  <nd ref="801010795"/>
+  <nd ref="800992510"/>
+  <tag k="addr:housenumber" v="337"/>
+  <tag k="addr:street" v="17th Place Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="10818"/>
+  <tag k="dcgis:lot" v="0158"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65734005" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:15:19Z" user="aude" uid="12055">
+  <nd ref="801009816"/>
+  <nd ref="801000287"/>
+  <nd ref="801000797"/>
+  <nd ref="800993054"/>
+  <nd ref="801009816"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dcgis:gis_id" v="11832"/>
+ </way>
+ <way id="65734056" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:27Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801003254"/>
+  <nd ref="801013875"/>
+  <nd ref="801011515"/>
+  <nd ref="801013986"/>
+  <nd ref="801001862"/>
+  <nd ref="801013506"/>
+  <nd ref="801003444"/>
+  <nd ref="800989032"/>
+  <nd ref="801007111"/>
+  <nd ref="801003254"/>
+  <tag k="addr:housenumber" v="1733"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="74013"/>
+  <tag k="dcgis:lot" v="0166"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65734107" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:27Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801011170"/>
+  <nd ref="801001833"/>
+  <nd ref="800993752"/>
+  <nd ref="801009385"/>
+  <nd ref="801011170"/>
+  <tag k="addr:housenumber" v="1732"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="75082"/>
+  <tag k="dcgis:lot" v="0155"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65735151" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:05Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801004696"/>
+  <nd ref="800999712"/>
+  <nd ref="801001670"/>
+  <nd ref="801002238"/>
+  <nd ref="800997623"/>
+  <nd ref="800987810"/>
+  <nd ref="801012529"/>
+  <nd ref="801002761"/>
+  <nd ref="801004696"/>
+  <tag k="addr:housenumber" v="417"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="156785"/>
+  <tag k="dcgis:lot" v="0104"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65735724" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:28Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801008653"/>
+  <nd ref="800993773"/>
+  <nd ref="800999086"/>
+  <nd ref="801002792"/>
+  <nd ref="800998316"/>
+  <nd ref="801010358"/>
+  <nd ref="801008653"/>
+  <tag k="addr:housenumber" v="1737"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="11219"/>
+  <tag k="dcgis:lot" v="0168"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65735174" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:29Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801012019"/>
+  <nd ref="801013796"/>
+  <nd ref="800987702"/>
+  <nd ref="801011525"/>
+  <nd ref="801013217"/>
+  <nd ref="801011188"/>
+  <nd ref="801009302"/>
+  <nd ref="801004288"/>
+  <nd ref="800998985"/>
+  <nd ref="800998372"/>
+  <nd ref="800992577"/>
+  <nd ref="801012019"/>
+  <tag k="addr:housenumber" v="1740"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="75132"/>
+  <tag k="dcgis:lot" v="0151"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65737067" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:27Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801001862"/>
+  <nd ref="801013986"/>
+  <nd ref="801001170"/>
+  <nd ref="801000496"/>
+  <nd ref="800999595"/>
+  <nd ref="801010289"/>
+  <nd ref="800988138"/>
+  <nd ref="800994928"/>
+  <nd ref="801001862"/>
+  <tag k="addr:housenumber" v="1731"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="74032"/>
+  <tag k="dcgis:lot" v="0165"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65736597" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:30Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800987584"/>
+  <nd ref="800998751"/>
+  <nd ref="801002538"/>
+  <nd ref="801000408"/>
+  <nd ref="801012340"/>
+  <nd ref="800997785"/>
+  <nd ref="801003209"/>
+  <nd ref="800987584"/>
+  <tag k="addr:housenumber" v="1804"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="72695"/>
+  <tag k="dcgis:lot" v="0804"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65737676" visible="true" version="1" changeset="5135933" timestamp="2010-07-04T19:22:25Z" user="aude" uid="12055">
+  <nd ref="800999979"/>
+  <nd ref="801007349"/>
+  <nd ref="801012589"/>
+  <nd ref="801013839"/>
+  <nd ref="800999979"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dcgis:gis_id" v="72867"/>
+ </way>
+ <way id="65737499" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:27Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801001833"/>
+  <nd ref="801000474"/>
+  <nd ref="800992585"/>
+  <nd ref="800993752"/>
+  <nd ref="801001833"/>
+  <tag k="addr:housenumber" v="1730"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="69653"/>
+  <tag k="dcgis:lot" v="0156"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65737473" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:28Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801008152"/>
+  <nd ref="801012009"/>
+  <nd ref="801011170"/>
+  <nd ref="801009385"/>
+  <nd ref="800997238"/>
+  <nd ref="801004597"/>
+  <nd ref="800987902"/>
+  <nd ref="800994186"/>
+  <nd ref="801008152"/>
+  <tag k="addr:housenumber" v="1734"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="11614"/>
+  <tag k="dcgis:lot" v="0154"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65737538" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:29Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801013217"/>
+  <nd ref="800993664"/>
+  <nd ref="801002471"/>
+  <nd ref="801011188"/>
+  <nd ref="801013217"/>
+  <tag k="addr:housenumber" v="1738"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="11598"/>
+  <tag k="dcgis:lot" v="0152"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65737134" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:29Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800987953"/>
+  <nd ref="801007014"/>
+  <nd ref="800996305"/>
+  <nd ref="801013844"/>
+  <nd ref="801008653"/>
+  <nd ref="801010358"/>
+  <nd ref="800997430"/>
+  <nd ref="800987953"/>
+  <tag k="addr:housenumber" v="1739"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Mon Apr 04 00:00:00 EDT 2005"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="74005"/>
+  <tag k="dcgis:lot" v="0169"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="29961677" visible="true" version="3" changeset="15807107" timestamp="2013-04-21T07:48:37Z" user="bot-mode" uid="451693">
+  <nd ref="49763125"/>
+  <nd ref="49763126"/>
+  <nd ref="49763128"/>
+  <nd ref="49763130"/>
+  <nd ref="49739585"/>
+  <nd ref="49763132"/>
+  <nd ref="49758306"/>
+  <nd ref="49763138"/>
+  <nd ref="49763143"/>
+  <nd ref="49763147"/>
+  <nd ref="49763149"/>
+  <nd ref="49763150"/>
+  <nd ref="49763151"/>
+  <nd ref="49763152"/>
+  <nd ref="49763154"/>
+  <nd ref="49763155"/>
+  <nd ref="49763157"/>
+  <nd ref="49763158"/>
+  <nd ref="49763160"/>
+  <nd ref="49763162"/>
+  <nd ref="49763163"/>
+  <nd ref="49763164"/>
+  <nd ref="49763165"/>
+  <nd ref="49763167"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="D Street Northeast"/>
+  <tag k="tiger:cfcc" v="A41"/>
+  <tag k="tiger:county" v="District of Columbia, DC"/>
+  <tag k="tiger:name_base" v="D"/>
+  <tag k="tiger:name_direction_suffix" v="NE"/>
+  <tag k="tiger:name_type" v="St"/>
+  <tag k="tiger:reviewed" v="no"/>
+  <tag k="tiger:zip_left" v="20002"/>
+  <tag k="tiger:zip_right" v="20002"/>
+ </way>
+ <way id="65737773" visible="true" version="4" changeset="29321102" timestamp="2015-03-08T03:51:36Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800996826"/>
+  <nd ref="2828546735"/>
+  <nd ref="800997535"/>
+  <nd ref="800996796"/>
+  <nd ref="800988682"/>
+  <nd ref="800998131"/>
+  <nd ref="801000688"/>
+  <nd ref="801001472"/>
+  <nd ref="801000429"/>
+  <nd ref="800996826"/>
+  <tag k="addr:housenumber" v="1733"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="79931"/>
+  <tag k="dcgis:lot" v="0147"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65738033" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:28Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800999086"/>
+  <nd ref="800993773"/>
+  <nd ref="801007111"/>
+  <nd ref="800989032"/>
+  <nd ref="800998166"/>
+  <nd ref="801007434"/>
+  <nd ref="800999086"/>
+  <tag k="addr:housenumber" v="1735"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="11224"/>
+  <tag k="dcgis:lot" v="0167"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="6062844" visible="true" version="5" changeset="14830131" timestamp="2013-01-29T03:04:55Z" user="bot-mode" uid="451693">
+  <nd ref="705647738"/>
+  <nd ref="705647749"/>
+  <nd ref="49886143"/>
+  <nd ref="49886145"/>
+  <nd ref="49886147"/>
+  <nd ref="49886149"/>
+  <nd ref="49763149"/>
+  <nd ref="49777981"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="18th Street Northeast"/>
+  <tag k="sidewalk" v="both"/>
+  <tag k="tiger:cfcc" v="A41"/>
+  <tag k="tiger:county" v="District of Columbia, DC"/>
+  <tag k="tiger:name_base" v="18th"/>
+  <tag k="tiger:name_direction_suffix" v="NE"/>
+  <tag k="tiger:name_type" v="St"/>
+  <tag k="tiger:reviewed" v="no"/>
+  <tag k="tiger:zip_left" v="20002"/>
+  <tag k="tiger:zip_right" v="20002"/>
+ </way>
+ <way id="65733672" visible="true" version="3" changeset="29321102" timestamp="2015-03-08T03:51:37Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800996669"/>
+  <nd ref="801010074"/>
+  <nd ref="801001010"/>
+  <nd ref="801009647"/>
+  <nd ref="801011711"/>
+  <nd ref="800999428"/>
+  <nd ref="800996669"/>
+  <tag k="addr:housenumber" v="1741"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="13293"/>
+  <tag k="dcgis:lot" v="0149"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65732927" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:51:37Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801000748"/>
+  <nd ref="800999240"/>
+  <nd ref="801001802"/>
+  <nd ref="801000853"/>
+  <nd ref="801001626"/>
+  <nd ref="801010074"/>
+  <nd ref="800996669"/>
+  <nd ref="800999276"/>
+  <nd ref="801006558"/>
+  <nd ref="800993285"/>
+  <nd ref="801013551"/>
+  <nd ref="801000748"/>
+  <tag k="addr:housenumber" v="1767"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="77770"/>
+  <tag k="dcgis:lot" v="0117"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731331" visible="true" version="3" changeset="29321102" timestamp="2015-03-08T03:51:37Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800997091"/>
+  <nd ref="2274103840"/>
+  <nd ref="800995778"/>
+  <nd ref="800995985"/>
+  <nd ref="801012796"/>
+  <nd ref="800993996"/>
+  <nd ref="800997091"/>
+  <tag k="addr:housenumber" v="1772"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="70317"/>
+  <tag k="dcgis:lot" v="0054"/>
+  <tag k="dcgis:square" v="4537"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65732315" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:51:38Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801002016"/>
+  <nd ref="800995969"/>
+  <nd ref="801002361"/>
+  <nd ref="800989700"/>
+  <nd ref="801006258"/>
+  <nd ref="801001967"/>
+  <nd ref="801011094"/>
+  <nd ref="801000074"/>
+  <nd ref="801002968"/>
+  <nd ref="801004151"/>
+  <nd ref="800998133"/>
+  <nd ref="801001340"/>
+  <nd ref="800990753"/>
+  <nd ref="801007780"/>
+  <nd ref="801009738"/>
+  <nd ref="801010860"/>
+  <nd ref="800992796"/>
+  <nd ref="800996128"/>
+  <nd ref="801002016"/>
+  <tag k="addr:housenumber" v="1801"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="77758"/>
+  <tag k="dcgis:lot" v="0066"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65736630" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:51:38Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800993724"/>
+  <nd ref="801011590"/>
+  <nd ref="801012759"/>
+  <nd ref="800995969"/>
+  <nd ref="801002016"/>
+  <nd ref="801001092"/>
+  <nd ref="800993724"/>
+  <tag k="addr:housenumber" v="1803"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="77508"/>
+  <tag k="dcgis:lot" v="0067"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65733617" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:51:38Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801011255"/>
+  <nd ref="801011396"/>
+  <nd ref="800990843"/>
+  <nd ref="801014050"/>
+  <nd ref="800993724"/>
+  <nd ref="801001092"/>
+  <nd ref="801003334"/>
+  <nd ref="801011255"/>
+  <tag k="addr:housenumber" v="1805"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="77509"/>
+  <tag k="dcgis:lot" v="0068"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65736711" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:51:38Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800993606"/>
+  <nd ref="801011255"/>
+  <nd ref="801003334"/>
+  <nd ref="801002381"/>
+  <nd ref="800993606"/>
+  <tag k="addr:housenumber" v="1807"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="157565"/>
+  <tag k="dcgis:lot" v="0069"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65734172" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:51:38Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801006873"/>
+  <nd ref="800993606"/>
+  <nd ref="801002381"/>
+  <nd ref="801003050"/>
+  <nd ref="801006873"/>
+  <tag k="addr:housenumber" v="1809"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="77510"/>
+  <tag k="dcgis:lot" v="0070"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731891" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:51:39Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801003161"/>
+  <nd ref="801000790"/>
+  <nd ref="801008746"/>
+  <nd ref="801006873"/>
+  <nd ref="801003050"/>
+  <nd ref="801002401"/>
+  <nd ref="801003161"/>
+  <tag k="addr:housenumber" v="1811"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="77511"/>
+  <tag k="dcgis:lot" v="0071"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65734912" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:51:39Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800991545"/>
+  <nd ref="801003161"/>
+  <nd ref="801002401"/>
+  <nd ref="800987560"/>
+  <nd ref="800991545"/>
+  <tag k="addr:housenumber" v="1813"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="77512"/>
+  <tag k="dcgis:lot" v="0072"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65732463" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:00Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800997402"/>
+  <nd ref="800996312"/>
+  <nd ref="801003295"/>
+  <nd ref="801007544"/>
+  <nd ref="800997402"/>
+  <tag k="addr:housenumber" v="333"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="10819"/>
+  <tag k="dcgis:lot" v="0102"/>
+  <tag k="dcgis:square" v="4560"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731160" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:01Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800999810"/>
+  <nd ref="801013051"/>
+  <nd ref="800996053"/>
+  <nd ref="801000650"/>
+  <nd ref="800999976"/>
+  <nd ref="800999101"/>
+  <nd ref="801001971"/>
+  <nd ref="801002806"/>
+  <nd ref="801014165"/>
+  <nd ref="800994690"/>
+  <nd ref="801001767"/>
+  <nd ref="800999810"/>
+  <tag k="addr:housenumber" v="334"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="10820"/>
+  <tag k="dcgis:lot" v="0174"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65734392" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:02Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800997402"/>
+  <nd ref="801007544"/>
+  <nd ref="801010481"/>
+  <nd ref="800999495"/>
+  <nd ref="801000598"/>
+  <nd ref="801005379"/>
+  <nd ref="801008073"/>
+  <nd ref="801009999"/>
+  <nd ref="800998691"/>
+  <nd ref="800997402"/>
+  <tag k="addr:housenumber" v="335"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="66458"/>
+  <tag k="dcgis:lot" v="0103"/>
+  <tag k="dcgis:square" v="4560"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731848" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:02Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800987578"/>
+  <nd ref="800999810"/>
+  <nd ref="801001767"/>
+  <nd ref="801006931"/>
+  <nd ref="800999419"/>
+  <nd ref="801000185"/>
+  <nd ref="801012257"/>
+  <nd ref="801005113"/>
+  <nd ref="800997360"/>
+  <nd ref="801006507"/>
+  <nd ref="801013448"/>
+  <nd ref="800987578"/>
+  <tag k="addr:housenumber" v="336"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="66456"/>
+  <tag k="dcgis:lot" v="0173"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65732776" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:03Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800999495"/>
+  <nd ref="801010481"/>
+  <nd ref="801000800"/>
+  <nd ref="801000301"/>
+  <nd ref="801003218"/>
+  <nd ref="800994605"/>
+  <nd ref="801009957"/>
+  <nd ref="800998663"/>
+  <nd ref="800989280"/>
+  <nd ref="800987610"/>
+  <nd ref="801007542"/>
+  <nd ref="801000848"/>
+  <nd ref="801003117"/>
+  <nd ref="800999495"/>
+  <tag k="addr:housenumber" v="337"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="10994"/>
+  <tag k="dcgis:lot" v="0859"/>
+  <tag k="dcgis:square" v="4560"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65736833" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:03Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800987578"/>
+  <nd ref="801013448"/>
+  <nd ref="801006507"/>
+  <nd ref="801012027"/>
+  <nd ref="800999489"/>
+  <nd ref="800991270"/>
+  <nd ref="801003055"/>
+  <nd ref="801002310"/>
+  <nd ref="801013517"/>
+  <nd ref="800987578"/>
+  <tag k="addr:housenumber" v="338"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="76748"/>
+  <tag k="dcgis:lot" v="0172"/>
+  <tag k="dcgis:square" v="4561"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65734470" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:03Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800987610"/>
+  <nd ref="800989280"/>
+  <nd ref="800997427"/>
+  <nd ref="800998552"/>
+  <nd ref="801001621"/>
+  <nd ref="800990816"/>
+  <nd ref="800996146"/>
+  <nd ref="801000032"/>
+  <nd ref="800987610"/>
+  <tag k="addr:housenumber" v="339"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="77016"/>
+  <tag k="dcgis:lot" v="0151"/>
+  <tag k="dcgis:square" v="4560"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731458" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:04Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801004344"/>
+  <nd ref="801010722"/>
+  <nd ref="801011996"/>
+  <nd ref="800988825"/>
+  <nd ref="800999696"/>
+  <nd ref="800998456"/>
+  <nd ref="801002187"/>
+  <nd ref="801003028"/>
+  <nd ref="801004344"/>
+  <tag k="addr:housenumber" v="409"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="11813"/>
+  <tag k="dcgis:lot" v="0809"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65737871" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:04Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800999696"/>
+  <nd ref="800988825"/>
+  <nd ref="800996876"/>
+  <nd ref="801008460"/>
+  <nd ref="800999696"/>
+  <tag k="addr:housenumber" v="411"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="73320"/>
+  <tag k="dcgis:lot" v="0810"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731194" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:04Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801011428"/>
+  <nd ref="800998121"/>
+  <nd ref="800999127"/>
+  <nd ref="801013956"/>
+  <nd ref="800995534"/>
+  <nd ref="801002006"/>
+  <nd ref="801011428"/>
+  <tag k="addr:housenumber" v="414"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="75188"/>
+  <tag k="dcgis:lot" v="0163"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65734225" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:05Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801011428"/>
+  <nd ref="801002006"/>
+  <nd ref="801012608"/>
+  <nd ref="801004014"/>
+  <nd ref="801011428"/>
+  <tag k="addr:housenumber" v="418"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="12423"/>
+  <tag k="dcgis:lot" v="0162"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65736265" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:06Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801004014"/>
+  <nd ref="801012608"/>
+  <nd ref="800995546"/>
+  <nd ref="801003504"/>
+  <nd ref="801004014"/>
+  <tag k="addr:housenumber" v="422"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="75005"/>
+  <tag k="dcgis:lot" v="0161"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65735881" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:06Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800999712"/>
+  <nd ref="801004696"/>
+  <nd ref="801010331"/>
+  <nd ref="801002581"/>
+  <nd ref="800987801"/>
+  <nd ref="801011460"/>
+  <nd ref="801014199"/>
+  <nd ref="801000144"/>
+  <nd ref="800999712"/>
+  <tag k="addr:housenumber" v="423"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Fri May 30 00:00:00 EDT 2008"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="136841"/>
+  <tag k="dcgis:lot" v="0815"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65733882" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:06Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801003504"/>
+  <nd ref="800995546"/>
+  <nd ref="801006276"/>
+  <nd ref="800989361"/>
+  <nd ref="800995461"/>
+  <nd ref="801002855"/>
+  <nd ref="801000658"/>
+  <nd ref="800994778"/>
+  <nd ref="801003504"/>
+  <tag k="addr:housenumber" v="426"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="77664"/>
+  <tag k="dcgis:lot" v="0160"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65737005" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T03:52:07Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801002581"/>
+  <nd ref="801010331"/>
+  <nd ref="801011629"/>
+  <nd ref="800994815"/>
+  <nd ref="801007047"/>
+  <nd ref="800994840"/>
+  <nd ref="801013577"/>
+  <nd ref="800993320"/>
+  <nd ref="801002581"/>
+  <tag k="addr:housenumber" v="429"/>
+  <tag k="addr:street" v="18th Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="75843"/>
+  <tag k="dcgis:lot" v="0106"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65733944" visible="true" version="2" changeset="29321102" timestamp="2015-03-08T04:35:30Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="801002538"/>
+  <nd ref="800998751"/>
+  <nd ref="801012099"/>
+  <nd ref="801010722"/>
+  <nd ref="801004344"/>
+  <nd ref="801002404"/>
+  <nd ref="801002538"/>
+  <tag k="addr:housenumber" v="1802"/>
+  <tag k="addr:street" v="D Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="156412"/>
+  <tag k="dcgis:lot" v="0814"/>
+  <tag k="dcgis:square" v="4547"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="6056084" visible="true" version="5" changeset="16339664" timestamp="2013-05-29T15:47:28Z" user="jfire" uid="67236">
+  <nd ref="49777969"/>
+  <nd ref="49765949"/>
+  <nd ref="49777981"/>
+  <nd ref="49777983"/>
+  <nd ref="49777988"/>
+  <nd ref="49777990"/>
+  <nd ref="49777991"/>
+  <nd ref="49777993"/>
+  <nd ref="49777997"/>
+  <nd ref="49778002"/>
+  <nd ref="49758147"/>
+  <nd ref="49778012"/>
+  <nd ref="2324467075"/>
+  <nd ref="49778020"/>
+  <nd ref="49778022"/>
+  <nd ref="49778024"/>
+  <nd ref="49729701"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="E Street Northeast"/>
+  <tag k="tiger:cfcc" v="A41"/>
+  <tag k="tiger:county" v="District of Columbia, DC"/>
+  <tag k="tiger:name_base" v="E"/>
+  <tag k="tiger:name_direction_suffix" v="NE"/>
+  <tag k="tiger:name_type" v="St"/>
+  <tag k="tiger:reviewed" v="no"/>
+  <tag k="tiger:zip_left" v="20002"/>
+  <tag k="tiger:zip_right" v="20002"/>
+ </way>
+ <way id="65731877" visible="true" version="3" changeset="29321102" timestamp="2015-03-08T03:51:36Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800998131"/>
+  <nd ref="800988682"/>
+  <nd ref="800996796"/>
+  <nd ref="800997535"/>
+  <nd ref="2828546735"/>
+  <nd ref="801011015"/>
+  <nd ref="800993883"/>
+  <nd ref="800999695"/>
+  <nd ref="801011711"/>
+  <nd ref="800999428"/>
+  <nd ref="800998131"/>
+  <tag k="addr:housenumber" v="1737"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="79929"/>
+  <tag k="dcgis:lot" v="0148"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+ <way id="65731952" visible="true" version="4" changeset="29321102" timestamp="2015-03-08T03:51:37Z" user="RoadGeek_MD99" uid="475877">
+  <nd ref="800999240"/>
+  <nd ref="801000748"/>
+  <nd ref="801006760"/>
+  <nd ref="800990856"/>
+  <nd ref="801003009"/>
+  <nd ref="801013363"/>
+  <nd ref="800994718"/>
+  <nd ref="800999240"/>
+  <tag k="addr:housenumber" v="1769"/>
+  <tag k="addr:street" v="E Street Northeast"/>
+  <tag k="building" v="yes"/>
+  <tag k="captureyear" v="Wed Mar 31 00:00:00 EST 1999"/>
+  <tag k="dataset" v="buildings"/>
+  <tag k="dcgis:gis_id" v="13450"/>
+  <tag k="dcgis:lot" v="0813"/>
+  <tag k="dcgis:square" v="4546"/>
+  <tag k="source" v="dcgis"/>
+ </way>
+</osm>
