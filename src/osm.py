@@ -80,6 +80,11 @@ class OSM(object):
 
             if way.type is not None:
                 tag = """<tag k="%s" v="%s" />""" % ("highway", way.type)
+                if way.type == "footway":
+                    # How to tag sidewalks in OpenStreetMap
+                    # https://help.openstreetmap.org/questions/1236/should-i-map-sidewalks
+                    # http://wiki.openstreetmap.org/wiki/Tag:footway%3Dsidewalk
+                    tag = """<tag k="%s" v="%s" />""" % ("footway", "sidewalk")
                 way_list.append(tag)
             way_list.append("</way>")
 
@@ -87,7 +92,7 @@ class OSM(object):
 
         return osm
 
-    def merge_nodes(self, distance_threshold=0.025):
+    def merge_nodes(self, distance_threshold=0.008):
         """
         Merge nodes that are close to intersection nodes.
         """
